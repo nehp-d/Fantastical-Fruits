@@ -7,22 +7,22 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.fantasticalfruits.item.BlueberriesItem;
+import net.mcreator.fantasticalfruits.block.FruitCrateBlock;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class FantasticalFruitsItemGroup extends FantasticalFruitsModElements.ModElement {
-	public FantasticalFruitsItemGroup(FantasticalFruitsModElements instance) {
-		super(instance, 5);
+public class FantasticalBlocksItemGroup extends FantasticalFruitsModElements.ModElement {
+	public FantasticalBlocksItemGroup(FantasticalFruitsModElements instance) {
+		super(instance, 11);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabfantastical_fruits") {
+		tab = new ItemGroup("tabfantastical_blocks") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(BlueberriesItem.block);
+				return new ItemStack(FruitCrateBlock.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)

@@ -7,5 +7,7 @@
   "item.fantastical_fruits.mango": "Manga",
   "item.fantastical_fruits.green_grapes": "Green Grapes",
   "item.fantastical_fruits.lemon": "Limão",
-  "itemGroup.tabfantastical_fruits": "Frutas Fantásticas"
+  "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
+  "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
+  "block.fantastical_fruits.fruit_crate": "Fruit Crate"
 }
