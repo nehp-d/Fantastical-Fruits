@@ -1,11 +1,17 @@
 {
-  "item.fantastical_fruits.sugar_root": "Sugar Root",
   "item.fantastical_fruits.blueberries": "Blueberries",
-  "item.fantastical_fruits.banana": "Banana",
-  "item.fantastical_fruits.purple_grapes": "Purple Grapes",
   "item.fantastical_fruits.red_grapes": "Red Grapes",
-  "item.fantastical_fruits.mango": "Mango",
   "item.fantastical_fruits.green_grapes": "Green Grapes",
   "item.fantastical_fruits.lemon": "Lemon",
-  "itemGroup.tabfantastical_fruits": "Fantastical Fruits"
+  "item.fantastical_fruits.dragonfruit": "Dragonfruit",
+  "item.fantastical_fruits.kiwi": "Kiwi",
+  "item.fantastical_fruits.sugar_root": "Sugar Root",
+  "item.fantastical_fruits.viciata": "Viciata Berry",
+  "item.fantastical_fruits.banana": "Banana",
+  "item.fantastical_fruits.purple_grapes": "Purple Grapes",
+  "item.fantastical_fruits.lime": "Lime",
+  "item.fantastical_fruits.mango": "Mango",
+  "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
+  "itemGroup.tabfantastical_fruits": "Fantastical Fruits",
+  "block.fantastical_fruits.fruit_crate": "Fruit Crate"
 }
