@@ -1,0 +1,148 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "Lemon",
+      "type": "food",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lemon"
+    },
+    {
+      "name": "Blueberries",
+      "type": "food",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberries"
+    },
+    {
+      "name": "Mango",
+      "type": "food",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mango"
+    },
+    {
+      "name": "Banana",
+      "type": "food",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "banana"
+    },
+    {
+      "name": "FantasticalFruits",
+      "type": "tab",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fantastical_fruits"
+    },
+    {
+      "name": "PurpleGrapes",
+      "type": "food",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_grapes"
+    },
+    {
+      "name": "RedGrapes",
+      "type": "food",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "red_grapes"
+    },
+    {
+      "name": "GreenGrapes",
+      "type": "food",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "green_grapes"
+    },
+    {
+      "name": "SugarRoot",
+      "type": "food",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sugar_root"
+    },
+    {
+      "name": "SugarRecipe",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sugar_recipe"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.fantastical_fruits.sugar_root": "Sugar Root",
+      "item.fantastical_fruits.blueberries": "Blueberries",
+      "item.fantastical_fruits.banana": "Banana",
+      "item.fantastical_fruits.purple_grapes": "Purple Grapes",
+      "item.fantastical_fruits.red_grapes": "Red Grapes",
+      "item.fantastical_fruits.mango": "Mango",
+      "item.fantastical_fruits.green_grapes": "Green Grapes",
+      "item.fantastical_fruits.lemon": "Lemon",
+      "itemGroup.tabfantastical_fruits": "Fantastical Fruits"
+    },
+    "pt_br": {
+      "item.fantastical_fruits.sugar_root": "Sugar Root",
+      "item.fantastical_fruits.blueberries": "Mirtilos",
+      "item.fantastical_fruits.banana": "Banana",
+      "item.fantastical_fruits.purple_grapes": "Purple Grapes",
+      "item.fantastical_fruits.red_grapes": "Red Grapes",
+      "item.fantastical_fruits.mango": "Manga",
+      "item.fantastical_fruits.green_grapes": "Green Grapes",
+      "item.fantastical_fruits.lemon": "Limão",
+      "itemGroup.tabfantastical_fruits": "Frutas Fantásticas"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "Overworld Fruits",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "fantastical_fruits",
+    "modName": "Fantastical Fruits",
+    "version": "1.0.0",
+    "author": "Pedro, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "modElementsPackage": "net.mcreator.fantasticalfruits",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202100236710
+}

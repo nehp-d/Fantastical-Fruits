@@ -1,0 +1,13 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fantastical_fruits:sugar_root"
+    }
+  ],
+  "result": {
+    "item": "minecraft:sugar",
+    "count": 2
+  }
+}
