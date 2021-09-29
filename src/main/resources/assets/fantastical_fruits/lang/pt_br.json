@@ -1,6 +1,5 @@
 {
   "item.fantastical_fruits.blueberries": "Mirtilos",
-  "entity.fantastical_fruits.wanderingfunglin": "Wandering Funglin",
   "item.fantastical_fruits.red_grapes": "Red Grapes",
   "item.fantastical_fruits.green_grapes": "Green Grapes",
   "item.fantastical_fruits.lemon": "Limão",
@@ -14,7 +13,6 @@
   "item.fantastical_fruits.mango": "Manga",
   "block.fantastical_fruits.writingtable": "Writing Table",
   "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
-  "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
   "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
   "block.fantastical_fruits.fruit_crate": "Fruit Crate"
 }
