@@ -144,6 +144,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "viciata"
+    },
+    {
+      "name": "Writingtable",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "writingtable"
     }
   ],
   "variable_elements": [],

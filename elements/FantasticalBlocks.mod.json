@@ -4,7 +4,7 @@
   "definition": {
     "name": "Fantastical Blocks",
     "icon": {
-      "value": "CUSTOM:FruitCrate"
+      "value": "Blocks.BARREL"
     },
     "showSearch": false
   }

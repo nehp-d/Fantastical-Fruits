@@ -1,0 +1,16 @@
+{
+  "parent": "fantastical_fruits:custom/writingtable",
+  "textures": {
+    "all": "fantastical_fruits:blocks/beehive_end",
+    "particle": "fantastical_fruits:blocks/beehive_end",
+    "11": "fantastical_fruits:blocks/cobblestone",
+    "1": "fantastical_fruits:blocks/beehive_end",
+    "2": "fantastical_fruits:blocks/bookshelf",
+    "3": "fantastical_fruits:blocks/barrel_bottom",
+    "4": "fantastical_fruits:blocks/azalea_top",
+    "5": "fantastical_fruits:blocks/map_background",
+    "7": "fantastical_fruits:blocks/hopper_inside",
+    "8": "fantastical_fruits:blocks/feather",
+    "9": "fantastical_fruits:blocks/spruce_planks"
+  }
+}

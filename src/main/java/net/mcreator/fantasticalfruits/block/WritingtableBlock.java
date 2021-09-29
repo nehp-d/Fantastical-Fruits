@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class FruitCrateBlock extends FantasticalFruitsModElements.ModElement {
+public class WritingtableBlock extends FantasticalFruitsModElements.ModElement {
 
-	@ObjectHolder("fantastical_fruits:fruit_crate")
+	@ObjectHolder("fantastical_fruits:writingtable")
 	public static final Block block = null;
 
-	public FruitCrateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 11);
+	public WritingtableBlock(FantasticalFruitsModElements instance) {
+		super(instance, 15);
 
 	}
 
@@ -31,10 +31,10 @@ public class FruitCrateBlock extends FantasticalFruitsModElements.ModElement {
 	public static class CustomBlock extends Block {
 
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(0.6f, 0.6f).setLightLevel(s -> 0).notSolid()
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0).notSolid()
 					.setOpaque((bs, br, bp) -> false));
 
-			setRegistryName("fruit_crate");
+			setRegistryName("writingtable");
 		}
 
 		@Override
@@ -50,16 +50,11 @@ public class FruitCrateBlock extends FantasticalFruitsModElements.ModElement {
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 9, 16)
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 10, 16)
 
 			)
 
 					.withOffset(offset.x, offset.y, offset.z);
-		}
-
-		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 5;
 		}
 
 		@Override

@@ -1,17 +1,9 @@
 
 package net.mcreator.fantasticalfruits.itemgroup;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-
-import net.mcreator.fantasticalfruits.block.FruitCrateBlock;
-import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
-
 @FantasticalFruitsModElements.ModElement.Tag
 public class FantasticalBlocksItemGroup extends FantasticalFruitsModElements.ModElement {
+
 	public FantasticalBlocksItemGroup(FantasticalFruitsModElements instance) {
 		super(instance, 11);
 	}
@@ -22,7 +14,7 @@ public class FantasticalBlocksItemGroup extends FantasticalFruitsModElements.Mod
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(FruitCrateBlock.block);
+				return new ItemStack(Blocks.BARREL);
 			}
 
 			@OnlyIn(Dist.CLIENT)
@@ -31,5 +23,7 @@ public class FantasticalBlocksItemGroup extends FantasticalFruitsModElements.Mod
 			}
 		};
 	}
+
 	public static ItemGroup tab;
+
 }
