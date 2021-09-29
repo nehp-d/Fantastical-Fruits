@@ -144,6 +144,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "viciata"
+    },
+    {
+      "name": "Writingtable",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "writingtable"
     }
   ],
   "variable_elements": [],
@@ -162,6 +171,7 @@
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.mango": "Mango",
+      "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
       "itemGroup.tabfantastical_fruits": "Fantastical Fruits",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
@@ -179,6 +189,7 @@
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.mango": "Manga",
+      "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
       "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"

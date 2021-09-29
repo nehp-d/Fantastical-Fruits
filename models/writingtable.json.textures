@@ -1,0 +1,18 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "11": "cobblestone",
+        "1": "beehive_end",
+        "2": "bookshelf",
+        "3": "barrel_bottom",
+        "4": "azalea_top",
+        "5": "map_background",
+        "7": "hopper_inside",
+        "8": "feather",
+        "9": "spruce_planks"
+      },
+      "name": "default"
+    }
+  }
+}
