@@ -18,21 +18,23 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.fantasticalfruits.entity.renderer.WanderingfunglinRenderer;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
@@ -58,7 +60,7 @@ public class WanderingfunglinEntity extends FantasticalFruitsModElements.ModElem
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 1, 1));
 	}
 
 	@Override
@@ -78,7 +80,7 @@ public class WanderingfunglinEntity extends FantasticalFruitsModElements.ModElem
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -97,9 +99,9 @@ public class WanderingfunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
-			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 1));
+			this.goalSelector.addGoal(2, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(3, new OpenDoorGoal(this, false));
 			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(5, new SwimGoal(this));
 		}
@@ -107,6 +109,11 @@ public class WanderingfunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(Blocks.RED_MUSHROOM));
 		}
 
 		@Override
@@ -117,6 +124,13 @@ public class WanderingfunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.DROWN)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 	}
 }
