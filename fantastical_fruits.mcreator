@@ -162,6 +162,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wanderingfunglin"
+    },
+    {
+      "name": "Crimberry",
+      "type": "food",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crimberry"
     }
   ],
   "variable_elements": [],
@@ -180,6 +189,7 @@
       "item.fantastical_fruits.banana": "Banana",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.lime": "Lime",
+      "item.fantastical_fruits.crimberry": "Crimberry",
       "item.fantastical_fruits.mango": "Mango",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
@@ -200,6 +210,7 @@
       "item.fantastical_fruits.banana": "Banana",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.lime": "Lime",
+      "item.fantastical_fruits.crimberry": "Crimberry",
       "item.fantastical_fruits.mango": "Manga",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
