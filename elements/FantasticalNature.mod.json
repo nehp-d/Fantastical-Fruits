@@ -4,7 +4,7 @@
   "definition": {
     "name": "Fantastical Nature",
     "icon": {
-      "value": "CUSTOM:Aspenleaves"
+      "value": "CUSTOM:AspenLeaves"
     },
     "showSearch": true
   }

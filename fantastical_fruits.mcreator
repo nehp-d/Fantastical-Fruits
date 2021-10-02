@@ -200,15 +200,6 @@
       "registry_name": "fantastical_nature"
     },
     {
-      "name": "Aspenleaves",
-      "type": "block",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspenleaves"
-    },
-    {
       "name": "AspenPlanks",
       "type": "block",
       "sortid": 21,
@@ -251,26 +242,74 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crimberry_powder"
+    },
+    {
+      "name": "AspenLogStrip",
+      "type": "procedure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_log_strip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AspenLeaves",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_leaves"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
       "entity.fantastical_fruits.wanderingfunglin": "Wandering Funglin",
       "item.fantastical_fruits.lemon": "Lemon",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
+      "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
+      "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.viciata": "Viciata Berry",
+      "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.banana": "Banana",
+      "item.fantastical_fruits.crimberry_powder": "Crimberry Powder",
       "item.fantastical_fruits.mango": "Mango",
+      "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
       "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
@@ -292,6 +331,7 @@
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.viciata": "Viciata Berry",
+      "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "item.fantastical_fruits.banana": "Banana",
       "item.fantastical_fruits.crimberry_powder": "Crimberry Powder",
@@ -301,8 +341,7 @@
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
       "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
-      "block.fantastical_fruits.fruit_crate": "Fruit Crate",
-      "block.fantastical_fruits.aspenleaves": "Aspen Leaves"
+      "block.fantastical_fruits.fruit_crate": "Fruit Crate"
     }
   },
   "foldersRoot": {

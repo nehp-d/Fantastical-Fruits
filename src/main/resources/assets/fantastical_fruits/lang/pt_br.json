@@ -13,6 +13,7 @@
   "item.fantastical_fruits.green_grapes": "Green Grapes",
   "item.fantastical_fruits.kiwi": "Kiwi",
   "item.fantastical_fruits.viciata": "Viciata Berry",
+  "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
   "item.fantastical_fruits.purple_grapes": "Purple Grapes",
   "item.fantastical_fruits.banana": "Banana",
   "item.fantastical_fruits.crimberry_powder": "Crimberry Powder",
@@ -22,6 +23,5 @@
   "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
   "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
   "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
-  "block.fantastical_fruits.fruit_crate": "Fruit Crate",
-  "block.fantastical_fruits.aspenleaves": "Aspen Leaves"
+  "block.fantastical_fruits.fruit_crate": "Fruit Crate"
 }
