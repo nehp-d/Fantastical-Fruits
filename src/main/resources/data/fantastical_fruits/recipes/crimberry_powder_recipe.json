@@ -1,0 +1,13 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fantastical_fruits:crimberry"
+    }
+  ],
+  "result": {
+    "item": "fantastical_fruits:crimberry_powder",
+    "count": 2
+  }
+}
