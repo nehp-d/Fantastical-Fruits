@@ -1,31 +1,18 @@
 
 package net.mcreator.fantasticalfruits.block;
 
-import net.minecraftforge.registries.ObjectHolder;
-
-import net.minecraft.world.IBlockReader;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.loot.LootContext;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.SoundType;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
-
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalBlocksItemGroup;
-import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
-
-import java.util.List;
-import java.util.Collections;
+import net.minecraft.util.SoundEvent;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class AspenPlanksBlock extends FantasticalFruitsModElements.ModElement {
+
 	@ObjectHolder("fantastical_fruits:aspen_planks")
 	public static final Block block = null;
+
 	public AspenPlanksBlock(FantasticalFruitsModElements instance) {
 		super(instance, 21);
+
 	}
 
 	@Override
@@ -34,9 +21,12 @@ public class AspenPlanksBlock extends FantasticalFruitsModElements.ModElement {
 		elements.items.add(
 				() -> new BlockItem(block, new Item.Properties().group(FantasticalBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
+
 	public static class CustomBlock extends Block {
+
 		public CustomBlock() {
 			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+
 			setRegistryName("aspen_planks");
 		}
 
@@ -47,10 +37,13 @@ public class AspenPlanksBlock extends FantasticalFruitsModElements.ModElement {
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
 		}
+
 	}
+
 }
