@@ -33,7 +33,7 @@ import net.minecraft.block.BlockState;
 import java.util.Random;
 
 @Mod.EventBusSubscriber
-public class AspenTree1Structure {
+public class AspenTree6Structure {
 	private static Feature<NoFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -73,7 +73,7 @@ public class AspenTree1Structure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "aspen_tree_1"));
+									.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "aspen_tree_6"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,
@@ -87,8 +87,8 @@ public class AspenTree1Structure {
 			};
 			configuredFeature = feature.withConfiguration(IFeatureConfig.NO_FEATURE_CONFIG)
 					.withPlacement(Placement.NOPE.configure(IPlacementConfig.NO_PLACEMENT_CONFIG));
-			event.getRegistry().register(feature.setRegistryName("aspen_tree_1"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:aspen_tree_1"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("aspen_tree_6"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:aspen_tree_6"), configuredFeature);
 		}
 	}
 	@SubscribeEvent

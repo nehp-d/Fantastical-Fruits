@@ -380,6 +380,60 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aspen_tree_4"
+    },
+    {
+      "name": "AspenTree5",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_5"
+    },
+    {
+      "name": "AspenTree6",
+      "type": "structure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_6"
+    },
+    {
+      "name": "AspenTree7",
+      "type": "structure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_7"
+    },
+    {
+      "name": "AspenTree8",
+      "type": "structure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_8"
+    },
+    {
+      "name": "AspenGrass",
+      "type": "plant",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_grass"
+    },
+    {
+      "name": "ShortAspenGrass",
+      "type": "plant",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "short_aspen_grass"
     }
   ],
   "variable_elements": [],
@@ -392,11 +446,13 @@
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
@@ -422,11 +478,13 @@
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",

@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "aspen_tree_4",
+    "structure": "aspen_tree_8",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 1000000,
@@ -21,9 +21,6 @@
       },
       {
         "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#1"
       }
     ],
     "restrictionBiomes": [
