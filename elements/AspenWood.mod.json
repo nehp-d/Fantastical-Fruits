@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "aspenplanks",
-    "textureTop": "aspenplanks",
-    "textureLeft": "aspenplanks",
-    "textureFront": "aspenplanks",
-    "textureRight": "aspenplanks",
-    "textureBack": "aspenplanks",
+    "texture": "aspen_log",
+    "textureTop": "aspen_log",
+    "textureLeft": "aspen_log",
+    "textureFront": "aspen_log",
+    "textureRight": "aspen_log",
+    "textureBack": "aspen_log",
     "renderType": 10,
     "customModelName": "Normal",
-    "rotationMode": 0,
+    "rotationMode": 5,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Aspen Planks",
+    "name": "Aspen Wood",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 3.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FantasticalNature"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },

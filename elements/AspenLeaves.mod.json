@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "aspenleaves",
-    "textureTop": "aspenleaves",
-    "textureLeft": "aspenleaves",
-    "textureFront": "aspenleaves",
-    "textureRight": "aspenleaves",
-    "textureBack": "aspenleaves",
+    "texture": "aspenleaves2",
+    "textureTop": "aspenleaves2",
+    "textureLeft": "aspenleaves2",
+    "textureFront": "aspenleaves2",
+    "textureRight": "aspenleaves2",
+    "textureBack": "aspenleaves2",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -18,8 +18,8 @@
     "tintType": "No tint",
     "isItemTinted": false,
     "hasTransparency": true,
-    "connectedSides": false,
-    "transparencyType": "SOLID",
+    "connectedSides": true,
+    "transparencyType": "TRANSLUCENT",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -35,7 +35,7 @@
     "name": "Aspen Leaves",
     "specialInfo": [],
     "hardness": 0.2,
-    "resistance": 0.2,
+    "resistance": 1.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {

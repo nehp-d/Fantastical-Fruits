@@ -1,12 +1,12 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "fantastical_fruits:blocks/aspenleaves",
-    "up": "fantastical_fruits:blocks/aspenleaves",
-    "north": "fantastical_fruits:blocks/aspenleaves",
-    "east": "fantastical_fruits:blocks/aspenleaves",
-    "south": "fantastical_fruits:blocks/aspenleaves",
-    "west": "fantastical_fruits:blocks/aspenleaves",
-    "particle": "fantastical_fruits:blocks/aspenleaves"
+    "down": "fantastical_fruits:blocks/aspenleaves2",
+    "up": "fantastical_fruits:blocks/aspenleaves2",
+    "north": "fantastical_fruits:blocks/aspenleaves2",
+    "east": "fantastical_fruits:blocks/aspenleaves2",
+    "south": "fantastical_fruits:blocks/aspenleaves2",
+    "west": "fantastical_fruits:blocks/aspenleaves2",
+    "particle": "fantastical_fruits:blocks/aspenleaves2"
   }
 }

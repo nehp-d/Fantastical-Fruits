@@ -21,50 +21,50 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 		root.setRotationPoint(0.0F, 24.0F, 0.0F);
 
 		rightleg = new ModelRenderer(this);
-		rightleg.setRotationPoint(0.0F, 0.0F, 0.0F);
+		rightleg.setRotationPoint(0.0F, -4.0F, 0.0F);
 		root.addChild(rightleg);
-		rightleg.setTextureOffset(0, 26).addBox(-2.0F, -4.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		rightleg.setTextureOffset(0, 26).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		leftleg = new ModelRenderer(this);
-		leftleg.setRotationPoint(0.0F, 0.0F, 0.0F);
+		leftleg.setRotationPoint(0.0F, -4.0F, 0.0F);
 		root.addChild(leftleg);
-		leftleg.setTextureOffset(22, 0).addBox(0.0F, -4.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
+		leftleg.setTextureOffset(22, 0).addBox(0.0F, 0.0F, -1.0F, 2.0F, 4.0F, 2.0F, 0.0F, false);
 
 		body = new ModelRenderer(this);
-		body.setRotationPoint(0.0F, 0.0F, 0.0F);
+		body.setRotationPoint(0.0F, -4.0F, 0.0F);
 		root.addChild(body);
-		body.setTextureOffset(0, 18).addBox(-2.0F, -10.0F, -1.0F, 4.0F, 6.0F, 2.0F, 0.0F, false);
+		body.setTextureOffset(0, 18).addBox(-2.0F, -6.0F, -1.0F, 4.0F, 6.0F, 2.0F, 0.0F, false);
 
 		leftarm = new ModelRenderer(this);
-		leftarm.setRotationPoint(0.0F, 0.0F, 0.0F);
+		leftarm.setRotationPoint(2.0F, -10.0F, 0.0F);
 		root.addChild(leftarm);
-		leftarm.setTextureOffset(20, 20).addBox(2.0F, -10.0F, -1.0F, 2.0F, 6.0F, 2.0F, 0.0F, false);
+		leftarm.setTextureOffset(20, 20).addBox(0.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, 0.0F, false);
 
 		rightarm = new ModelRenderer(this);
-		rightarm.setRotationPoint(0.0F, 0.0F, 0.0F);
+		rightarm.setRotationPoint(-2.0F, -10.0F, 0.0F);
 		root.addChild(rightarm);
-		rightarm.setTextureOffset(12, 20).addBox(-4.0F, -10.0F, -1.0F, 2.0F, 6.0F, 2.0F, 0.0F, false);
+		rightarm.setTextureOffset(12, 20).addBox(-2.0F, 0.0F, -1.0F, 2.0F, 6.0F, 2.0F, 0.0F, false);
 
 		head = new ModelRenderer(this);
-		head.setRotationPoint(0.0F, 0.0F, 0.0F);
+		head.setRotationPoint(0.0F, -10.0F, 0.0F);
 		root.addChild(head);
-		head.setTextureOffset(12, 29).addBox(-2.0F, -13.0F, -2.0F, 4.0F, 3.0F, 3.0F, 0.0F, false);
+		head.setTextureOffset(12, 29).addBox(-2.0F, -3.0F, -2.0F, 4.0F, 3.0F, 3.0F, 0.0F, false);
 
 		mushroom = new ModelRenderer(this);
-		mushroom.setRotationPoint(0.0F, 0.0F, 0.0F);
+		mushroom.setRotationPoint(0.0F, -13.0F, 0.0F);
 		root.addChild(mushroom);
-		mushroom.setTextureOffset(0, 0).addBox(-4.0F, -15.0F, -3.0F, 8.0F, 2.0F, 6.0F, 0.0F, false);
-		mushroom.setTextureOffset(14, 14).addBox(-3.0F, -17.0F, -2.0F, 6.0F, 2.0F, 4.0F, 0.0F, false);
+		mushroom.setTextureOffset(0, 0).addBox(-4.0F, -2.0F, -3.0F, 8.0F, 2.0F, 6.0F, 0.0F, false);
+		mushroom.setTextureOffset(14, 14).addBox(-3.0F, -4.0F, -2.0F, 6.0F, 2.0F, 4.0F, 0.0F, false);
 
 		backpack = new ModelRenderer(this);
-		backpack.setRotationPoint(0.0F, 0.0F, 0.0F);
+		backpack.setRotationPoint(0.0F, -10.0F, 1.0F);
 		root.addChild(backpack);
-		backpack.setTextureOffset(46, 0).addBox(-3.0F, -12.0F, 1.0F, 6.0F, 7.0F, 3.0F, 0.0F, false);
-		backpack.setTextureOffset(56, 12).addBox(-3.0F, -11.0F, -2.0F, 1.0F, 1.0F, 3.0F, 0.0F, false);
-		backpack.setTextureOffset(46, 12).addBox(-3.0F, -10.0F, -2.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
-		backpack.setTextureOffset(56, 12).addBox(2.0F, -11.0F, -2.0F, 1.0F, 1.0F, 3.0F, 0.0F, false);
-		backpack.setTextureOffset(46, 12).addBox(2.0F, -10.0F, -2.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
-		backpack.setTextureOffset(46, 11).addBox(-2.0F, -8.0F, -2.0F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+		backpack.setTextureOffset(46, 0).addBox(-3.0F, -2.0F, 0.0F, 6.0F, 7.0F, 3.0F, 0.0F, false);
+		backpack.setTextureOffset(56, 12).addBox(-3.0F, -1.0F, -3.0F, 1.0F, 1.0F, 3.0F, 0.0F, false);
+		backpack.setTextureOffset(46, 12).addBox(-3.0F, 0.0F, -3.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
+		backpack.setTextureOffset(56, 12).addBox(2.0F, -1.0F, -3.0F, 1.0F, 1.0F, 3.0F, 0.0F, false);
+		backpack.setTextureOffset(46, 12).addBox(2.0F, 0.0F, -3.0F, 1.0F, 5.0F, 1.0F, 0.0F, false);
+		backpack.setTextureOffset(46, 11).addBox(-2.0F, 2.0F, -3.0F, 4.0F, 1.0F, 1.0F, 0.0F, false);
 	}
 
 	@Override
@@ -83,10 +83,10 @@ public static class Modelcustom_model extends EntityModel<Entity> {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
 		this.head.rotateAngleY = f3 / (180F / (float) Math.PI);
 		this.head.rotateAngleX = f4 / (180F / (float) Math.PI);
-		this.rightleg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
-		this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
-		this.leftleg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
-		this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.rightleg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+		this.rightarm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+		this.leftleg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+		this.leftarm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
 		this.mushroom.rotateAngleY = f3 / (180F / (float) Math.PI);
 		this.mushroom.rotateAngleX = f4 / (180F / (float) Math.PI);
 	}

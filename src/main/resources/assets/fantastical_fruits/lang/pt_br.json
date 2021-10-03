@@ -8,9 +8,11 @@
   "item.fantastical_fruits.sugar_root": "Sugar Root",
   "item.fantastical_fruits.lime": "Lime",
   "item.fantastical_fruits.crimberry": "Crimberry",
+  "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
   "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
   "item.fantastical_fruits.red_grapes": "Red Grapes",
   "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
+  "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
   "item.fantastical_fruits.green_grapes": "Green Grapes",
   "item.fantastical_fruits.kiwi": "Kiwi",
   "item.fantastical_fruits.viciata": "Viciata Berry",
@@ -22,6 +24,7 @@
   "itemGroup.tabfantastical_nature": "Fantastical Nature",
   "block.fantastical_fruits.writingtable": "Writing Table",
   "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
+  "block.fantastical_fruits.aspen_wood": "Aspen Wood",
   "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
   "block.fantastical_fruits.fruit_crate": "Fruit Crate"
 }

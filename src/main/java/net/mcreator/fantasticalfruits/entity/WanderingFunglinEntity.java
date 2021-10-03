@@ -15,15 +15,10 @@ import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
-import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
@@ -36,15 +31,11 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureAttribute;
 
-import net.mcreator.fantasticalfruits.procedures.HiProcedure;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.entity.renderer.WanderingFunglinRenderer;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
-
-import java.util.Map;
-import java.util.HashMap;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElement {
@@ -61,7 +52,7 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -39322, -1, new Item.Properties().group(ItemGroup.MISC))
+		elements.items.add(() -> new SpawnEggItem(entity, -39322, -1, new Item.Properties().group(FantasticalNatureItemGroup.tab))
 				.setRegistryName("wandering_funglin_spawn_egg"));
 	}
 
@@ -126,23 +117,6 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
-		}
-
-		@Override
-		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
-			ItemStack itemstack = sourceentity.getHeldItem(hand);
-			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
-			super.func_230254_b_(sourceentity, hand);
-			double x = this.getPosX();
-			double y = this.getPosY();
-			double z = this.getPosZ();
-			Entity entity = this;
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("entity", entity);
-				HiProcedure.executeProcedure($_dependencies);
-			}
-			return retval;
 		}
 	}
 }
