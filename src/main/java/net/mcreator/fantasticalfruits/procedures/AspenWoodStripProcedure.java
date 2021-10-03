@@ -17,7 +17,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fantasticalfruits.block.StrippedAspenWoodBlock;
-import net.mcreator.fantasticalfruits.block.AspenWoodBlock;
+import net.mcreator.fantasticalfruits.block.StrippedAspenLogBlock;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
 import java.util.Random;
@@ -79,7 +79,7 @@ public class AspenWoodStripProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() instanceof AxeItem)
-				&& (AspenWoodBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))) {
+				&& (StrippedAspenLogBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))) {
 			{
 				ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
 				if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
