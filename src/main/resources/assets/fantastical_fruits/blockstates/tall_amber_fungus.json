@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "fantastical_fruits:block/tall_amber_fungus"
+    },
+    "half=lower": {
+      "model": "fantastical_fruits:block/tall_amber_fungus_bottom"
+    }
+  }
+}

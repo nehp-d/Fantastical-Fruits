@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fantastical_fruits:blocks/amber_fungus",
+    "particle": "fantastical_fruits:blocks/amber_fungus"
+  }
+}
