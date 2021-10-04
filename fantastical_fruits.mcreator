@@ -487,12 +487,23 @@
       "ids": {},
       "registry_name": "yellow_autumnal_leaves",
       "path": "~/Nature"
+    },
+    {
+      "name": "VermillionMango",
+      "type": "food",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "vermillion_mango",
+      "path": "~/Fruits"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
       "item.fantastical_fruits.lemon": "Lemon",
@@ -528,6 +539,7 @@
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
     },
     "pt_br": {
+      "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Mirtilos",
       "item.fantastical_fruits.lemon": "Limão",
