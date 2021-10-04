@@ -23,9 +23,9 @@ import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.MeleeAttackGoal;
+import net.minecraft.entity.ai.goal.PanicGoal;
+import net.minecraft.entity.ai.goal.OpenDoorGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
 import net.minecraft.entity.ai.attributes.Attributes;
 import net.minecraft.entity.ai.attributes.AttributeModifierMap;
 import net.minecraft.entity.MobEntity;
@@ -61,7 +61,7 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 4, 4));
+		event.getSpawns().getSpawner(EntityClassification.MONSTER).add(new MobSpawnInfo.Spawners(entity, 20, 1, 1));
 	}
 
 	@Override
@@ -100,11 +100,12 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
-			this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+			this.goalSelector.addGoal(1, new PanicGoal(this, 1.2));
 			this.goalSelector.addGoal(2, new RandomWalkingGoal(this, 1));
-			this.targetSelector.addGoal(3, new HurtByTargetGoal(this));
-			this.goalSelector.addGoal(4, new LookRandomlyGoal(this));
-			this.goalSelector.addGoal(5, new SwimGoal(this));
+			this.goalSelector.addGoal(3, new LookRandomlyGoal(this));
+			this.goalSelector.addGoal(4, new OpenDoorGoal(this, true));
+			this.goalSelector.addGoal(5, new OpenDoorGoal(this, false));
+			this.goalSelector.addGoal(6, new SwimGoal(this));
 		}
 
 		@Override
@@ -125,6 +126,13 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		public net.minecraft.util.SoundEvent getDeathSound() {
 			return (net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.death"));
+		}
+
+		@Override
+		public boolean attackEntityFrom(DamageSource source, float amount) {
+			if (source == DamageSource.DROWN)
+				return false;
+			return super.attackEntityFrom(source, amount);
 		}
 	}
 }
