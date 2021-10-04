@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/autumnleaves1",
+    "up": "fantastical_fruits:blocks/autumnleaves1",
+    "north": "fantastical_fruits:blocks/autumnleaves1",
+    "east": "fantastical_fruits:blocks/autumnleaves1",
+    "south": "fantastical_fruits:blocks/autumnleaves1",
+    "west": "fantastical_fruits:blocks/autumnleaves1",
+    "particle": "fantastical_fruits:blocks/autumnleaves1"
+  }
+}
