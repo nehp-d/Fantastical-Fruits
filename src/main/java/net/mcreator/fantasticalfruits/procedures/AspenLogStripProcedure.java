@@ -1,19 +1,29 @@
 package net.mcreator.fantasticalfruits.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.GameType;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.AxeItem;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fantasticalfruits.block.StrippedAspenLogBlock;
@@ -28,7 +38,7 @@ public class AspenLogStripProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
-		public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+		public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 			PlayerEntity entity = event.getPlayer();
 			if (event.getHand() != entity.getActiveHand()) {
 				return;
@@ -37,12 +47,15 @@ public class AspenLogStripProcedure {
 			double j = event.getPos().getY();
 			double k = event.getPos().getZ();
 			IWorld world = event.getWorld();
+			BlockState state = world.getBlockState(event.getPos());
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
 			dependencies.put("world", world);
 			dependencies.put("entity", entity);
+			dependencies.put("direction", event.getFace());
+			dependencies.put("blockstate", state);
 			dependencies.put("event", event);
 			executeProcedure(dependencies);
 		}
@@ -80,12 +93,37 @@ public class AspenLogStripProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() instanceof AxeItem)
 				&& (AspenLogBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock()))) {
-			{
-				ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-				if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-					_ist.shrink(1);
-					_ist.setDamage(0);
+			if ((!(new Object() {
+				public boolean checkGamemode(Entity _ent) {
+					if (_ent instanceof ServerPlayerEntity) {
+						return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+					} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+						NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+								.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+						return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+					}
+					return false;
 				}
+			}.checkGamemode(entity)))) {
+				{
+					ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+					if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+						_ist.shrink(1);
+						_ist.setDamage(0);
+					}
+				}
+			}
+			if (entity instanceof LivingEntity) {
+				((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+			}
+			if (world instanceof World && !world.isRemote()) {
+				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+						SoundCategory.BLOCKS, (float) 1, (float) 1);
+			} else {
+				((World) world).playSound(x, y, z,
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+						SoundCategory.BLOCKS, (float) 1, (float) 1, false);
 			}
 			{
 				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
