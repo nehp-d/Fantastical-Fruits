@@ -10,11 +10,11 @@
       "value": "Blocks.STONE#0"
     },
     "grassColor": {
-      "value": -12226,
+      "value": -5722026,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -10942,
+      "value": -6709170,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -49,8 +49,8 @@
     "biomeDictionaryTypes": [],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
-    "flowersPerChunk": 4,
-    "mushroomsPerChunk": 3,
+    "flowersPerChunk": 0,
+    "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
     "sandPatchesPerChunk": 0,
     "gravelPatchesPerChunk": 0,

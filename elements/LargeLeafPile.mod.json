@@ -2,18 +2,18 @@
   "_fv": 24,
   "_type": "plant",
   "definition": {
-    "renderType": 12,
-    "texture": "aspengrass",
+    "renderType": 2,
+    "texture": "autumnleaves1",
     "textureBottom": "",
-    "customModelName": "Cross model",
+    "customModelName": "leafpile1:default",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
-    "suspiciousStewEffect": "HASTE",
-    "suspiciousStewDuration": 20,
+    "staticPlantGenerationType": "Flower",
+    "suspiciousStewEffect": "SPEED",
+    "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
@@ -30,10 +30,10 @@
         "subtract": false
       }
     ],
-    "name": "Aspen Grass",
+    "name": "Large Leaf Pile",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "DECORATIONS"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -78,15 +78,11 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 16,
+    "frequencyOnChunks": 2,
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBiomes": [
-      {
-        "value": "CUSTOM:AspenForest"
-      }
-    ],
-    "patchSize": 64
+    "restrictionBiomes": [],
+    "patchSize": 5
   }
 }

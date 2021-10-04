@@ -1,7 +1,0 @@
-{
-  "parent": "block/cross",
-  "textures": {
-    "cross": "fantastical_fruits:blocks/aspengrass",
-    "particle": "fantastical_fruits:blocks/aspengrass"
-  }
-}

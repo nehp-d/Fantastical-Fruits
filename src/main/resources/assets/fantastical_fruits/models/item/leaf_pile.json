@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fantastical_fruits:blocks/aspengrass"
+    "layer0": "fantastical_fruits:blocks/leafpile"
   }
 }

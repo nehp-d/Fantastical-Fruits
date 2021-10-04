@@ -439,26 +439,6 @@
       "registry_name": "aspen_tree_8"
     },
     {
-      "name": "AspenGrass",
-      "type": "plant",
-      "sortid": 38,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspen_grass",
-      "path": "~/Nature"
-    },
-    {
-      "name": "ShortAspenGrass",
-      "type": "plant",
-      "sortid": 39,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "short_aspen_grass",
-      "path": "~/Nature"
-    },
-    {
       "name": "OrangeAutumnalLeaves",
       "type": "block",
       "sortid": 41,
@@ -487,6 +467,33 @@
       "ids": {},
       "registry_name": "yellow_autumnal_leaves",
       "path": "~/Nature"
+    },
+    {
+      "name": "LeafPile",
+      "type": "plant",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "leaf_pile"
+    },
+    {
+      "name": "LargeLeafPile",
+      "type": "plant",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "large_leaf_pile"
+    },
+    {
+      "name": "SmallLeafPile",
+      "type": "plant",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "small_leaf_pile"
     }
   ],
   "variable_elements": [],
@@ -495,18 +502,18 @@
     "en_us": {
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
+      "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
       "item.fantastical_fruits.lemon": "Lemon",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
-      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
-      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
+      "block.fantastical_fruits.large_leaf_pile": "Large Leaf Pile",
       "block.fantastical_fruits.red_autumnal_leaves": "Red Autumnal Leaves",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
@@ -523,6 +530,7 @@
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
+      "block.fantastical_fruits.leaf_pile": "Leaf Pile",
       "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "itemGroup.tabfantastical_fruits": "Fantastical Fruits",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
@@ -530,18 +538,18 @@
     "pt_br": {
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Mirtilos",
+      "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
       "item.fantastical_fruits.lemon": "Limão",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
-      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
-      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
+      "block.fantastical_fruits.large_leaf_pile": "Large Leaf Pile",
       "block.fantastical_fruits.red_autumnal_leaves": "Red Autumnal Leaves",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
@@ -558,6 +566,7 @@
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
+      "block.fantastical_fruits.leaf_pile": "Leaf Pile",
       "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
