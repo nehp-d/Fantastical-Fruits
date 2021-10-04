@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/stripped_aspen_log",
+    "up": "fantastical_fruits:blocks/stripped_aspen_log",
+    "north": "fantastical_fruits:blocks/stripped_aspen_log",
+    "east": "fantastical_fruits:blocks/stripped_aspen_log",
+    "south": "fantastical_fruits:blocks/stripped_aspen_log",
+    "west": "fantastical_fruits:blocks/stripped_aspen_log",
+    "particle": "fantastical_fruits:blocks/stripped_aspen_log"
+  }
+}

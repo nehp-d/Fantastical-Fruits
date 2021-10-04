@@ -8,7 +8,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lemon"
+      "registry_name": "lemon",
+      "path": "~/Fruits"
     },
     {
       "name": "Blueberries",
@@ -17,7 +18,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "blueberries"
+      "registry_name": "blueberries",
+      "path": "~/Fruits"
     },
     {
       "name": "Mango",
@@ -26,7 +28,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "mango"
+      "registry_name": "mango",
+      "path": "~/Fruits"
     },
     {
       "name": "Banana",
@@ -35,7 +38,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "banana"
+      "registry_name": "banana",
+      "path": "~/Fruits"
     },
     {
       "name": "FantasticalFruits",
@@ -53,7 +57,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "purple_grapes"
+      "registry_name": "purple_grapes",
+      "path": "~/Fruits"
     },
     {
       "name": "RedGrapes",
@@ -62,7 +67,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "red_grapes"
+      "registry_name": "red_grapes",
+      "path": "~/Fruits"
     },
     {
       "name": "GreenGrapes",
@@ -71,7 +77,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "green_grapes"
+      "registry_name": "green_grapes",
+      "path": "~/Fruits"
     },
     {
       "name": "SugarRoot",
@@ -80,7 +87,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "sugar_root"
+      "registry_name": "sugar_root",
+      "path": "~/Fruits"
     },
     {
       "name": "SugarRecipe",
@@ -98,7 +106,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "fruit_crate"
+      "registry_name": "fruit_crate",
+      "path": "~/Blocks"
     },
     {
       "name": "FantasticalBlocks",
@@ -116,7 +125,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lime"
+      "registry_name": "lime",
+      "path": "~/Fruits"
     },
     {
       "name": "Kiwi",
@@ -125,7 +135,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "kiwi"
+      "registry_name": "kiwi",
+      "path": "~/Fruits"
     },
     {
       "name": "Dragonfruit",
@@ -134,7 +145,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dragonfruit"
+      "registry_name": "dragonfruit",
+      "path": "~/Fruits"
     },
     {
       "name": "Viciata",
@@ -143,7 +155,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viciata"
+      "registry_name": "viciata",
+      "path": "~/Fruits"
     },
     {
       "name": "Writingtable",
@@ -155,22 +168,14 @@
       "registry_name": "writingtable"
     },
     {
-      "name": "Wanderingfunglin",
-      "type": "livingentity",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wanderingfunglin"
-    },
-    {
       "name": "Crimberry",
       "type": "food",
       "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimberry"
+      "registry_name": "crimberry",
+      "path": "~/Fruits"
     },
     {
       "name": "AspenLog",
@@ -179,7 +184,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_log"
+      "registry_name": "aspen_log",
+      "path": "~/Nature"
     },
     {
       "name": "StrippedAspenLog",
@@ -188,7 +194,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "stripped_aspen_log"
+      "registry_name": "stripped_aspen_log",
+      "path": "~/Nature"
     },
     {
       "name": "FantasticalNature",
@@ -206,7 +213,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_planks"
+      "registry_name": "aspen_planks",
+      "path": "~/Nature"
     },
     {
       "name": "CrimberryFoodEaten",
@@ -241,7 +249,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "crimberry_powder"
+      "registry_name": "crimberry_powder",
+      "path": "~/Fruits"
     },
     {
       "name": "AspenLogStrip",
@@ -283,7 +292,171 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_leaves"
+      "registry_name": "aspen_leaves",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WanderingFunglin",
+      "type": "livingentity",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wandering_funglin"
+    },
+    {
+      "name": "AspenWood",
+      "type": "block",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_wood",
+      "path": "~/Nature"
+    },
+    {
+      "name": "StrippedAspenWood",
+      "type": "block",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_aspen_wood",
+      "path": "~/Nature"
+    },
+    {
+      "name": "AspenWoodStrip",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_wood_strip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AspenForest",
+      "type": "biome",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_forest"
+    },
+    {
+      "name": "AspenTree1",
+      "type": "structure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_1"
+    },
+    {
+      "name": "AspenTree2",
+      "type": "structure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_2"
+    },
+    {
+      "name": "AspenTree3",
+      "type": "structure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_3"
+    },
+    {
+      "name": "AspenTree4",
+      "type": "structure",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_4"
+    },
+    {
+      "name": "AspenTree5",
+      "type": "structure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_5"
+    },
+    {
+      "name": "AspenTree6",
+      "type": "structure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_6"
+    },
+    {
+      "name": "AspenTree7",
+      "type": "structure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_7"
+    },
+    {
+      "name": "AspenTree8",
+      "type": "structure",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_8"
+    },
+    {
+      "name": "AspenGrass",
+      "type": "plant",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_grass",
+      "path": "~/Nature"
+    },
+    {
+      "name": "ShortAspenGrass",
+      "type": "plant",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "short_aspen_grass",
+      "path": "~/Nature"
     }
   ],
   "variable_elements": [],
@@ -292,15 +465,20 @@
     "en_us": {
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
-      "entity.fantastical_fruits.wanderingfunglin": "Wandering Funglin",
       "item.fantastical_fruits.lemon": "Lemon",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
+      "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
+      "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
+      "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
+      "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.viciata": "Viciata Berry",
@@ -312,22 +490,27 @@
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
-      "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "itemGroup.tabfantastical_fruits": "Fantastical Fruits",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
     },
     "pt_br": {
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Mirtilos",
-      "entity.fantastical_fruits.wanderingfunglin": "Wandering Funglin",
       "item.fantastical_fruits.lemon": "Limão",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
+      "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "item.fantastical_fruits.lime": "Lime",
       "item.fantastical_fruits.crimberry": "Crimberry",
+      "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
+      "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
+      "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.viciata": "Viciata Berry",
@@ -339,14 +522,27 @@
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
-      "item.fantastical_fruits.wanderingfunglin_spawn_egg": "Wandering Funglin Spawn Egg",
+      "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Fruits",
+        "children": []
+      },
+      {
+        "name": "Nature",
+        "children": []
+      },
+      {
+        "name": "Blocks",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "fantastical_fruits",
