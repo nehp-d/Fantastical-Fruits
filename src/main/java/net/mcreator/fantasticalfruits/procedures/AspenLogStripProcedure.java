@@ -11,6 +11,7 @@ import net.minecraft.world.GameType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.Property;
 import net.minecraft.nbt.CompoundNBT;
@@ -37,7 +38,7 @@ public class AspenLogStripProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
-		public static void onRightClickItem(PlayerInteractEvent.RightClickItem event) {
+		public static void onRightClickBlock(PlayerInteractEvent.RightClickBlock event) {
 			PlayerEntity entity = event.getPlayer();
 			if (event.getHand() != entity.getActiveHand()) {
 				return;
@@ -46,12 +47,15 @@ public class AspenLogStripProcedure {
 			double j = event.getPos().getY();
 			double k = event.getPos().getZ();
 			IWorld world = event.getWorld();
+			BlockState state = world.getBlockState(event.getPos());
 			Map<String, Object> dependencies = new HashMap<>();
 			dependencies.put("x", i);
 			dependencies.put("y", j);
 			dependencies.put("z", k);
 			dependencies.put("world", world);
 			dependencies.put("entity", entity);
+			dependencies.put("direction", event.getFace());
+			dependencies.put("blockstate", state);
 			dependencies.put("event", event);
 			executeProcedure(dependencies);
 		}
@@ -109,13 +113,16 @@ public class AspenLogStripProcedure {
 					}
 				}
 			}
+			if (entity instanceof LivingEntity) {
+				((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+			}
 			if (world instanceof World && !world.isRemote()) {
 				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.step")),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
 						SoundCategory.BLOCKS, (float) 1, (float) 1);
 			} else {
 				((World) world).playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.wood.step")),
+						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
 						SoundCategory.BLOCKS, (float) 1, (float) 1, false);
 			}
 			{
