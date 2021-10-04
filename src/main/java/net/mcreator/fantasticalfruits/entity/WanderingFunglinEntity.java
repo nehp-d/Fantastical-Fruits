@@ -18,6 +18,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.monster.MonsterEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -31,7 +32,9 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.entity.renderer.WanderingFunglinRenderer;
@@ -78,7 +81,7 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 		}
 	}
 
-	public static class CustomEntity extends MonsterEntity {
+	public static class CustomEntity extends CreatureEntity {
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -107,6 +110,11 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 		@Override
 		public CreatureAttribute getCreatureAttribute() {
 			return CreatureAttribute.UNDEFINED;
+		}
+
+		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
+			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(Blocks.RED_MUSHROOM));
 		}
 
 		@Override
