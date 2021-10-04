@@ -49,7 +49,7 @@
     "biomeDictionaryTypes": [
       "FOREST"
     ],
-    "grassPerChunk": 6,
+    "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 1,
     "mushroomsPerChunk": 2,
