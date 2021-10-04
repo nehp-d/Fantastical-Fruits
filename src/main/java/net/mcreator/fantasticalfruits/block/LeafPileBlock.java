@@ -97,7 +97,7 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 			configuredFeature = feature.withConfiguration(
 					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(5)
 							.build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 5)));
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 9)));
 			event.getRegistry().register(feature.setRegistryName("leaf_pile"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:leaf_pile"), configuredFeature);
 		}
