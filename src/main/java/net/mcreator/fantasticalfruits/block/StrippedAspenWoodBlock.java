@@ -2,6 +2,7 @@
 package net.mcreator.fantasticalfruits.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.common.ToolType;
 
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
@@ -36,7 +37,8 @@ public class StrippedAspenWoodBlock extends FantasticalFruitsModElements.ModElem
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			super(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 2f).setLightLevel(s -> 0).harvestLevel(-1)
+					.harvestTool(ToolType.AXE).setRequiresTool());
 			setRegistryName("stripped_aspen_wood");
 		}
 

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "fantastical_fruits:block/aspen_slab"
+    },
+    "type=top": {
+      "model": "fantastical_fruits:block/aspen_slab_top"
+    },
+    "type=double": {
+      "model": "fantastical_fruits:block/aspen_slab_full"
+    }
+  }
+}

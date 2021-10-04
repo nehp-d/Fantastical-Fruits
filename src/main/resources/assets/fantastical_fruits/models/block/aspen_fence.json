@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_side",
+  "textures": {
+    "texture": "fantastical_fruits:blocks/aspenplanks",
+    "particle": "fantastical_fruits:blocks/aspenplanks"
+  }
+}
