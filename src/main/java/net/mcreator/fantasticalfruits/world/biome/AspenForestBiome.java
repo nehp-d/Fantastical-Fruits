@@ -51,7 +51,7 @@ public class AspenForestBiome extends FantasticalFruitsModElements.ModElement {
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
-								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 8))));
+								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 10))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.FLOWER.withConfiguration(Features.Configs.NORMAL_FLOWER_CONFIG)
 								.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
@@ -68,7 +68,7 @@ public class AspenForestBiome extends FantasticalFruitsModElements.ModElement {
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.FOREST).depth(0.1f).scale(0.1f)
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.FOREST).depth(0.1f).scale(0.2f)
 						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("fantastical_fruits:aspen_forest"));

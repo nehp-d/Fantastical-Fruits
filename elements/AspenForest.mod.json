@@ -42,14 +42,14 @@
     "rainingPossibility": 0.5,
     "temperature": 0.5,
     "baseHeight": 0.1,
-    "heightVariation": 0.1,
+    "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "FOREST"
     ],
-    "grassPerChunk": 8,
+    "grassPerChunk": 10,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 1,
     "mushroomsPerChunk": 2,
