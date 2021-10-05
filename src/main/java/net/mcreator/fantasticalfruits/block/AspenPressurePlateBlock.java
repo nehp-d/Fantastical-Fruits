@@ -19,7 +19,7 @@ import net.minecraft.block.PressurePlateBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalBlocksItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
@@ -37,7 +37,7 @@ public class AspenPressurePlateBlock extends FantasticalFruitsModElements.ModEle
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(FantasticalFruitsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+				() -> new BlockItem(block, new Item.Properties().group(FantasticalBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -48,7 +48,7 @@ public class AspenPressurePlateBlock extends FantasticalFruitsModElements.ModEle
 	public static class CustomBlock extends PressurePlateBlock {
 		public CustomBlock() {
 			super(Sensitivity.EVERYTHING, Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f)
-					.setLightLevel(s -> 0).harvestLevel(-1).harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
+					.setLightLevel(s -> 0).harvestLevel(0).harvestTool(ToolType.AXE).setRequiresTool().notSolid().setOpaque((bs, br, bp) -> false));
 			setRegistryName("aspen_pressure_plate");
 		}
 

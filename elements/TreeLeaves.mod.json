@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Items",
+    "items": [
+      {
+        "value": "CUSTOM:OrangeAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:RedAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:YellowAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:AspenLeaves"
+      }
+    ],
+    "blocks": [],
+    "functions": [],
+    "entities": [],
+    "name": "treeleaves",
+    "namespace": "forge"
+  }
+}

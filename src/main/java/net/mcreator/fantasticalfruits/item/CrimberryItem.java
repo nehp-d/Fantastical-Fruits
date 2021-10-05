@@ -7,12 +7,12 @@ import net.minecraft.world.World;
 import net.minecraft.item.UseAction;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.Food;
 import net.minecraft.entity.LivingEntity;
 
 import net.mcreator.fantasticalfruits.procedures.CrimberryFoodEatenProcedure;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Map;
@@ -32,7 +32,7 @@ public class CrimberryItem extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
-			super(new Item.Properties().group(ItemGroup.FOOD).maxStackSize(64).rarity(Rarity.COMMON)
+			super(new Item.Properties().group(FantasticalFruitsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
 					.food((new Food.Builder()).hunger(2).saturation(0.8f).build()));
 			setRegistryName("crimberry");
 		}

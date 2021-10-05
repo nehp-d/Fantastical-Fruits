@@ -26,6 +26,7 @@ import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
@@ -47,7 +48,7 @@ import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
@@ -68,7 +69,7 @@ public class SmallLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
 		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(FantasticalFruitsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+				() -> new BlockItem(block, new Item.Properties().group(FantasticalNatureItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -125,7 +126,8 @@ public class SmallLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			return VoxelShapes.empty();
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 0.1, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

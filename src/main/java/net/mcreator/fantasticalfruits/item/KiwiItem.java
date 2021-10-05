@@ -27,7 +27,7 @@ public class KiwiItem extends FantasticalFruitsModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(FantasticalFruitsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(4).saturation(2f).build()));
+					.food((new Food.Builder()).hunger(5).saturation(2f).build()));
 			setRegistryName("kiwi");
 		}
 

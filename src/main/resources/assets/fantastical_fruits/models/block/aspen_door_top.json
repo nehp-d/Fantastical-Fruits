@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_top",
+  "textures": {
+    "bottom": "fantastical_fruits:blocks/aspen_door_bottom",
+    "top": "fantastical_fruits:blocks/aspen_door_top"
+  }
+}

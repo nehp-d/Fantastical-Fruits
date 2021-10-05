@@ -14,7 +14,7 @@ import net.minecraft.block.SoundType;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalBlocksItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
@@ -32,13 +32,13 @@ public class AspenStairsBlock extends FantasticalFruitsModElements.ModElement {
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(FantasticalFruitsItemGroup.tab)).setRegistryName(block.getRegistryName()));
+				() -> new BlockItem(block, new Item.Properties().group(FantasticalBlocksItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends StairsBlock {
 		public CustomBlock() {
 			super(() -> new Block(Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0)
-					.harvestLevel(-1).harvestTool(ToolType.AXE).setRequiresTool()).getDefaultState(),
-					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(-1)
+					.harvestLevel(0).harvestTool(ToolType.AXE).setRequiresTool()).getDefaultState(),
+					Block.Properties.create(Material.WOOD).sound(SoundType.WOOD).hardnessAndResistance(2f, 3f).setLightLevel(s -> 0).harvestLevel(0)
 							.harvestTool(ToolType.AXE).setRequiresTool());
 			setRegistryName("aspen_stairs");
 		}

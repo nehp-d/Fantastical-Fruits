@@ -1,0 +1,37 @@
+{
+  "display": {
+    "icon": {
+      "item": "fantastical_fruits:dragonfruit"
+    },
+    "title": {
+      "translate": "advancements.fiery_breath.title"
+    },
+    "description": {
+      "translate": "advancements.fiery_breath.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fiery_breath": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "fantastical_fruits:dragonfruit",
+            "count": {
+              "min": 1,
+              "max": 1
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "fantastical_fruits:fruitastical_beginning"
+}

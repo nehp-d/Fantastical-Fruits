@@ -40,7 +40,7 @@
     "recipeReturnStack": {
       "value": "CUSTOM:AspenFenceGate"
     },
-    "name": "aspen_fence_gate_recipe",
+    "name": "aspen_fence_gate",
     "namespace": "mod"
   }
 }

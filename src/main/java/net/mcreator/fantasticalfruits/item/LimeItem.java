@@ -27,7 +27,7 @@ public class LimeItem extends FantasticalFruitsModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(FantasticalFruitsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(4).saturation(0.3f).build()));
+					.food((new Food.Builder()).hunger(4).saturation(2.4f).build()));
 			setRegistryName("lime");
 		}
 

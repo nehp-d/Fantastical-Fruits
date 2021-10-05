@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "fantastical_fruits:blueberries"
+    },
+    "title": {
+      "translate": "advancements.fruitastical_beginning.title"
+    },
+    "description": {
+      "translate": "advancements.fruitastical_beginning.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "fruitastical_beginning": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "experience": 0
+  }
+}
