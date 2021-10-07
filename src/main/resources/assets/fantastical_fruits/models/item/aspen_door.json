@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fantastical_fruits:blocks/aspen_door_bottom"
+    "layer0": "fantastical_fruits:items/aspen_door"
   }
 }

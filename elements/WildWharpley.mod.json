@@ -14,12 +14,21 @@
     "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
-    "growapableSpawnType": "Plains",
+    "growapableSpawnType": "Nether",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
-    "customBoundingBox": false,
+    "customBoundingBox": true,
     "disableOffset": false,
     "boundingBoxes": [
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
+        "Mx": 16.0,
+        "My": 16.0,
+        "Mz": 16.0,
+        "subtract": false
+      },
       {
         "mx": 0.0,
         "my": 0.0,
@@ -58,26 +67,30 @@
     "fallSound": {
       "value": ""
     },
-    "useLootTableForDrops": true,
+    "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Wharpley"
     },
     "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "colorOnMap": "WARPED_WART",
     "creativePickItem": {
-      "value": "CUSTOM:Wharpley"
+      "value": "CUSTOM:WharpleySeeds"
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 100,
-    "fireSpreadSpeed": 60,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.WARPED_NYLIUM"
+      }
+    ],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Nether"
@@ -87,6 +100,9 @@
         "value": "warped_forest"
       }
     ],
-    "patchSize": 16
+    "patchSize": 16,
+    "onDestroyedByPlayer": {
+      "name": "WharpleyDrop"
+    }
   }
 }

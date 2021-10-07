@@ -136,7 +136,7 @@ public class TallAmberFungusBlock extends FantasticalFruitsModElements.ModElemen
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.PLAINS;
+			return PlantType.CAVE;
 		}
 	}
 }

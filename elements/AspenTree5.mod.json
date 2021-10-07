@@ -28,6 +28,9 @@
         "value": "CUSTOM:AspenForest"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "AspenTreeCondition"
+    }
   }
 }

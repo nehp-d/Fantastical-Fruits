@@ -13,7 +13,7 @@
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "",
+    "itemTexture": "aspen_door",
     "particleTexture": "",
     "blockBase": "Door",
     "tintType": "No tint",

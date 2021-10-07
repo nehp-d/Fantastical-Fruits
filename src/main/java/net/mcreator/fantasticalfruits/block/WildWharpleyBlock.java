@@ -22,32 +22,46 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
-import net.minecraft.util.Direction;
 import net.minecraft.potion.Effects;
+import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.procedures.WharpleyDropProcedure;
+import net.mcreator.fantasticalfruits.item.WharpleySeedsItem;
 import net.mcreator.fantasticalfruits.item.WharpleyItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
+import java.util.Map;
+import java.util.List;
+import java.util.HashMap;
+import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class WildWharpleyBlock extends FantasticalFruitsModElements.ModElement {
@@ -112,29 +126,66 @@ public class WildWharpleyBlock extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.ROOT)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS, MaterialColor.WARPED_WART).doesNotBlockMovement().sound(SoundType.ROOT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("wild_wharpley");
 		}
 
 		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 100;
-		}
-
-		@Override
-		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 60;
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 16, 16), makeCuboidShape(0, 0, 0, 16, 16, 16)).withOffset(offset.x, offset.y,
+					offset.z);
 		}
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(WharpleyItem.block);
+			return new ItemStack(WharpleySeedsItem.block);
+		}
+
+		@Override
+		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
+			if (!dropsOriginal.isEmpty())
+				return dropsOriginal;
+			return Collections.singletonList(new ItemStack(WharpleyItem.block));
+		}
+
+		@Override
+		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			Block ground = state.getBlock();
+			return (ground == Blocks.WARPED_NYLIUM);
+		}
+
+		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			BlockPos blockpos = pos.down();
+			BlockState groundState = worldIn.getBlockState(blockpos);
+			Block ground = groundState.getBlock();
+			return this.isValidGround(groundState, worldIn, blockpos);
 		}
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.PLAINS;
+			return PlantType.NETHER;
+		}
+
+		@Override
+		public boolean removedByPlayer(BlockState blockstate, World world, BlockPos pos, PlayerEntity entity, boolean willHarvest, FluidState fluid) {
+			boolean retval = super.removedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				WharpleyDropProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }

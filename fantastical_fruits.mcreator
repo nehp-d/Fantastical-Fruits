@@ -1030,6 +1030,89 @@
       "ids": {},
       "registry_name": "wild_wharpley",
       "path": "~/Nature"
+    },
+    {
+      "name": "WharpleySeeds",
+      "type": "item",
+      "sortid": 99,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_seeds",
+      "path": "~/Items"
+    },
+    {
+      "name": "CropWheat",
+      "type": "tag",
+      "sortid": 100,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "crop_wheat",
+      "path": "~/Ore Dictionary"
+    },
+    {
+      "name": "WharpleyDrop",
+      "type": "procedure",
+      "sortid": 101,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AspenTreeCondition",
+      "type": "procedure",
+      "sortid": 102,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_tree_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1096,6 +1179,7 @@
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
+      "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
@@ -1165,6 +1249,7 @@
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
+      "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",

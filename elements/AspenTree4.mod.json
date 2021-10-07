@@ -21,9 +21,6 @@
       },
       {
         "value": "Blocks.DIRT#0"
-      },
-      {
-        "value": "Blocks.DIRT#1"
       }
     ],
     "restrictionBiomes": [
@@ -31,6 +28,9 @@
         "value": "CUSTOM:AspenForest"
       }
     ],
-    "ignoreBlocks": "STRUCTURE_BLOCK"
+    "ignoreBlocks": "STRUCTURE_BLOCK",
+    "generateCondition": {
+      "name": "AspenTreeCondition"
+    }
   }
 }
