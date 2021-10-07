@@ -62,8 +62,6 @@ public class AspenTree8Structure {
 							boolean blockCriteria = false;
 							if (blockAt.getBlock() == Blocks.GRASS_BLOCK)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.DIRT)
-								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];

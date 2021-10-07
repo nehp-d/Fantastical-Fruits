@@ -30,11 +30,7 @@ import net.minecraft.util.Mirror;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.procedures.AspenTreeConditionProcedure;
-
 import java.util.Random;
-
-import com.google.common.collect.ImmutableMap;
 
 @Mod.EventBusSubscriber
 public class AspenTree1Structure {
@@ -66,8 +62,6 @@ public class AspenTree1Structure {
 							boolean blockCriteria = false;
 							if (blockAt.getBlock() == Blocks.GRASS_BLOCK)
 								blockCriteria = true;
-							if (blockAt.getBlock() == Blocks.DIRT)
-								blockCriteria = true;
 							if (!blockCriteria)
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
@@ -76,8 +70,6 @@ public class AspenTree1Structure {
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
-							if (!AspenTreeConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-								continue;
 							Template template = world.getWorld().getStructureTemplateManager()
 									.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "aspen_tree_1"));
 							if (template == null)
