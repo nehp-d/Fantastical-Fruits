@@ -1113,6 +1113,15 @@
           }
         ]
       }
+    },
+    {
+      "name": "Saplings",
+      "type": "tag",
+      "sortid": 103,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "saplings"
     }
   ],
   "variable_elements": [],
