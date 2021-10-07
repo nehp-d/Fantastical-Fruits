@@ -12,11 +12,11 @@ import net.mcreator.fantasticalfruits.itemgroup.FantasticalItemsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class CrimberryPowderItem extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:crimberry_powder")
+public class MyceliteItem extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:mycelite")
 	public static final Item block = null;
-	public CrimberryPowderItem(FantasticalFruitsModElements instance) {
-		super(instance, 19);
+	public MyceliteItem(FantasticalFruitsModElements instance) {
+		super(instance, 90);
 	}
 
 	@Override
@@ -26,7 +26,7 @@ public class CrimberryPowderItem extends FantasticalFruitsModElements.ModElement
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
 			super(new Item.Properties().group(FantasticalItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("crimberry_powder");
+			setRegistryName("mycelite");
 		}
 
 		@Override

@@ -6,6 +6,6 @@
     "icon": {
       "value": "CUSTOM:AspenLeaves"
     },
-    "showSearch": true
+    "showSearch": false
   }
 }

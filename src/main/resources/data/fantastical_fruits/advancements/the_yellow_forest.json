@@ -1,0 +1,29 @@
+{
+  "display": {
+    "icon": {
+      "item": "fantastical_fruits:aspen_leaves"
+    },
+    "title": {
+      "translate": "advancements.the_yellow_forest.title"
+    },
+    "description": {
+      "translate": "advancements.the_yellow_forest.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "the_yellow_forest": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "fantastical_fruits:aspen_forest"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  },
+  "parent": "fantastical_fruits:fruitastical_beginning"
+}

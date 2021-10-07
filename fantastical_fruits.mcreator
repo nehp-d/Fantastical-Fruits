@@ -9,7 +9,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lemon",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Blueberries",
@@ -19,7 +19,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "blueberries",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Mango",
@@ -29,7 +29,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mango",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Banana",
@@ -39,7 +39,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "banana",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "FantasticalFruits",
@@ -58,7 +58,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "purple_grapes",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "RedGrapes",
@@ -68,7 +68,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "red_grapes",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "GreenGrapes",
@@ -78,7 +78,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "green_grapes",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "SugarRoot",
@@ -88,7 +88,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "sugar_root",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "SugarRecipe",
@@ -127,7 +127,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lime",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Kiwi",
@@ -137,7 +137,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "kiwi",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Dragonfruit",
@@ -147,7 +147,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "dragonfruit",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Viciata",
@@ -157,7 +157,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "viciata",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Writingtable",
@@ -177,7 +177,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crimberry",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "AspenLog",
@@ -187,7 +187,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aspen_log",
-      "path": "~/Nature"
+      "path": "~/Blocks"
     },
     {
       "name": "StrippedAspenLog",
@@ -197,7 +197,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "stripped_aspen_log",
-      "path": "~/Nature"
+      "path": "~/Blocks"
     },
     {
       "name": "FantasticalNature",
@@ -216,7 +216,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aspen_planks",
-      "path": "~/Nature"
+      "path": "~/Blocks"
     },
     {
       "name": "CrimberryFoodEaten",
@@ -253,7 +253,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "crimberry_powder",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "AspenLogStrip",
@@ -315,7 +315,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "aspen_wood",
-      "path": "~/Nature"
+      "path": "~/Blocks"
     },
     {
       "name": "StrippedAspenWood",
@@ -325,7 +325,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "stripped_aspen_wood",
-      "path": "~/Nature"
+      "path": "~/Blocks"
     },
     {
       "name": "AspenWoodStrip",
@@ -509,7 +509,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "vermillion_mango",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "AspenPlanksRecipe",
@@ -828,7 +828,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "scourapple",
-      "path": "~/Fruits"
+      "path": "~/Items"
     },
     {
       "name": "Logs",
@@ -874,6 +874,162 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "natures_spice"
+    },
+    {
+      "name": "TheYellowForest",
+      "type": "achievement",
+      "sortid": 88,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "the_yellow_forest"
+    },
+    {
+      "name": "MyceliteOre",
+      "type": "block",
+      "sortid": 89,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mycelite_ore",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "Mycelite",
+      "type": "item",
+      "sortid": 90,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mycelite",
+      "path": "~/Items"
+    },
+    {
+      "name": "FantasticalItems",
+      "type": "tab",
+      "sortid": 91,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fantastical_items"
+    },
+    {
+      "name": "RoughMycelite",
+      "type": "item",
+      "sortid": 92,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rough_mycelite",
+      "path": "~/Items"
+    },
+    {
+      "name": "MyceliteRecipe",
+      "type": "recipe",
+      "sortid": 93,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mycelite_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MyceliteRecipe2",
+      "type": "recipe",
+      "sortid": 94,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mycelite_recipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Wharpley",
+      "type": "item",
+      "sortid": 95,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley",
+      "path": "~/Items"
+    },
+    {
+      "name": "AspenSapling",
+      "type": "plant",
+      "sortid": 96,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sapling",
+      "path": "~/Nature"
+    },
+    {
+      "name": "AspenSaplingGrow",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sapling_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AspenSaplingBonemeal",
+      "type": "procedure",
+      "sortid": 97,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sapling_bonemeal",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WildWharpley",
+      "type": "plant",
+      "sortid": 98,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wild_wharpley",
+      "path": "~/Nature"
     }
   ],
   "variable_elements": [],
@@ -883,6 +1039,7 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
       "item.fantastical_fruits.lime": "Lime",
       "advancements.citrus_encounter.title": "Citrus Encounter",
@@ -894,6 +1051,7 @@
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "item.fantastical_fruits.scourapple": "Scourapple",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "item.fantastical_fruits.banana": "Banana",
       "block.fantastical_fruits.aspen_fence": "Aspen Fence",
@@ -904,13 +1062,15 @@
       "block.fantastical_fruits.leaf_pile": "Leaf Pile",
       "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "advancements.greenish_glow.title": "Greenish Glow",
-      "itemGroup.tabfantastical_fruits": "Fantastical Fruits",
+      "advancements.the_yellow_forest.title": "The Yellow Forest",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate",
+      "itemGroup.tabfantastical_fruits": "Fantastical Foods",
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
       "block.fantastical_fruits.aspen_slab": "Aspen Slab",
       "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
       "block.fantastical_fruits.aspen_door": "Aspen Door",
+      "item.fantastical_fruits.wharpley": "Wharpley",
       "item.fantastical_fruits.lemon": "Lemon",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
@@ -924,8 +1084,11 @@
       "advancements.fruitastical_beginning.descr": "Start your adventure in Fantastical Fruits.",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
+      "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
+      "item.fantastical_fruits.mycelite": "Mycelite",
       "block.fantastical_fruits.red_autumnal_leaves": "Red Autumnal Leaves",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
+      "block.fantastical_fruits.mycelite_ore": "Mycelite Ore",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "advancements.citrus_encounter.descr": "Obtain a lemon.",
       "advancements.natures_spice.title": "Nature\u0027s Spice",
@@ -937,12 +1100,15 @@
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
-      "block.fantastical_fruits.writingtable": "Writing Table"
+      "block.fantastical_fruits.writingtable": "Writing Table",
+      "itemGroup.tabfantastical_items": "Fantastical Items",
+      "item.fantastical_fruits.rough_mycelite": "Rough Mycelite"
     },
     "pt_br": {
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
       "item.fantastical_fruits.lime": "Lime",
       "advancements.citrus_encounter.title": "Citrus Encounter",
@@ -954,6 +1120,7 @@
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "item.fantastical_fruits.scourapple": "Scourapple",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "item.fantastical_fruits.banana": "Banana",
       "block.fantastical_fruits.aspen_fence": "Aspen Fence",
@@ -964,13 +1131,15 @@
       "block.fantastical_fruits.leaf_pile": "Leaf Pile",
       "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "advancements.greenish_glow.title": "Greenish Glow",
-      "itemGroup.tabfantastical_fruits": "Frutas Fantásticas",
+      "advancements.the_yellow_forest.title": "The Yellow Forest",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate",
+      "itemGroup.tabfantastical_fruits": "Fantastical Items",
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Mirtilos",
       "block.fantastical_fruits.aspen_slab": "Aspen Slab",
       "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
       "block.fantastical_fruits.aspen_door": "Aspen Door",
+      "item.fantastical_fruits.wharpley": "Wharpley",
       "item.fantastical_fruits.lemon": "Limão",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
@@ -984,8 +1153,11 @@
       "advancements.fruitastical_beginning.descr": "Obtain your first fantastical fruit.",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
+      "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
+      "item.fantastical_fruits.mycelite": "Mycelite",
       "block.fantastical_fruits.red_autumnal_leaves": "Red Autumnal Leaves",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
+      "block.fantastical_fruits.mycelite_ore": "Mycelite Ore",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "advancements.citrus_encounter.descr": "Obtain a lemon.",
       "advancements.natures_spice.title": "Nature\u0027s Spice",
@@ -997,7 +1169,9 @@
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
-      "block.fantastical_fruits.writingtable": "Writing Table"
+      "block.fantastical_fruits.writingtable": "Writing Table",
+      "itemGroup.tabfantastical_items": "Fantastical Items",
+      "item.fantastical_fruits.rough_mycelite": "Rough Mycelite"
     }
   },
   "foldersRoot": {
@@ -1008,7 +1182,7 @@
         "children": []
       },
       {
-        "name": "Fruits",
+        "name": "Items",
         "children": []
       },
       {

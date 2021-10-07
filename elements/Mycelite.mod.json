@@ -3,9 +3,9 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "crimberry_powder",
+    "texture": "mycelite",
     "customModelName": "Normal",
-    "name": "Crimberry Powder",
+    "name": "Mycelite",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:FantasticalItems"

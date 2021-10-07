@@ -2,9 +2,9 @@
   "_fv": 24,
   "_type": "tab",
   "definition": {
-    "name": "Fantastical Foods",
+    "name": "Fantastical Items",
     "icon": {
-      "value": "CUSTOM:Blueberries"
+      "value": "CUSTOM:Mycelite"
     },
     "showSearch": false
   }

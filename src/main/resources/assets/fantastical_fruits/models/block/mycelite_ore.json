@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/mycelite_ore",
+    "up": "fantastical_fruits:blocks/mycelite_ore",
+    "north": "fantastical_fruits:blocks/mycelite_ore",
+    "east": "fantastical_fruits:blocks/mycelite_ore",
+    "south": "fantastical_fruits:blocks/mycelite_ore",
+    "west": "fantastical_fruits:blocks/mycelite_ore",
+    "particle": "fantastical_fruits:blocks/mycelite_ore"
+  }
+}

@@ -5,18 +5,18 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.Rarity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalItemsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class CrimberryPowderItem extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:crimberry_powder")
+public class WharpleyItem extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:wharpley")
 	public static final Item block = null;
-	public CrimberryPowderItem(FantasticalFruitsModElements instance) {
-		super(instance, 19);
+	public WharpleyItem(FantasticalFruitsModElements instance) {
+		super(instance, 95);
 	}
 
 	@Override
@@ -25,8 +25,8 @@ public class CrimberryPowderItem extends FantasticalFruitsModElements.ModElement
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(FantasticalItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
-			setRegistryName("crimberry_powder");
+			super(new Item.Properties().group(ItemGroup.MISC).maxStackSize(64).rarity(Rarity.COMMON));
+			setRegistryName("wharpley");
 		}
 
 		@Override

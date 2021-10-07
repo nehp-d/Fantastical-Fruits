@@ -3,12 +3,12 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "crimberry_powder",
+    "texture": "rough_mycelite",
     "customModelName": "Normal",
-    "name": "Crimberry Powder",
+    "name": "Rough Mycelite",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:FantasticalItems"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

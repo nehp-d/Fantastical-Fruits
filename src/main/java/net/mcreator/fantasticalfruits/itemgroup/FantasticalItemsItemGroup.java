@@ -7,22 +7,22 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
 
-import net.mcreator.fantasticalfruits.block.AspenLeavesBlock;
+import net.mcreator.fantasticalfruits.item.MyceliteItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class FantasticalNatureItemGroup extends FantasticalFruitsModElements.ModElement {
-	public FantasticalNatureItemGroup(FantasticalFruitsModElements instance) {
-		super(instance, 19);
+public class FantasticalItemsItemGroup extends FantasticalFruitsModElements.ModElement {
+	public FantasticalItemsItemGroup(FantasticalFruitsModElements instance) {
+		super(instance, 91);
 	}
 
 	@Override
 	public void initElements() {
-		tab = new ItemGroup("tabfantastical_nature") {
+		tab = new ItemGroup("tabfantastical_items") {
 			@OnlyIn(Dist.CLIENT)
 			@Override
 			public ItemStack createIcon() {
-				return new ItemStack(AspenLeavesBlock.block);
+				return new ItemStack(MyceliteItem.block);
 			}
 
 			@OnlyIn(Dist.CLIENT)
