@@ -2,14 +2,31 @@
 package net.mcreator.fantasticalfruits.block;
 
 import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.world.BiomeLoadingEvent;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.PlantType;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.gen.feature.Features;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.DefaultFlowersFeature;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
+import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
+import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.GenerationStage;
+import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.registry.WorldGenRegistries;
+import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -17,6 +34,8 @@ import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
@@ -51,6 +70,8 @@ public class BlueberryBush2Block extends FantasticalFruitsModElements.ModElement
 	public static final Block block = null;
 	public BlueberryBush2Block(FantasticalFruitsModElements instance) {
 		super(instance, 106);
+		MinecraftForge.EVENT_BUS.register(this);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
 
 	@Override
@@ -63,6 +84,48 @@ public class BlueberryBush2Block extends FantasticalFruitsModElements.ModElement
 	@OnlyIn(Dist.CLIENT)
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
+	}
+	private static Feature<BlockClusterFeatureConfig> feature = null;
+	private static ConfiguredFeature<?, ?> configuredFeature = null;
+	private static class FeatureRegisterHandler {
+		@SubscribeEvent
+		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
+			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
+				@Override
+				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
+					return block.getDefaultState();
+				}
+
+				@Override
+				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
+					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
+					boolean dimensionCriteria = false;
+					if (dimensionType == World.OVERWORLD)
+						dimensionCriteria = true;
+					if (!dimensionCriteria)
+						return false;
+					return super.generate(world, generator, random, pos, config);
+				}
+			};
+			configuredFeature = feature
+					.withConfiguration(
+							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
+									.tries(38).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(4);
+			event.getRegistry().register(feature.setRegistryName("blueberry_bush_2"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:blueberry_bush_2"), configuredFeature);
+		}
+	}
+	@SubscribeEvent
+	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("wooded_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
+		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {

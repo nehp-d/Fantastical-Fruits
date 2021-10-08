@@ -79,8 +79,17 @@
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      }
+    ],
     "patchSize": 64,
     "onRightClicked": {
       "name": "BlueberryBushHarvest"
