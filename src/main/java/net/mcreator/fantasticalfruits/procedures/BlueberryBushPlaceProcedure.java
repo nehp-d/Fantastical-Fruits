@@ -98,15 +98,14 @@ public class BlueberryBushPlaceProcedure {
 								((PlayerEntity) entity).container.func_234641_j_());
 					}
 					if (world instanceof World && !world.isRemote()) {
-						((World) world)
-								.playSound(null, new BlockPos((int) x, (int) y, (int) z),
-										(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-												.getValue(new ResourceLocation("block.sweet_berry_bush.place")),
-										SoundCategory.BLOCKS, (float) 1, (float) 1);
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
+										.getValue(new ResourceLocation("ambient.basalt_deltas.additions")),
+								SoundCategory.BLOCKS, (float) 1, (float) 1);
 					} else {
 						((World) world).playSound(x, y, z,
 								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
-										.getValue(new ResourceLocation("block.sweet_berry_bush.place")),
+										.getValue(new ResourceLocation("ambient.basalt_deltas.additions")),
 								SoundCategory.BLOCKS, (float) 1, (float) 1, false);
 					}
 					world.setBlockState(new BlockPos((int) x, (int) y, (int) z), BlueberryBushBlock.block.getDefaultState(), 3);

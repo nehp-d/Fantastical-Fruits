@@ -1226,6 +1226,26 @@
       }
     },
     {
+      "name": "LemonLeaves",
+      "type": "block",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lemon_leaves",
+      "path": "~/Nature"
+    },
+    {
+      "name": "MangoLeaves",
+      "type": "block",
+      "sortid": 110,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "mango_leaves",
+      "path": "~/Nature"
+    },
+    {
       "name": "BlueberryBushPlace",
       "type": "procedure",
       "sortid": 109,
@@ -1348,6 +1368,7 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.lemon_leaves": "Lemon Tree Leaves",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
       "item.fantastical_fruits.lime": "Lime",
@@ -1396,6 +1417,7 @@
       "block.fantastical_fruits.lemon_oak_leaves_1": "Lemon Oak Leaves 1",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "advancements.fruitastical_beginning.descr": "Start your adventure in Fantastical Fruits.",
+      "block.fantastical_fruits.mango_leaves": "Mango Tree Leaves",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
       "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
@@ -1424,6 +1446,7 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
+      "block.fantastical_fruits.lemon_leaves": "Lemon Tree Leaves",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
       "item.fantastical_fruits.lime": "Lime",
@@ -1472,6 +1495,7 @@
       "block.fantastical_fruits.lemon_oak_leaves_1": "Lemon Oak Leaves 1",
       "item.fantastical_fruits.crimberry": "Crimberry",
       "advancements.fruitastical_beginning.descr": "Obtain your first fantastical fruit.",
+      "block.fantastical_fruits.mango_leaves": "Mango Tree Leaves",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
       "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
@@ -1501,15 +1525,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Nature",
-        "children": []
-      },
-      {
         "name": "Items",
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "Ore Dictionary",
         "children": []
       },
       {
@@ -1517,7 +1537,11 @@
         "children": []
       },
       {
-        "name": "Ore Dictionary",
+        "name": "Nature",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       }
     ]
