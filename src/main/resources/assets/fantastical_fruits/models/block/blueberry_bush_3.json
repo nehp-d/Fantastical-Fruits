@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fantastical_fruits:blocks/blueberry_bush_stage3",
+    "particle": "fantastical_fruits:blocks/blueberry_bush_stage3"
+  }
+}

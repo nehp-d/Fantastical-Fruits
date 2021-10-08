@@ -2,19 +2,19 @@
   "_fv": 24,
   "_type": "plant",
   "definition": {
-    "renderType": 13,
-    "texture": "wild_wharpley",
+    "renderType": 12,
+    "texture": "blueberry_bush_stage2",
     "textureBottom": "",
-    "customModelName": "Crop model",
+    "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
-    "growapableSpawnType": "Nether",
+    "growapableSpawnType": "Plains",
     "growapableMaxHeight": 3,
     "doublePlantGenerationType": "Flower",
     "customBoundingBox": true,
@@ -28,18 +28,9 @@
         "My": 16.0,
         "Mz": 16.0,
         "subtract": false
-      },
-      {
-        "mx": 0.0,
-        "my": 0.0,
-        "mz": 0.0,
-        "Mx": 16.0,
-        "My": 16.0,
-        "Mz": 16.0,
-        "subtract": false
       }
     ],
-    "name": "Wild Wharpley",
+    "name": "Blueberry Bush 2",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
@@ -50,7 +41,7 @@
     "unbreakable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "ROOT"
+      "value": "SWEET_BERRY_BUSH"
     },
     "breakSound": {
       "value": ""
@@ -69,40 +60,33 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": "CUSTOM:Wharpley"
+      "value": "CUSTOM:Blueberries"
     },
     "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
-    "colorOnMap": "WARPED_WART",
+    "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": "CUSTOM:WharpleySeeds"
+      "value": "CUSTOM:Blueberries"
     },
     "offsetType": "XZ",
     "aiPathNodeType": "DEFAULT",
-    "flammability": 0,
-    "fireSpreadSpeed": 0,
+    "flammability": 100,
+    "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [
-      {
-        "value": "Blocks.WARPED_NYLIUM"
-      }
-    ],
-    "frequencyOnChunks": 8,
-    "spawnWorldTypes": [
-      "Nether"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "warped_forest"
-      }
-    ],
-    "patchSize": 50,
-    "onDestroyedByPlayer": {
-      "name": "WharpleyDrop"
+    "canBePlacedOn": [],
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "patchSize": 64,
+    "onTickUpdate": {
+      "name": "BlueberryBushAge"
+    },
+    "onRightClicked": {
+      "name": "BlueberryBushHarvest"
     }
   }
 }

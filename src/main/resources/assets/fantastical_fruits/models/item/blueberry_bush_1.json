@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "fantastical_fruits:blocks/blueberry_bush_stage1"
+  }
+}

@@ -1122,9 +1122,118 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "saplings"
+    },
+    {
+      "name": "BlueberryBush",
+      "type": "plant",
+      "sortid": 104,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush",
+      "path": "~/Nature"
+    },
+    {
+      "name": "BlueberryBush1",
+      "type": "plant",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_1",
+      "path": "~/Nature"
+    },
+    {
+      "name": "BlueberryBush2",
+      "type": "plant",
+      "sortid": 106,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_2",
+      "path": "~/Nature"
+    },
+    {
+      "name": "BlueberryBush3",
+      "type": "plant",
+      "sortid": 107,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_3",
+      "path": "~/Nature"
+    },
+    {
+      "name": "BlueberryBushAge",
+      "type": "procedure",
+      "sortid": 105,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_age",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BlueberryBushHarvest",
+      "type": "procedure",
+      "sortid": 108,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_harvest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
-  "variable_elements": [],
+  "variable_elements": [
+    {
+      "name": "age",
+      "type": "blockstate",
+      "scope": "map",
+      "value": "Blocks.AIR.getDefaultState()"
+    }
+  ],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -1139,8 +1248,12 @@
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "block.fantastical_fruits.large_leaf_pile": "Large Leaf Pile",
+      "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
+      "block.fantastical_fruits.blueberry_bush_3": "Blueberry Bush 3",
+      "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
+      "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "item.fantastical_fruits.scourapple": "Scourapple",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
@@ -1209,8 +1322,12 @@
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "block.fantastical_fruits.large_leaf_pile": "Large Leaf Pile",
+      "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
+      "block.fantastical_fruits.blueberry_bush_3": "Blueberry Bush 3",
+      "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
+      "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "item.fantastical_fruits.scourapple": "Scourapple",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
