@@ -61,7 +61,7 @@ public class BlueberryBush1Block extends FantasticalFruitsModElements.ModElement
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("blueberry_bush_1");
 		}

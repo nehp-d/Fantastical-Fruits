@@ -108,8 +108,8 @@ public class BlueberryBush3Block extends FantasticalFruitsModElements.ModElement
 			configuredFeature = feature
 					.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
+									.tries(48).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(2);
 			event.getRegistry().register(feature.setRegistryName("blueberry_bush_3"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:blueberry_bush_3"), configuredFeature);
 		}
@@ -127,7 +127,7 @@ public class BlueberryBush3Block extends FantasticalFruitsModElements.ModElement
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("blueberry_bush_3");
 		}
@@ -141,6 +141,11 @@ public class BlueberryBush3Block extends FantasticalFruitsModElements.ModElement
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 100;
+		}
+
+		@Override
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
 		}
 
 		@Override

@@ -63,7 +63,7 @@
       "value": "CUSTOM:Blueberries"
     },
     "dropAmount": 1,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
@@ -71,26 +71,17 @@
     "creativePickItem": {
       "value": "CUSTOM:Blueberries"
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 4,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "forest"
-      },
-      {
-        "value": "forest_hills"
-      }
-    ],
-    "patchSize": 38,
+    "frequencyOnChunks": 1,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "patchSize": 32,
     "onTickUpdate": {
       "name": "BlueberryBushAge"
     },

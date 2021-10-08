@@ -63,7 +63,7 @@
       "value": "CUSTOM:Blueberries"
     },
     "dropAmount": 2,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
@@ -71,14 +71,14 @@
     "creativePickItem": {
       "value": "CUSTOM:Blueberries"
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 5,
+    "frequencyOnChunks": 2,
     "spawnWorldTypes": [
       "Surface"
     ],
@@ -90,7 +90,7 @@
         "value": "forest_hills"
       }
     ],
-    "patchSize": 64,
+    "patchSize": 48,
     "onRightClicked": {
       "name": "BlueberryBushHarvest"
     }

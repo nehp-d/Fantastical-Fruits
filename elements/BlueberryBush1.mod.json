@@ -63,7 +63,7 @@
       "value": ""
     },
     "dropAmount": 0,
-    "forceTicking": false,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
