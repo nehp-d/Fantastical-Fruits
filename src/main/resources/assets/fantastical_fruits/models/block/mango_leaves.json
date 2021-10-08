@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/mangoleaves",
+    "up": "fantastical_fruits:blocks/mangoleaves",
+    "north": "fantastical_fruits:blocks/mangoleaves",
+    "east": "fantastical_fruits:blocks/mangoleaves",
+    "south": "fantastical_fruits:blocks/mangoleaves",
+    "west": "fantastical_fruits:blocks/mangoleaves",
+    "particle": "fantastical_fruits:blocks/mangoleaves"
+  }
+}

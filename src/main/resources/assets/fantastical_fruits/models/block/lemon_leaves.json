@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/lemonleaves",
+    "up": "fantastical_fruits:blocks/lemonleaves",
+    "north": "fantastical_fruits:blocks/lemonleaves",
+    "east": "fantastical_fruits:blocks/lemonleaves",
+    "south": "fantastical_fruits:blocks/lemonleaves",
+    "west": "fantastical_fruits:blocks/lemonleaves",
+    "particle": "fantastical_fruits:blocks/lemonleaves"
+  }
+}

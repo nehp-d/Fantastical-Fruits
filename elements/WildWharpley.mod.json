@@ -11,7 +11,7 @@
     "tintType": "No tint",
     "isItemTinted": false,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Nether",
@@ -91,7 +91,7 @@
         "value": "Blocks.WARPED_NYLIUM"
       }
     ],
-    "frequencyOnChunks": 8,
+    "frequencyOnChunks": 10,
     "spawnWorldTypes": [
       "Nether"
     ],
@@ -100,7 +100,7 @@
         "value": "warped_forest"
       }
     ],
-    "patchSize": 50,
+    "patchSize": 16,
     "onDestroyedByPlayer": {
       "name": "WharpleyDrop"
     }
