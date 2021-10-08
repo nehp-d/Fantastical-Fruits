@@ -78,10 +78,19 @@
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [],
-    "restrictionBiomes": [],
-    "patchSize": 64,
+    "frequencyOnChunks": 4,
+    "spawnWorldTypes": [
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      }
+    ],
+    "patchSize": 38,
     "onTickUpdate": {
       "name": "BlueberryBushAge"
     },

@@ -1244,16 +1244,42 @@
       "ids": {},
       "registry_name": "mango_leaves",
       "path": "~/Nature"
-    }
-  ],
-  "variable_elements": [
+    },
     {
-      "name": "age",
-      "type": "blockstate",
-      "scope": "map",
-      "value": "Blocks.AIR.getDefaultState()"
+      "name": "BlueberryBushPlace",
+      "type": "procedure",
+      "sortid": 109,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blueberry_bush_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
+  "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
@@ -1413,15 +1439,11 @@
     "name": "~",
     "children": [
       {
-        "name": "Nature",
-        "children": []
-      },
-      {
         "name": "Items",
         "children": []
       },
       {
-        "name": "Blocks",
+        "name": "Ore Dictionary",
         "children": []
       },
       {
@@ -1429,7 +1451,11 @@
         "children": []
       },
       {
-        "name": "Ore Dictionary",
+        "name": "Nature",
+        "children": []
+      },
+      {
+        "name": "Blocks",
         "children": []
       }
     ]
