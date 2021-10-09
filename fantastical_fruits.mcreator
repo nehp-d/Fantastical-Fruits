@@ -1589,26 +1589,6 @@
       "path": "~/Nature"
     },
     {
-      "name": "MapleStairs",
-      "type": "block",
-      "sortid": 134,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "maple_stairs",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "MapleSlab",
-      "type": "block",
-      "sortid": 135,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "maple_slab",
-      "path": "~/Blocks"
-    },
-    {
       "name": "MapleFence",
       "type": "block",
       "sortid": 136,
@@ -1629,13 +1609,13 @@
       "path": "~/Blocks"
     },
     {
-      "name": "MapleButton",
+      "name": "MapleStairs",
       "type": "block",
-      "sortid": 138,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_button",
+      "registry_name": "maple_stairs",
       "path": "~/Blocks"
     },
     {
@@ -1646,6 +1626,26 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "maple_pressure_plate",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MapleSlab",
+      "type": "block",
+      "sortid": 135,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_slab",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "MapleButton",
+      "type": "block",
+      "sortid": 138,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_button",
       "path": "~/Blocks"
     }
   ],

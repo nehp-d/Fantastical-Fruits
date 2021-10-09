@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "fantastical_fruits:blocks/mapleleaves",
+    "down": "fantastical_fruits:blocks/mapleleaves",
+    "up": "fantastical_fruits:blocks/mapleleaves",
+    "north": "fantastical_fruits:blocks/mapleleaves",
+    "east": "fantastical_fruits:blocks/mapleleaves",
+    "south": "fantastical_fruits:blocks/mapleleaves",
+    "west": "fantastical_fruits:blocks/mapleleaves",
     "particle": "fantastical_fruits:blocks/mapleleaves"
   }
 }
