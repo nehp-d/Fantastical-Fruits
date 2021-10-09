@@ -9,7 +9,7 @@
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "Foliage",
-    "isItemTinted": false,
+    "isItemTinted": true,
     "plantType": "normal",
     "staticPlantGenerationType": "Grass",
     "suspiciousStewEffect": "SPEED",
