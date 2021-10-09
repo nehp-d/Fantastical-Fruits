@@ -7,7 +7,7 @@
       "value": "Blocks.GRASS"
     },
     "undergroundBlock": {
-      "value": "Blocks.STONE#0"
+      "value": "Blocks.DIRT#0"
     },
     "grassColor": {
       "value": -7953060,
@@ -46,7 +46,9 @@
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 5,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "FOREST"
+    ],
     "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 2,
