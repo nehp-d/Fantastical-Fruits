@@ -1,1 +1,11 @@
-{}
+{
+  "maplewnd": {
+    "category": "master",
+    "sounds": [
+      {
+        "name": "fantastical_fruits:maplewind",
+        "stream": false
+      }
+    ]
+  }
+}
