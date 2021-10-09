@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_post",
+  "textures": {
+    "texture": "fantastical_fruits:blocks/maple_planks",
+    "particle": "fantastical_fruits:blocks/maple_planks"
+  }
+}
