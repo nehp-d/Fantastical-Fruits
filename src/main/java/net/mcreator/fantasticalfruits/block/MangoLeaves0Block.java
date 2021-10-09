@@ -16,7 +16,7 @@ import net.minecraft.block.LeavesBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.procedures.LemonGrowProcedure;
+import net.mcreator.fantasticalfruits.procedures.MangoGrowProcedure;
 import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
@@ -27,11 +27,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class LemonOakLeavesBlock extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:lemon_oak_leaves")
+public class MangoLeaves0Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:mango_leaves_0")
 	public static final Block block = null;
-	public LemonOakLeavesBlock(FantasticalFruitsModElements instance) {
-		super(instance, 110);
+	public MangoLeaves0Block(FantasticalFruitsModElements instance) {
+		super(instance, 113);
 	}
 
 	@Override
@@ -44,7 +44,7 @@ public class LemonOakLeavesBlock extends FantasticalFruitsModElements.ModElement
 		public CustomBlock() {
 			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid()
 					.tickRandomly());
-			setRegistryName("lemon_oak_leaves");
+			setRegistryName("mango_leaves_0");
 		}
 
 		@Override
@@ -72,7 +72,7 @@ public class LemonOakLeavesBlock extends FantasticalFruitsModElements.ModElement
 				$_dependencies.put("y", y);
 				$_dependencies.put("z", z);
 				$_dependencies.put("world", world);
-				LemonGrowProcedure.executeProcedure($_dependencies);
+				MangoGrowProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

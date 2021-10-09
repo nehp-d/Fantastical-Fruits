@@ -17,37 +17,37 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.item.LemonItem;
-import net.mcreator.fantasticalfruits.block.LemonLeaves0Block;
+import net.mcreator.fantasticalfruits.item.MangoItem;
+import net.mcreator.fantasticalfruits.block.MangoLeaves0Block;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
 import java.util.Map;
 
-public class LemonHarvestProcedure {
+public class MangoHarvestProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency entity for procedure LemonHarvest!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency entity for procedure MangoHarvest!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency x for procedure LemonHarvest!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency x for procedure MangoHarvest!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency y for procedure LemonHarvest!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency y for procedure MangoHarvest!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency z for procedure LemonHarvest!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency z for procedure MangoHarvest!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure LemonHarvest!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure MangoHarvest!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -57,7 +57,7 @@ public class LemonHarvestProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		{
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-			BlockState _bs = LemonLeaves0Block.block.getDefaultState();
+			BlockState _bs = MangoLeaves0Block.block.getDefaultState();
 			BlockState _bso = world.getBlockState(_bp);
 			for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 				Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
@@ -85,7 +85,7 @@ public class LemonHarvestProcedure {
 			}
 		}
 		if (world instanceof World && !world.isRemote()) {
-			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LemonItem.block));
+			ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(MangoItem.block));
 			entityToSpawn.setPickupDelay((int) 10);
 			world.addEntity(entityToSpawn);
 		}
@@ -103,7 +103,7 @@ public class LemonHarvestProcedure {
 		}
 		if ((Math.random() < 0.5)) {
 			if (world instanceof World && !world.isRemote()) {
-				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LemonItem.block));
+				ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(MangoItem.block));
 				entityToSpawn.setPickupDelay((int) 10);
 				world.addEntity(entityToSpawn);
 			}

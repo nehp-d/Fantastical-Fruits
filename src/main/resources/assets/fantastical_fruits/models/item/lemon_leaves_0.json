@@ -1,5 +1,5 @@
 {
-  "parent": "fantastical_fruits:block/lemon_oak_leaves",
+  "parent": "fantastical_fruits:block/lemon_leaves_0",
   "display": {
     "thirdperson": {
       "rotation": [

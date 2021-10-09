@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "lemon_oak_leaves_1",
-    "textureTop": "lemon_oak_leaves_1",
-    "textureLeft": "lemon_oak_leaves_1",
-    "textureFront": "lemon_oak_leaves_1",
-    "textureRight": "lemon_oak_leaves_1",
-    "textureBack": "lemon_oak_leaves_1",
+    "texture": "mango_leaves_0",
+    "textureTop": "mango_leaves_0",
+    "textureLeft": "mango_leaves_0",
+    "textureFront": "mango_leaves_0",
+    "textureRight": "mango_leaves_0",
+    "textureBack": "mango_leaves_0",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
@@ -33,20 +33,20 @@
         "subtract": false
       }
     ],
-    "name": "Lemon Oak Leaves 1",
+    "name": "Mango Leaves",
     "specialInfo": [],
     "hardness": 0.2,
     "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "No creative tab entry"
+      "value": "CUSTOM:FantasticalNature"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": "CUSTOM:Lemon"
+      "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -56,7 +56,7 @@
       "value": "LEAVES"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -67,7 +67,7 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "LEAVES",
+    "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -97,7 +97,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
@@ -122,8 +122,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRightClicked": {
-      "name": "LemonHarvest"
+    "onTickUpdate": {
+      "name": "MangoGrow"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

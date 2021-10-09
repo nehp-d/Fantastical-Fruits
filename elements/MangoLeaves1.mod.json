@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "lemon_oak_leaves_0",
-    "textureTop": "lemon_oak_leaves_0",
-    "textureLeft": "lemon_oak_leaves_0",
-    "textureFront": "lemon_oak_leaves_0",
-    "textureRight": "lemon_oak_leaves_0",
-    "textureBack": "lemon_oak_leaves_0",
+    "texture": "mango_leaves_1",
+    "textureTop": "mango_leaves_1",
+    "textureLeft": "mango_leaves_1",
+    "textureFront": "mango_leaves_1",
+    "textureRight": "mango_leaves_1",
+    "textureBack": "mango_leaves_1",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
@@ -33,14 +33,14 @@
         "subtract": false
       }
     ],
-    "name": "Lemon Oak Leaves",
+    "name": "Mango Leaves 1",
     "specialInfo": [],
     "hardness": 0.2,
     "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
@@ -122,8 +122,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "LemonGrow"
+    "onRightClicked": {
+      "name": "MangoHarvest"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

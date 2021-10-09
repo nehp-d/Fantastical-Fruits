@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "fantastical_fruits:blocks/mango_leaves_0",
+    "particle": "fantastical_fruits:blocks/mango_leaves_0"
+  }
+}

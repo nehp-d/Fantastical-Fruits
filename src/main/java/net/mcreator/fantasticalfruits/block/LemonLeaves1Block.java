@@ -10,13 +10,11 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Hand;
 import net.minecraft.util.Direction;
 import net.minecraft.util.ActionResultType;
-import net.minecraft.pathfinding.PathNodeType;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.MobEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.LeavesBlock;
@@ -33,11 +31,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class LemonOakLeaves1Block extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:lemon_oak_leaves_1")
+public class LemonLeaves1Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:lemon_leaves_1")
 	public static final Block block = null;
-	public LemonOakLeaves1Block(FantasticalFruitsModElements instance) {
-		super(instance, 111);
+	public LemonLeaves1Block(FantasticalFruitsModElements instance) {
+		super(instance, 116);
 	}
 
 	@Override
@@ -47,18 +45,14 @@ public class LemonOakLeaves1Block extends FantasticalFruitsModElements.ModElemen
 	}
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
-			setRegistryName("lemon_oak_leaves_1");
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid()
+					.tickRandomly());
+			setRegistryName("lemon_leaves_1");
 		}
 
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 1;
-		}
-
-		@Override
-		public PathNodeType getAiPathNodeType(BlockState state, IBlockReader world, BlockPos pos, MobEntity entity) {
-			return PathNodeType.LEAVES;
 		}
 
 		@Override
