@@ -91,34 +91,6 @@
       "Ores",
       "FrozenTopLayer"
     ],
-    "spawnEntries": [
-      {
-        "entity": {
-          "value": "EntitySheep"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 12,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityRabbit"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 20,
-        "spawnType": "creature"
-      },
-      {
-        "entity": {
-          "value": "EntityPig"
-        },
-        "minGroup": 4,
-        "maxGroup": 4,
-        "weight": 8,
-        "spawnType": "monster"
-      }
-    ]
+    "spawnEntries": []
   }
 }
