@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "fantastical_fruits:block/maple_pressure_plate"
+    },
+    "powered=true": {
+      "model": "fantastical_fruits:block/maple_pressure_plate_down"
+    }
+  }
+}
