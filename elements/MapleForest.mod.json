@@ -45,7 +45,7 @@
     "heightVariation": 0.19999999999999998,
     "biomeType": "WARM",
     "spawnBiome": true,
-    "biomeWeight": 5,
+    "biomeWeight": 3,
     "biomeDictionaryTypes": [],
     "grassPerChunk": 8,
     "seagrassPerChunk": 0,

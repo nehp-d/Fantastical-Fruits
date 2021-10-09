@@ -61,6 +61,7 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 	public FlushedGrassBlock(FantasticalFruitsModElements instance) {
 		super(instance, 133);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -82,6 +83,16 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 		public void blockColorLoad(ColorHandlerEvent.Block event) {
 			event.getBlockColors().register((bs, world, pos, index) -> {
 				return world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefault();
+			}, block);
+		}
+	}
+
+	private static class ItemColorRegisterHandler {
+		@OnlyIn(Dist.CLIENT)
+		@SubscribeEvent
+		public void itemColorLoad(ColorHandlerEvent.Item event) {
+			event.getItemColors().register((stack, index) -> {
+				return FoliageColors.getDefault();
 			}, block);
 		}
 	}
