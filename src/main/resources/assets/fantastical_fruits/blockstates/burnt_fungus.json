@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "fantastical_fruits:block/burnt_fungus"
+    },
+    "half=lower": {
+      "model": "fantastical_fruits:block/burnt_fungus_bottom"
+    }
+  }
+}

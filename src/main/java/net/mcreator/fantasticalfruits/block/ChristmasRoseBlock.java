@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
+public class ChristmasRoseBlock extends FantasticalFruitsModElements.ModElement {
 
-	@ObjectHolder("fantastical_fruits:glow_sprout")
+	@ObjectHolder("fantastical_fruits:christmas_rose")
 	public static final Block block = null;
 
-	public GlowSproutBlock(FantasticalFruitsModElements instance) {
-		super(instance, 129);
+	public ChristmasRoseBlock(FantasticalFruitsModElements instance) {
+		super(instance, 132);
 
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
@@ -37,11 +37,7 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-				@Override
-				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-					return block.getDefaultState();
-				}
+			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
 
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
@@ -58,20 +54,24 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 				}
 			};
 
-			configuredFeature = feature
-					.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(40).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(2);
+			configuredFeature = feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(32)
+							.build())
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 2)));
 
-			event.getRegistry().register(feature.setRegistryName("glow_sprout"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:glow_sprout"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("christmas_rose"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:christmas_rose"), configuredFeature);
 		}
 
 	}
 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("fantastical_fruits:maple_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
@@ -79,24 +79,9 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 	public static class BlockCustomFlower extends FlowerBlock {
 
 		public BlockCustomFlower() {
-			super(Effects.GLOWING, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_WART)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("glow_sprout");
-		}
-
-		@Override
-		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
-			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 15, 10, 15)
-
-			)
-
-					.withOffset(offset.x, offset.y, offset.z);
-		}
-
-		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
+			setRegistryName("christmas_rose");
 		}
 
 		@Override
@@ -119,29 +104,8 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 		}
 
 		@Override
-		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
-
-			Block ground = state.getBlock();
-			return (ground == Blocks.STONE || ground == Blocks.GRANITE || ground == Blocks.DIORITE || ground == Blocks.ANDESITE
-					|| ground == Blocks.MYCELIUM || ground == Blocks.COARSE_DIRT || ground == Blocks.COBBLESTONE || ground == Blocks.MOSSY_COBBLESTONE
-
-			)
-
-			;
-		}
-
-		@Override
-		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
-			BlockPos blockpos = pos.down();
-			BlockState groundState = worldIn.getBlockState(blockpos);
-			Block ground = groundState.getBlock();
-
-			return this.isValidGround(groundState, worldIn, blockpos);
-		}
-
-		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.CAVE;
+			return PlantType.PLAINS;
 		}
 
 	}
