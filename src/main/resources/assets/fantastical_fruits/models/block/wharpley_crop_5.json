@@ -1,0 +1,7 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "fantastical_fruits:blocks/wharpley_stage5",
+    "particle": "fantastical_fruits:blocks/wharpley_stage5"
+  }
+}
