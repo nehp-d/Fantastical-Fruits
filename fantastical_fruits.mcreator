@@ -1679,43 +1679,13 @@
       }
     },
     {
-      "name": "WharpleyCrop0",
+      "name": "WharpleyCrop5",
       "type": "plant",
-      "sortid": 141,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wharpley_crop_0",
-      "path": "~/Nature"
-    },
-    {
-      "name": "WharpleyCrop1",
-      "type": "plant",
-      "sortid": 142,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wharpley_crop_1",
-      "path": "~/Nature"
-    },
-    {
-      "name": "WharpleyCrop2",
-      "type": "plant",
-      "sortid": 143,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wharpley_crop_2",
-      "path": "~/Nature"
-    },
-    {
-      "name": "WharpleyCrop3",
-      "type": "plant",
-      "sortid": 144,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "wharpley_crop_3",
+      "registry_name": "wharpley_crop_5",
       "path": "~/Nature"
     },
     {
@@ -1729,14 +1699,95 @@
       "path": "~/Nature"
     },
     {
-      "name": "WharpleyCrop5",
+      "name": "WharpleyCrop3",
       "type": "plant",
-      "sortid": 146,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "wharpley_crop_5",
+      "registry_name": "wharpley_crop_3",
       "path": "~/Nature"
+    },
+    {
+      "name": "WharpleyCrop2",
+      "type": "plant",
+      "sortid": 143,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_crop_2",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WharpleyCrop1",
+      "type": "plant",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_crop_1",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WharpleyCrop0",
+      "type": "plant",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_crop_0",
+      "path": "~/Nature"
+    },
+    {
+      "name": "Bartering",
+      "type": "procedure",
+      "sortid": 142,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "bartering",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "MapleTree4",
+      "type": "structure",
+      "sortid": 140,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_tree_4"
+    },
+    {
+      "name": "MapleTree5",
+      "type": "structure",
+      "sortid": 141,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_tree_5"
     }
   ],
   "variable_elements": [],
@@ -1753,8 +1804,8 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
+      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -1773,8 +1824,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
+      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
@@ -1831,16 +1882,10 @@
       "block.fantastical_fruits.aspen_pressure_plate": "Aspen Pressure Plate",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
-      "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "advancements.fruitastical_beginning.title": "Fruitastical Beginning",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
-      "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
-      "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
       "block.fantastical_fruits.maple_wood": "Maple Wood",
-      "block.fantastical_fruits.wharpley_crop_0": "Wharpley Crop 0",
-      "block.fantastical_fruits.wharpley_crop_1": "Wharpley Crop 1",
       "item.fantastical_fruits.crimberry": "Crimberry",
-      "block.fantastical_fruits.wharpley_crop_2": "Wharpley Crop 2",
       "advancements.fruitastical_beginning.descr": "Start your adventure in Fantastical Fruits.",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
@@ -1858,8 +1903,8 @@
     },
     "pt_br": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
+      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -1878,8 +1923,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
+      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
