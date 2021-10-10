@@ -8,7 +8,7 @@
     "name": "Rough Mycelite",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:FantasticalItems"
     },
     "stackSize": 64,
     "enchantability": 0,

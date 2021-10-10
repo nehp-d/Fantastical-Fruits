@@ -42,11 +42,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class WharpleyCrop1Block extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:wharpley_crop_1")
+public class WharpleyCrop6Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:wharpley_crop_6")
 	public static final Block block = null;
-	public WharpleyCrop1Block(FantasticalFruitsModElements instance) {
-		super(instance, 142);
+	public WharpleyCrop6Block(FantasticalFruitsModElements instance) {
+		super(instance, 147);
 	}
 
 	@Override
@@ -64,13 +64,13 @@ public class WharpleyCrop1Block extends FantasticalFruitsModElements.ModElement 
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.ROOT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("wharpley_crop_1");
+			setRegistryName("wharpley_crop_6");
 		}
 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 4, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 15, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

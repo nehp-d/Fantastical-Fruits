@@ -62,7 +62,7 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -85,6 +85,9 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64
+    "patchSize": 64,
+    "onTickUpdate": {
+      "name": "WharpleyGrow"
+    }
   }
 }

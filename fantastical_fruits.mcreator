@@ -1788,6 +1788,88 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "maple_tree_5"
+    },
+    {
+      "name": "WharpleyCrop6",
+      "type": "plant",
+      "sortid": 147,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_crop_6",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WharpleyCrop7",
+      "type": "plant",
+      "sortid": 148,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_crop_7",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WharpleyPlant",
+      "type": "procedure",
+      "sortid": 149,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_plant",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WharpleyGrow",
+      "type": "procedure",
+      "sortid": 150,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wharpley_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -1882,10 +1964,17 @@
       "block.fantastical_fruits.aspen_pressure_plate": "Aspen Pressure Plate",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
+      "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "advancements.fruitastical_beginning.title": "Fruitastical Beginning",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
+      "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
+      "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
+      "block.fantastical_fruits.wharpley_crop_6": "Wharpley Crop 6",
       "block.fantastical_fruits.maple_wood": "Maple Wood",
+      "block.fantastical_fruits.wharpley_crop_0": "Wharpley Crop 0",
+      "block.fantastical_fruits.wharpley_crop_1": "Wharpley Crop 1",
       "item.fantastical_fruits.crimberry": "Crimberry",
+      "block.fantastical_fruits.wharpley_crop_2": "Wharpley Crop 2",
       "advancements.fruitastical_beginning.descr": "Start your adventure in Fantastical Fruits.",
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
@@ -1893,6 +1982,7 @@
       "block.fantastical_fruits.maple_fence": "Aspen Fence",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
@@ -1986,6 +2076,7 @@
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
       "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
+      "block.fantastical_fruits.wharpley_crop_6": "Wharpley Crop 6",
       "block.fantastical_fruits.maple_wood": "Maple Wood",
       "block.fantastical_fruits.wharpley_crop_0": "Wharpley Crop 0",
       "block.fantastical_fruits.wharpley_crop_1": "Wharpley Crop 1",
@@ -1998,6 +2089,7 @@
       "block.fantastical_fruits.maple_fence": "Aspen Fence",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
