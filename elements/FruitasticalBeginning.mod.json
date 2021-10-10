@@ -2,15 +2,15 @@
   "_fv": 24,
   "_type": "achievement",
   "definition": {
-    "achievementName": "Fruitastical Beginning",
+    "achievementName": "Fantastical Fruits",
     "achievementDescription": "Start your adventure in Fantastical Fruits.",
     "achievementIcon": {
-      "value": "CUSTOM:Blueberries"
+      "value": "CUSTOM:Icon"
     },
     "background": "Default",
     "disableDisplay": false,
-    "showPopup": true,
-    "announceToChat": true,
+    "showPopup": false,
+    "announceToChat": false,
     "hideIfNotCompleted": false,
     "rewardLoot": [],
     "rewardRecipes": [],

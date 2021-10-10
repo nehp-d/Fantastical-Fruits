@@ -2,7 +2,6 @@
 package net.mcreator.fantasticalfruits.block;
 
 import net.minecraftforge.registries.ObjectHolder;
-import net.minecraftforge.common.ToolType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
@@ -42,8 +41,7 @@ public class AspenLeavesBlock extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0)
-					.harvestLevel(0).harvestTool(ToolType.HOE).setRequiresTool().notSolid());
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
 			setRegistryName("aspen_leaves");
 		}
 

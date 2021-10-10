@@ -1753,6 +1753,10 @@
             "type": "entity"
           },
           {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -1870,6 +1874,35 @@
           }
         ]
       }
+    },
+    {
+      "name": "Icon",
+      "type": "item",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "icon"
+    },
+    {
+      "name": "AspenStickRecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_stick_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenCraftingTableRecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_crafting_table_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1901,7 +1934,7 @@
       "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
-      "block.fantastical_fruits.maple_button": "Aspen Button",
+      "block.fantastical_fruits.maple_button": "Maple Button",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
       "block.fantastical_fruits.leaf_pile": "Leaf Pile",
       "subtitles.maplewnd": "",
@@ -1909,7 +1942,7 @@
       "block.fantastical_fruits.aspen_wood": "Aspen Wood",
       "advancements.greenish_glow.title": "Greenish Glow",
       "advancements.the_yellow_forest.title": "The Yellow Forest",
-      "block.fantastical_fruits.maple_pressure_plate": "Aspen Pressure Plate",
+      "block.fantastical_fruits.maple_pressure_plate": "Maple Pressure Plate",
       "itemGroup.tabfantastical_fruits": "Fantastical Foods",
       "block.fantastical_fruits.aspen_log": "Aspen Log",
       "item.fantastical_fruits.blueberries": "Blueberries",
@@ -1918,7 +1951,7 @@
       "item.fantastical_fruits.lemon": "Lemon",
       "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.tall_amber_fungus": "Tall Amber Fungus",
-      "block.fantastical_fruits.maple_slab": "Aspen Slab",
+      "block.fantastical_fruits.maple_slab": "Maple Slab",
       "block.fantastical_fruits.aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.aspen_trapdoor": "Aspen Trapdoor",
       "block.fantastical_fruits.scarlet_fungus": "Scarlet Mushroom",
@@ -1927,7 +1960,7 @@
       "block.fantastical_fruits.red_autumnal_leaves": "Red Autumnal Leaves",
       "block.fantastical_fruits.stripped_aspen_log": "Stripped Aspen Log",
       "block.fantastical_fruits.mycelite_ore": "Mycelite Ore",
-      "block.fantastical_fruits.maple_fence_gate": "Aspen Fence Gate",
+      "block.fantastical_fruits.maple_fence_gate": "Maple Fence Gate",
       "advancements.citrus_encounter.descr": "Obtain a lemon.",
       "advancements.natures_spice.title": "Nature\u0027s Spice",
       "block.fantastical_fruits.maple_log": "Maple Log",
@@ -1943,6 +1976,7 @@
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.scourapple": "Scourapple",
+      "item.fantastical_fruits.icon": "icon",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "block.fantastical_fruits.flushed_grass": "Flushed Grass",
       "item.fantastical_fruits.banana": "Banana",
@@ -1956,10 +1990,11 @@
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
-      "advancements.fruitastical_beginning.title": "Fruitastical Beginning",
+      "advancements.fruitastical_beginning.title": "Fantastical Fruits",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
       "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
+      "block.fantastical_fruits.wharpley_crop_6": "Wharpley Crop 6",
       "block.fantastical_fruits.maple_wood": "Maple Wood",
       "block.fantastical_fruits.wharpley_crop_0": "Wharpley Crop 0",
       "block.fantastical_fruits.wharpley_crop_1": "Wharpley Crop 1",
@@ -1969,9 +2004,10 @@
       "block.fantastical_fruits.short_aspen_grass": "Aspen Grass",
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
       "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
-      "block.fantastical_fruits.maple_fence": "Aspen Fence",
+      "block.fantastical_fruits.maple_fence": "Maple Fence",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
@@ -2048,6 +2084,7 @@
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.scourapple": "Scourapple",
+      "item.fantastical_fruits.icon": "icon",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "block.fantastical_fruits.flushed_grass": "Flushed Grass",
       "item.fantastical_fruits.banana": "Banana",
