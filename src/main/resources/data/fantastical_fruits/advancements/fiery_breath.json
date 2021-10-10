@@ -23,7 +23,7 @@
             "item": "fantastical_fruits:dragonfruit",
             "count": {
               "min": 1,
-              "max": 1
+              "max": 64
             }
           }
         ]

@@ -15,11 +15,14 @@ import net.minecraft.world.gen.Heightmap;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
@@ -31,14 +34,19 @@ import net.minecraft.entity.MobEntity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.EntitySpawnPlacementRegistry;
 import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.CreatureEntity;
 import net.minecraft.entity.CreatureAttribute;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.fantasticalfruits.procedures.BarteringProcedure;
 import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.entity.renderer.WanderingFunglinRenderer;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
+
+import java.util.Map;
+import java.util.HashMap;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElement {
@@ -134,6 +142,27 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 			if (source == DamageSource.DROWN)
 				return false;
 			return super.attackEntityFrom(source, amount);
+		}
+
+		@Override
+		public ActionResultType func_230254_b_(PlayerEntity sourceentity, Hand hand) {
+			ItemStack itemstack = sourceentity.getHeldItem(hand);
+			ActionResultType retval = ActionResultType.func_233537_a_(this.world.isRemote());
+			super.func_230254_b_(sourceentity, hand);
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			Entity entity = this;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				BarteringProcedure.executeProcedure($_dependencies);
+			}
+			return retval;
 		}
 	}
 }
