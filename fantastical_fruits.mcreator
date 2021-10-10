@@ -1749,8 +1749,28 @@
       "metadata": {
         "dependencies": [
           {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
             "name": "sourceentity",
             "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -1779,8 +1799,8 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -1799,8 +1819,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
@@ -1884,8 +1904,8 @@
     },
     "pt_br": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
+      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -1904,8 +1924,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
+      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
