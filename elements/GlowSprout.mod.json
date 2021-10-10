@@ -64,7 +64,7 @@
     },
     "dropAmount": 1,
     "forceTicking": false,
-    "emissiveRendering": true,
+    "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": true,
     "colorOnMap": "DEFAULT",

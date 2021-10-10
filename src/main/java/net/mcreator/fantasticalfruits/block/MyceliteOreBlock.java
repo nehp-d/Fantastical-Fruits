@@ -122,7 +122,7 @@ public class MyceliteOreBlock extends FantasticalFruitsModElements.ModElement {
 					return super.generate(world, generator, rand, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 3)).range(40)
+			configuredFeature = feature.withConfiguration(new OreFeatureConfig(CustomRuleTest.INSTANCE, block.getDefaultState(), 16)).range(40)
 					.square().func_242731_b(3);
 			event.getRegistry().register(feature.setRegistryName("mycelite_ore"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:mycelite_ore"), configuredFeature);

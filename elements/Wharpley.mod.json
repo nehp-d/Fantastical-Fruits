@@ -8,7 +8,7 @@
     "name": "Wharpley",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "CUSTOM:FantasticalItems"
+      "value": "MISC"
     },
     "stackSize": 64,
     "enchantability": 0,

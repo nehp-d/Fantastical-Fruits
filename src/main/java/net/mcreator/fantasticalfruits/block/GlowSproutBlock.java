@@ -116,9 +116,8 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.GLOWING, 5,
-					Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_WART).hardnessAndResistance(0f, 0f)
-							.setNeedsPostProcessing((bs, br, bp) -> true).setEmmisiveRendering((bs, br, bp) -> true).setLightLevel(s -> 8));
+			super(Effects.GLOWING, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_WART)
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 8));
 			setRegistryName("glow_sprout");
 		}
 

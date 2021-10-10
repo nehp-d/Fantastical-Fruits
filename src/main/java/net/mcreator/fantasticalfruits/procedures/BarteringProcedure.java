@@ -1,7 +1,27 @@
 package net.mcreator.fantasticalfruits.procedures;
 
-public class BarteringProcedure {
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.item.ItemEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 
+import net.mcreator.fantasticalfruits.item.WharpleySeedsItem;
+import net.mcreator.fantasticalfruits.item.SugarRootItem;
+import net.mcreator.fantasticalfruits.item.MyceliteItem;
+import net.mcreator.fantasticalfruits.item.LemonItem;
+import net.mcreator.fantasticalfruits.item.DragonfruitItem;
+import net.mcreator.fantasticalfruits.item.BlueberriesItem;
+import net.mcreator.fantasticalfruits.item.BananaItem;
+import net.mcreator.fantasticalfruits.block.GlowSproutBlock;
+import net.mcreator.fantasticalfruits.block.AspenSaplingBlock;
+import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
+
+import java.util.Map;
+
+public class BarteringProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -33,14 +53,12 @@ public class BarteringProcedure {
 				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure Bartering!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		Entity sourceentity = (Entity) dependencies.get("sourceentity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == MyceliteItem.block)) {
 			entity.getPersistentData().putDouble("funglinloot", Math.random());
 			if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.875)) {
@@ -99,5 +117,4 @@ public class BarteringProcedure {
 			}
 		}
 	}
-
 }

@@ -1,7 +1,31 @@
 package net.mcreator.fantasticalfruits.procedures;
 
-public class WharpleyPlantProcedure {
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import net.minecraft.world.World;
+import net.minecraft.world.IWorld;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.fantasticalfruits.item.WharpleySeedsItem;
+import net.mcreator.fantasticalfruits.block.WharpleyCrop0Block;
+import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
+
+import java.util.Map;
+import java.util.HashMap;
+
+public class WharpleyPlantProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -27,7 +51,6 @@ public class WharpleyPlantProcedure {
 			executeProcedure(dependencies);
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -54,13 +77,11 @@ public class WharpleyPlantProcedure {
 				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure WharpleyPlant!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 				.getItem() == WharpleySeedsItem.block)) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.SOUL_SAND)) {
@@ -82,5 +103,4 @@ public class WharpleyPlantProcedure {
 			}
 		}
 	}
-
 }

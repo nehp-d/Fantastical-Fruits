@@ -44,43 +44,45 @@ public class LemonGrowProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if (((world.getLight(new BlockPos((int) x, (int) y, (int) z))) > 9)) {
-			{
-				BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-				BlockState _bs = LemonLeaves1Block.block.getDefaultState();
-				BlockState _bso = world.getBlockState(_bp);
-				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-					Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-					if (_property != null && _bs.get(_property) != null)
-						try {
-							_bs = _bs.with(_property, (Comparable) entry.getValue());
-						} catch (Exception e) {
-						}
-				}
-				TileEntity _te = world.getTileEntity(_bp);
-				CompoundNBT _bnbt = null;
-				if (_te != null) {
-					_bnbt = _te.write(new CompoundNBT());
-					_te.remove();
-				}
-				world.setBlockState(_bp, _bs, 3);
-				if (_bnbt != null) {
-					_te = world.getTileEntity(_bp);
+			if ((Math.random() < 0.1)) {
+				{
+					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+					BlockState _bs = LemonLeaves1Block.block.getDefaultState();
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.get(_property) != null)
+							try {
+								_bs = _bs.with(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					TileEntity _te = world.getTileEntity(_bp);
+					CompoundNBT _bnbt = null;
 					if (_te != null) {
-						try {
-							_te.read(_bso, _bnbt);
-						} catch (Exception ignored) {
+						_bnbt = _te.write(new CompoundNBT());
+						_te.remove();
+					}
+					world.setBlockState(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_te = world.getTileEntity(_bp);
+						if (_te != null) {
+							try {
+								_te.read(_bso, _bnbt);
+							} catch (Exception ignored) {
+							}
 						}
 					}
 				}
-			}
-			if (world instanceof World && !world.isRemote()) {
-				((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.crop.plant")),
-						SoundCategory.BLOCKS, (float) 0.5, (float) 1);
-			} else {
-				((World) world).playSound(x, y, z,
-						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.crop.plant")),
-						SoundCategory.BLOCKS, (float) 0.5, (float) 1, false);
+				if (world instanceof World && !world.isRemote()) {
+					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.crop.plant")),
+							SoundCategory.BLOCKS, (float) 0.5, (float) 1);
+				} else {
+					((World) world).playSound(x, y, z,
+							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.crop.plant")),
+							SoundCategory.BLOCKS, (float) 0.5, (float) 1, false);
+				}
 			}
 		}
 	}

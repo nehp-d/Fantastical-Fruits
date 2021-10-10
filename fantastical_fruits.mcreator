@@ -1870,6 +1870,16 @@
           }
         ]
       }
+    },
+    {
+      "name": "MapleLeafPile",
+      "type": "plant",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_leaf_pile",
+      "path": "~/Nature"
     }
   ],
   "variable_elements": [],
@@ -1943,6 +1953,7 @@
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.scourapple": "Scourapple",
+      "block.fantastical_fruits.maple_leaf_pile": "Maple Leaf Pile",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "block.fantastical_fruits.flushed_grass": "Flushed Grass",
       "item.fantastical_fruits.banana": "Banana",
@@ -1960,6 +1971,7 @@
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
       "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
+      "block.fantastical_fruits.wharpley_crop_6": "Wharpley Crop 6",
       "block.fantastical_fruits.maple_wood": "Maple Wood",
       "block.fantastical_fruits.wharpley_crop_0": "Wharpley Crop 0",
       "block.fantastical_fruits.wharpley_crop_1": "Wharpley Crop 1",
@@ -1972,6 +1984,7 @@
       "block.fantastical_fruits.maple_fence": "Aspen Fence",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "advancements.fiery_breath.title": "Fiery Breath",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
@@ -2048,6 +2061,7 @@
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.scourapple": "Scourapple",
+      "block.fantastical_fruits.maple_leaf_pile": "Large Leaf Pile",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "block.fantastical_fruits.flushed_grass": "Flushed Grass",
       "item.fantastical_fruits.banana": "Banana",
