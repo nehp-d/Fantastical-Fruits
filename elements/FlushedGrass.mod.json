@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "forceTicking": false,
@@ -87,6 +87,9 @@
         "value": "CUSTOM:MapleForest"
       }
     ],
-    "patchSize": 64
+    "patchSize": 64,
+    "onDestroyedByPlayer": {
+      "name": "Seeds"
+    }
   }
 }
