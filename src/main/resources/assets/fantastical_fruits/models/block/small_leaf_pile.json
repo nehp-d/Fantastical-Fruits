@@ -1,8 +1,0 @@
-{
-  "parent": "fantastical_fruits:custom/leafpile3",
-  "textures": {
-    "all": "fantastical_fruits:blocks/smallpile",
-    "particle": "fantastical_fruits:blocks/smallpile",
-    "0": "fantastical_fruits:blocks/smallpile"
-  }
-}

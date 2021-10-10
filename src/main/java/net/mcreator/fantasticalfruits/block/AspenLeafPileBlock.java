@@ -5,13 +5,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.util.SoundEvent;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement {
+public class AspenLeafPileBlock extends FantasticalFruitsModElements.ModElement {
 
-	@ObjectHolder("fantastical_fruits:maple_leaf_pile")
+	@ObjectHolder("fantastical_fruits:aspen_leaf_pile")
 	public static final Block block = null;
 
-	public MapleLeafPileBlock(FantasticalFruitsModElements instance) {
-		super(instance, 151);
+	public AspenLeafPileBlock(FantasticalFruitsModElements instance) {
+		super(instance, 154);
 
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
@@ -37,11 +37,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-				@Override
-				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-					return block.getDefaultState();
-				}
+			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
 
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
@@ -58,14 +54,13 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 				}
 			};
 
-			configuredFeature = feature
-					.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(10).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(15);
+			configuredFeature = feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(5)
+							.build())
+					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 9)));
 
-			event.getRegistry().register(feature.setRegistryName("maple_leaf_pile"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:maple_leaf_pile"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("aspen_leaf_pile"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:aspen_leaf_pile"), configuredFeature);
 		}
 
 	}
@@ -73,7 +68,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("fantastical_fruits:maple_forest").equals(event.getName()))
+		if (new ResourceLocation("fantastical_fruits:aspen_forest").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
@@ -86,7 +81,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("maple_leaf_pile");
+			setRegistryName("aspen_leaf_pile");
 		}
 
 		@Override
@@ -125,7 +120,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR));
+			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
 		}
 
 		@Override
