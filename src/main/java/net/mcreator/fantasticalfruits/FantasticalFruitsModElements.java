@@ -45,8 +45,6 @@ public class FantasticalFruitsModElements {
 	public final List<Supplier<Enchantment>> enchantments = new ArrayList<>();
 	public static Map<ResourceLocation, net.minecraft.util.SoundEvent> sounds = new HashMap<>();
 	public FantasticalFruitsModElements() {
-		sounds.put(new ResourceLocation("fantastical_fruits", "maplewnd"),
-				new net.minecraft.util.SoundEvent(new ResourceLocation("fantastical_fruits", "maplewnd")));
 		try {
 			ModFileScanData modFileInfo = ModList.get().getModFileById("fantastical_fruits").getFile().getScanResult();
 			Set<ModFileScanData.AnnotationData> annotations = modFileInfo.getAnnotations();
