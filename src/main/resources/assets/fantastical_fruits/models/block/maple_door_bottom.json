@@ -1,0 +1,7 @@
+{
+  "parent": "block/door_bottom",
+  "textures": {
+    "bottom": "fantastical_fruits:blocks/maple_door_bottom",
+    "top": "fantastical_fruits:blocks/maple_door_top"
+  }
+}

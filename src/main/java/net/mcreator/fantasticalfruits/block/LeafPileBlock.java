@@ -63,7 +63,7 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:leaf_pile")
 	public static final Block block = null;
 	public LeafPileBlock(FantasticalFruitsModElements instance) {
-		super(instance, 155);
+		super(instance, 43);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
