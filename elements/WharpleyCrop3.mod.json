@@ -62,8 +62,8 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
-    "forceTicking": false,
+    "dropAmount": 0,
+    "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
@@ -77,7 +77,11 @@
     "fireSpreadSpeed": 0,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.SOUL_SAND"
+      }
+    ],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
