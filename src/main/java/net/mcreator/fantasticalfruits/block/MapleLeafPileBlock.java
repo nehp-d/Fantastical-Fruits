@@ -104,7 +104,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 					.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
 									.tries(10).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(10);
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(15);
 			event.getRegistry().register(feature.setRegistryName("maple_leaf_pile"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:maple_leaf_pile"), configuredFeature);
 		}
@@ -139,6 +139,11 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 		@Override
 		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 100;
+		}
+
+		@Override
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
 		}
 
 		@Override

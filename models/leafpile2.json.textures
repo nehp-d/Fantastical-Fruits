@@ -2,7 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "leafpile"
+        "0": "aspenleafpile"
       },
       "name": "default"
     }

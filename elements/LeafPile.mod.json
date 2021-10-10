@@ -5,13 +5,13 @@
     "renderType": 2,
     "texture": "leafpile",
     "textureBottom": "",
-    "customModelName": "leafpile2:default",
+    "customModelName": "leafpile1:default",
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "No tint",
-    "isItemTinted": false,
+    "tintType": "Foliage",
+    "isItemTinted": true,
     "plantType": "normal",
-    "staticPlantGenerationType": "Grass",
+    "staticPlantGenerationType": "Flower",
     "suspiciousStewEffect": "SPEED",
     "suspiciousStewDuration": 5,
     "growapableSpawnType": "Plains",
@@ -60,33 +60,108 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": true,
+    "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
       "value": ""
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 9,
+    "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"
     ],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:AspenForest"
+        "value": "birch_forest"
+      },
+      {
+        "value": "birch_forest_hills"
+      },
+      {
+        "value": "roofed_forest"
+      },
+      {
+        "value": "mutated_roofed_forest"
+      },
+      {
+        "value": "mutated_forest"
+      },
+      {
+        "value": "forest"
+      },
+      {
+        "value": "forest_hills"
+      },
+      {
+        "value": "mutated_redwood_taiga"
+      },
+      {
+        "value": "mutated_redwood_taiga_hills"
+      },
+      {
+        "value": "redwood_taiga"
+      },
+      {
+        "value": "redwood_taiga_hills"
+      },
+      {
+        "value": "jungle"
+      },
+      {
+        "value": "jungle_edge"
+      },
+      {
+        "value": "jungle_hills"
+      },
+      {
+        "value": "mutated_jungle"
+      },
+      {
+        "value": "mutated_jungle_edge"
+      },
+      {
+        "value": "taiga_cold"
+      },
+      {
+        "value": "taiga_cold_hills"
+      },
+      {
+        "value": "mutated_taiga_cold"
+      },
+      {
+        "value": "swamp"
+      },
+      {
+        "value": "mutated_swampland"
+      },
+      {
+        "value": "taiga"
+      },
+      {
+        "value": "taiga_hills"
+      },
+      {
+        "value": "mutated_taiga"
+      },
+      {
+        "value": "mutated_birch_forest"
+      },
+      {
+        "value": "mutated_birch_forest_hills"
       }
     ],
-    "patchSize": 5
+    "patchSize": 64
   }
 }

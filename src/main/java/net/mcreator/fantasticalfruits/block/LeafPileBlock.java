@@ -9,22 +9,24 @@ import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.common.PlantType;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.client.event.ColorHandlerEvent;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.gen.placement.Placement;
-import net.minecraft.world.gen.placement.NoiseDependant;
-import net.minecraft.world.gen.feature.RandomPatchFeature;
+import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.DefaultFlowersFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
+import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.world.FoliageColors;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.vector.Vector3d;
@@ -39,13 +41,13 @@ import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -61,7 +63,9 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:leaf_pile")
 	public static final Block block = null;
 	public LeafPileBlock(FantasticalFruitsModElements instance) {
-		super(instance, 43);
+		super(instance, 155);
+		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
+		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -78,12 +82,36 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
+	private static class BlockColorRegisterHandler {
+		@OnlyIn(Dist.CLIENT)
+		@SubscribeEvent
+		public void blockColorLoad(ColorHandlerEvent.Block event) {
+			event.getBlockColors().register((bs, world, pos, index) -> {
+				return world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefault();
+			}, block);
+		}
+	}
+
+	private static class ItemColorRegisterHandler {
+		@OnlyIn(Dist.CLIENT)
+		@SubscribeEvent
+		public void itemColorLoad(ColorHandlerEvent.Item event) {
+			event.getItemColors().register((stack, index) -> {
+				return FoliageColors.getDefault();
+			}, block);
+		}
+	}
 	private static Feature<BlockClusterFeatureConfig> feature = null;
 	private static ConfiguredFeature<?, ?> configuredFeature = null;
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
+			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
+				@Override
+				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
+					return block.getDefaultState();
+				}
+
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
@@ -95,10 +123,11 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
-			configuredFeature = feature.withConfiguration(
-					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer())).tries(5)
-							.build())
-					.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8, 0, 9)));
+			configuredFeature = feature
+					.withConfiguration(
+							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
+									.tries(64).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
 			event.getRegistry().register(feature.setRegistryName("leaf_pile"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:leaf_pile"), configuredFeature);
 		}
@@ -106,7 +135,57 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
 		boolean biomeCriteria = false;
-		if (new ResourceLocation("fantastical_fruits:aspen_forest").equals(event.getName()))
+		if (new ResourceLocation("birch_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("birch_forest_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("dark_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("dark_forest_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("flower_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("wooded_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("giant_spruce_taiga").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("giant_spruce_taiga_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("giant_tree_taiga").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("giant_tree_taiga_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle_edge").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("jungle_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("modified_jungle").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("modified_jungle_edge").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("snowy_taiga").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("snowy_taiga_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("snowy_taiga_mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("swamp").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("swamp_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("taiga").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("taiga_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("taiga_mountains").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("tall_birch_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("tall_birch_hills").equals(event.getName()))
 			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
@@ -126,13 +205,13 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 		}
 
 		@Override
-		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
-			return useContext.getItem().getItem() != this.asItem();
+		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
+			return 100;
 		}
 
 		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 100;
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
 		}
 
 		@Override
@@ -145,7 +224,7 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 0));
+			return Collections.singletonList(new ItemStack(Blocks.AIR));
 		}
 
 		@Override
