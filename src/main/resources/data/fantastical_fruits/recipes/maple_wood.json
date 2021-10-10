@@ -1,0 +1,26 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "fantastical_fruits:maple_log"
+    },
+    "1": {
+      "item": "fantastical_fruits:maple_log"
+    },
+    "2": {
+      "item": "fantastical_fruits:maple_log"
+    },
+    "3": {
+      "item": "fantastical_fruits:maple_log"
+    }
+  },
+  "result": {
+    "item": "fantastical_fruits:maple_wood",
+    "count": 3
+  }
+}

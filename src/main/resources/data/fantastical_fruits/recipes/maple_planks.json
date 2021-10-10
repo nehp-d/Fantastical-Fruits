@@ -1,0 +1,13 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "fantastical_fruits:maple_log"
+    }
+  ],
+  "result": {
+    "item": "fantastical_fruits:maple_planks",
+    "count": 4
+  }
+}

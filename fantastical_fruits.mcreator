@@ -1692,7 +1692,7 @@
       "name": "WharpleyCrop2",
       "type": "plant",
       "sortid": 143,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "wharpley_crop_2",
@@ -1702,7 +1702,7 @@
       "name": "WharpleyCrop1",
       "type": "plant",
       "sortid": 142,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "wharpley_crop_1",
@@ -1712,7 +1712,7 @@
       "name": "WharpleyCrop0",
       "type": "plant",
       "sortid": 141,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "wharpley_crop_0",
@@ -1884,7 +1884,7 @@
       "name": "MapleLeafPile",
       "type": "plant",
       "sortid": 151,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "maple_leaf_pile",
@@ -1898,7 +1898,7 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "flushed_seeds",
-      "path": "~/Nature"
+      "path": "~/Items"
     },
     {
       "name": "Seeds",
@@ -1932,6 +1932,176 @@
           }
         ]
       }
+    },
+    {
+      "name": "AspenPickaxeRecipe",
+      "type": "recipe",
+      "sortid": 154,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_pickaxe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenAxeRecipe",
+      "type": "recipe",
+      "sortid": 155,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_axe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenAxeRecipe2",
+      "type": "recipe",
+      "sortid": 156,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_axe_recipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenSwordRecipe",
+      "type": "recipe",
+      "sortid": 157,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sword_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenShovelRecipe",
+      "type": "recipe",
+      "sortid": 158,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_shovel_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenHoeRecipe",
+      "type": "recipe",
+      "sortid": 159,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_hoe_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenHoeRecipe2",
+      "type": "recipe",
+      "sortid": 160,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_hoe_recipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MaplePlanksRecipe",
+      "type": "recipe",
+      "sortid": 161,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_planks_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MaplePlanksRecipe2",
+      "type": "recipe",
+      "sortid": 162,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_planks_recipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleWoodRecipe",
+      "type": "recipe",
+      "sortid": 163,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_wood_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrippedMapleWoodRecipe",
+      "type": "recipe",
+      "sortid": 164,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_maple_wood_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleStairsRecipe",
+      "type": "recipe",
+      "sortid": 165,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_stairs_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleSlabRecipe",
+      "type": "recipe",
+      "sortid": 166,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_slab_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleFenceRecipe",
+      "type": "recipe",
+      "sortid": 167,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_fence_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MaplePressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 168,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_pressure_plate_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleButtonRecipe",
+      "type": "recipe",
+      "sortid": 169,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_button_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "MapleFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 170,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "maple_fence_gate_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -1939,8 +2109,8 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -1959,8 +2129,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
@@ -2019,7 +2189,7 @@
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
-      "advancements.fruitastical_beginning.title": "Fruitastical Beginning",
+      "advancements.fruitastical_beginning.title": "Fantastical Fruits",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
       "block.fantastical_fruits.wharpley_crop_5": "Wharpley Crop 5",
@@ -2047,8 +2217,8 @@
     },
     "pt_br": {
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
+      "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -2067,8 +2237,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
+      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",

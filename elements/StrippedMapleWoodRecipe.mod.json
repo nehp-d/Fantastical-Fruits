@@ -1,0 +1,46 @@
+{
+  "_fv": 24,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "recipeRetstackSize": 3,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:StrippedMapleLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMapleLog"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "CUSTOM:StrippedMapleLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMapleLog"
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:StrippedMapleWood"
+    },
+    "name": "stripped_maple_wood",
+    "namespace": "mod"
+  }
+}
