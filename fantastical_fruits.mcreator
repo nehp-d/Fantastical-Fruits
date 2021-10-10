@@ -1852,6 +1852,35 @@
       }
     },
     {
+      "name": "AspenStickRecipe",
+      "type": "recipe",
+      "sortid": 152,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_stick_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenCraftingTableRecipe",
+      "type": "recipe",
+      "sortid": 153,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_crafting_table_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "Icon",
+      "type": "item",
+      "sortid": 151,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "icon"
+    },
+    {
       "name": "MapleLeafPile",
       "type": "plant",
       "sortid": 151,
@@ -2081,6 +2110,7 @@
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.scourapple": "Scourapple",
+      "item.fantastical_fruits.icon": "icon",
       "block.fantastical_fruits.maple_leaf_pile": "Large Leaf Pile",
       "block.fantastical_fruits.aspen_fence_gate": "Aspen Fence Gate",
       "block.fantastical_fruits.flushed_grass": "Flushed Grass",
