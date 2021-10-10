@@ -1,0 +1,8 @@
+{
+  "parent": "fantastical_fruits:custom/mapleleafpile",
+  "textures": {
+    "all": "fantastical_fruits:blocks/mapleleafpile",
+    "particle": "fantastical_fruits:blocks/mapleleafpile",
+    "0": "fantastical_fruits:blocks/mapleleafpile"
+  }
+}

@@ -2,10 +2,10 @@
   "_fv": 24,
   "_type": "plant",
   "definition": {
-    "renderType": 13,
+    "renderType": 12,
     "texture": "wharpley_stage2",
     "textureBottom": "",
-    "customModelName": "Crop model",
+    "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "No tint",
@@ -62,7 +62,7 @@
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "forceTicking": true,
     "emissiveRendering": false,
     "hasTileEntity": false,
@@ -85,9 +85,6 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64,
-    "onTickUpdate": {
-      "name": "WharpleyGrow"
-    }
+    "patchSize": 64
   }
 }
