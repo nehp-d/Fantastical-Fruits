@@ -1,7 +1,7 @@
 {
-  "parent": "block/cross",
+  "parent": "block/crop",
   "textures": {
-    "cross": "fantastical_fruits:blocks/wharpley_stage3",
+    "crop": "fantastical_fruits:blocks/wharpley_stage3",
     "particle": "fantastical_fruits:blocks/wharpley_stage3"
   }
 }

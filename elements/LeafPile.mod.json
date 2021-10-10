@@ -5,7 +5,7 @@
     "renderType": 2,
     "texture": "leafpile",
     "textureBottom": "",
-    "customModelName": "leafpile1:default",
+    "customModelName": "leafpile:default",
     "itemTexture": "",
     "particleTexture": "",
     "tintType": "Foliage",
