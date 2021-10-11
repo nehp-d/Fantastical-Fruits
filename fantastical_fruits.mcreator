@@ -2142,12 +2142,34 @@
       "ids": {},
       "registry_name": "maple_trapdoor_recipe",
       "path": "~/Recipes"
+    },
+    {
+      "name": "LimeLeaves0",
+      "type": "block",
+      "sortid": 176,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_leaves_0",
+      "path": "~/Nature"
+    },
+    {
+      "name": "LimeLeaves1",
+      "type": "block",
+      "sortid": 177,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_leaves_1",
+      "path": "~/Nature"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
+      "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -2258,6 +2280,8 @@
       "itemGroup.tabfantastical_items": "Fantastical Items"
     },
     "pt_br": {
+      "block.fantastical_fruits.lime_leaves_1": "Lemon Leaves 1",
+      "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",

@@ -2,23 +2,23 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "maple_door_bottom",
-    "textureTop": "maple_door_top",
-    "textureLeft": "",
-    "textureFront": "",
-    "textureRight": "",
-    "textureBack": "",
+    "texture": "lemon_oak_leaves_0",
+    "textureTop": "lemon_oak_leaves_0",
+    "textureLeft": "lemon_oak_leaves_0",
+    "textureFront": "lemon_oak_leaves_0",
+    "textureRight": "lemon_oak_leaves_0",
+    "textureBack": "lemon_oak_leaves_0",
     "renderType": 11,
     "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
-    "itemTexture": "maple_door",
+    "itemTexture": "",
     "particleTexture": "",
-    "blockBase": "Door",
+    "blockBase": "Leaves",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -33,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Maple Door",
+    "name": "Lemon Leaves",
     "specialInfo": [],
-    "hardness": 3.0,
-    "resistance": 3.0,
+    "hardness": 0.2,
+    "resistance": 0.2,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalBlocks"
+      "value": "CUSTOM:FantasticalNature"
     },
-    "destroyTool": "axe",
+    "destroyTool": "Not specified",
     "customDrop": {
       "value": ""
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 0,
+    "lightOpacity": 1,
     "material": {
-      "value": "WOOD"
+      "value": "LEAVES"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -67,7 +67,7 @@
       "value": ""
     },
     "offsetType": "NONE",
-    "aiPathNodeType": "DEFAULT",
+    "aiPathNodeType": "LEAVES",
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
@@ -78,7 +78,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""
@@ -122,6 +122,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "LemonGrow"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
