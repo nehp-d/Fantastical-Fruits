@@ -75,8 +75,8 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "jumpFactor": 1.0,
-    "speedFactor": 1.0,
+    "jumpFactor": 0.7,
+    "speedFactor": 0.4,
     "canBePlacedOn": [],
     "frequencyOnChunks": 2,
     "spawnWorldTypes": [
@@ -90,7 +90,7 @@
         "value": "forest_hills"
       }
     ],
-    "patchSize": 48,
+    "patchSize": 32,
     "onRightClicked": {
       "name": "BlueberryBushHarvest"
     }

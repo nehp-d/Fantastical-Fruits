@@ -9,6 +9,10 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
@@ -58,8 +62,14 @@ public class BlueberryBushBlock extends FantasticalFruitsModElements.ModElement 
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
 			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.SWEET_BERRY_BUSH)
-					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
+					.hardnessAndResistance(0f, 0f).speedFactor(0.5f).jumpFactor(0.8f).setLightLevel(s -> 0));
 			setRegistryName("blueberry_bush");
+		}
+
+		@Override
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 10, 8, 10)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

@@ -70,7 +70,7 @@ public class WharpleyCrop2Block extends FantasticalFruitsModElements.ModElement 
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 7, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 6, 16)).withOffset(offset.x, offset.y, offset.z);
 		}
 
 		@Override

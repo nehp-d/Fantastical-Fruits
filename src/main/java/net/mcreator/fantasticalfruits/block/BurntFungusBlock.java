@@ -22,6 +22,7 @@ import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -41,6 +42,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.DoublePlantBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -132,6 +134,25 @@ public class BurntFungusBlock extends FantasticalFruitsModElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			Block ground = state.getBlock();
+			return (ground == Blocks.GRASS_BLOCK || ground == Blocks.DIRT || ground == Blocks.COARSE_DIRT || ground == Blocks.PODZOL
+					|| ground == Blocks.MYCELIUM || ground == Blocks.STONE || ground == Blocks.GRANITE || ground == Blocks.DIORITE
+					|| ground == Blocks.ANDESITE);
+		}
+
+		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			BlockPos blockpos = pos.down();
+			BlockState groundState = worldIn.getBlockState(blockpos);
+			Block ground = groundState.getBlock();
+			if (blockstate.get(HALF) == DoubleBlockHalf.UPPER)
+				return groundState.isIn(this) && groundState.get(HALF) == DoubleBlockHalf.LOWER;
+			else
+				return this.isValidGround(groundState, worldIn, blockpos);
 		}
 
 		@Override

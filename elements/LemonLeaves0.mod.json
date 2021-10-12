@@ -55,8 +55,8 @@
     "material": {
       "value": "LEAVES"
     },
-    "tickRate": 10,
-    "tickRandomly": true,
+    "tickRate": 100,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

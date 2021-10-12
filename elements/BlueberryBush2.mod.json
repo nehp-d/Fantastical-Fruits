@@ -75,7 +75,7 @@
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
-    "jumpFactor": 1.0,
+    "jumpFactor": 0.7,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
     "frequencyOnChunks": 1,

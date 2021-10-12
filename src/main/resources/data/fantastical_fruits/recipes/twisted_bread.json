@@ -1,0 +1,22 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012"
+  ],
+  "key": {
+    "0": {
+      "item": "fantastical_fruits:wharpley"
+    },
+    "1": {
+      "item": "fantastical_fruits:wharpley"
+    },
+    "2": {
+      "item": "fantastical_fruits:wharpley"
+    }
+  },
+  "result": {
+    "item": "fantastical_fruits:twisted_bread",
+    "count": 1
+  }
+}

@@ -2171,12 +2171,209 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "mangrove"
+    },
+    {
+      "name": "BlightCookie",
+      "type": "food",
+      "sortid": 178,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blight_cookie",
+      "path": "~/Items"
+    },
+    {
+      "name": "TwistedBreadRecipe",
+      "type": "recipe",
+      "sortid": 179,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "twisted_bread_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "BlightCookieRecipe",
+      "type": "recipe",
+      "sortid": 180,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "blight_cookie_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenSaplingDrop",
+      "type": "procedure",
+      "sortid": 181,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sapling_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimeGrow",
+      "type": "procedure",
+      "sortid": 182,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "LimeHarvest",
+      "type": "procedure",
+      "sortid": 183,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_harvest",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlushedSeedsPlace",
+      "type": "procedure",
+      "sortid": 184,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "flushed_seeds_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AspenSaplingTree",
+      "type": "structure",
+      "sortid": 185,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_sapling_tree",
+      "path": "~/Nature"
+    },
+    {
+      "name": "LemonTree",
+      "type": "structure",
+      "sortid": 186,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lemon_tree"
+    },
+    {
+      "name": "LemonTreeRare",
+      "type": "structure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lemon_tree_rare"
+    },
+    {
+      "name": "LimeTree",
+      "type": "structure",
+      "sortid": 187,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "lime_tree"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
+      "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
@@ -2199,6 +2396,7 @@
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Maple Button",
@@ -2231,6 +2429,7 @@
       "advancements.natures_spice.title": "Nature\u0027s Spice",
       "block.fantastical_fruits.maple_log": "Maple Log",
       "item.fantastical_fruits.kiwi": "Kiwi",
+      "item.fantastical_fruits.twisted_bread": "Twisted Bread",
       "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
@@ -2238,6 +2437,7 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
+      "biome.fantastical_fruits.mangrove": "Mangrove",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
@@ -2311,6 +2511,7 @@
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
@@ -2351,6 +2552,7 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
+      "biome.fantastical_fruits.mangrove": "Mangrove",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",

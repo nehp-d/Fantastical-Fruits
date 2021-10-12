@@ -25,7 +25,7 @@
         "my": 0.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 12.0,
+        "My": 11.0,
         "Mz": 16.0,
         "subtract": false
       }
@@ -71,7 +71,7 @@
     "creativePickItem": {
       "value": "CUSTOM:WharpleySeeds"
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 0,
     "fireSpreadSpeed": 0,

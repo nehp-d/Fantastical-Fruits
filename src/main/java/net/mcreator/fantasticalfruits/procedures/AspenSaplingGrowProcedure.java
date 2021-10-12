@@ -9,6 +9,7 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
@@ -40,11 +41,11 @@ public class AspenSaplingGrowProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.canBlockSeeSky(new BlockPos((int) x, (int) y, (int) z))) && ((world.getLight(new BlockPos((int) x, (int) y, (int) z))) >= 9))) {
-			if ((Math.random() < 0.0915)) {
+		if (((world.getLight(new BlockPos((int) x, (int) y, (int) z))) >= 9)) {
+			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR)) {
 				if (world instanceof ServerWorld) {
 					Template template = ((ServerWorld) world).getStructureTemplateManager()
-							.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "aspen_tree_1"));
+							.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "aspen_sapling"));
 					if (template != null) {
 						template.func_237144_a_((ServerWorld) world, new BlockPos((int) x, (int) y, (int) z),
 								new PlacementSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setChunk(null).setIgnoreEntities(false),

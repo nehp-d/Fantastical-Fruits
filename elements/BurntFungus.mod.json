@@ -24,6 +24,15 @@
         "mx": 0.0,
         "my": 0.0,
         "mz": 0.0,
+        "Mx": 2.0,
+        "My": 14.0,
+        "Mz": 2.0,
+        "subtract": false
+      },
+      {
+        "mx": 0.0,
+        "my": 0.0,
+        "mz": 0.0,
         "Mx": 16.0,
         "My": 16.0,
         "Mz": 16.0,
@@ -77,7 +86,35 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.GRASS"
+      },
+      {
+        "value": "Blocks.DIRT#0"
+      },
+      {
+        "value": "Blocks.DIRT#1"
+      },
+      {
+        "value": "Blocks.DIRT#2"
+      },
+      {
+        "value": "Blocks.MYCELIUM"
+      },
+      {
+        "value": "Blocks.STONE#0"
+      },
+      {
+        "value": "Blocks.STONE#1"
+      },
+      {
+        "value": "Blocks.STONE#3"
+      },
+      {
+        "value": "Blocks.STONE#5"
+      }
+    ],
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [
       "Surface"

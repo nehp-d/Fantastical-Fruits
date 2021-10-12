@@ -4,6 +4,7 @@ package net.mcreator.fantasticalfruits.block;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.pathfinding.PathNodeType;
@@ -44,8 +45,7 @@ public class LemonLeaves0Block extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid()
-					.tickRandomly());
+			super(Block.Properties.create(Material.LEAVES).sound(SoundType.PLANT).hardnessAndResistance(0.2f, 0.2f).setLightLevel(s -> 0).notSolid());
 			setRegistryName("lemon_leaves_0");
 		}
 
@@ -68,6 +68,15 @@ public class LemonLeaves0Block extends FantasticalFruitsModElements.ModElement {
 		}
 
 		@Override
+		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+			super.onBlockAdded(blockstate, world, pos, oldState, moving);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
+		}
+
+		@Override
 		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
 			super.tick(blockstate, world, pos, random);
 			int x = pos.getX();
@@ -81,6 +90,7 @@ public class LemonLeaves0Block extends FantasticalFruitsModElements.ModElement {
 				$_dependencies.put("world", world);
 				LemonGrowProcedure.executeProcedure($_dependencies);
 			}
+			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 100);
 		}
 	}
 }

@@ -7,14 +7,19 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IWorld;
+import net.minecraft.world.GameType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.SoundCategory;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
+import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
@@ -89,13 +94,26 @@ public class BlueberryBushPlaceProcedure {
 			if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR)) {
 				if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
 						.getItem() == BlueberriesItem.block)) {
+					if ((!(new Object() {
+						public boolean checkGamemode(Entity _ent) {
+							if (_ent instanceof ServerPlayerEntity) {
+								return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+							} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+								NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+										.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+								return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+							}
+							return false;
+						}
+					}.checkGamemode(entity)))) {
+						if (entity instanceof PlayerEntity) {
+							ItemStack _stktoremove = new ItemStack(BlueberriesItem.block);
+							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
+									((PlayerEntity) entity).container.func_234641_j_());
+						}
+					}
 					if (entity instanceof LivingEntity) {
 						((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
-					}
-					if (entity instanceof PlayerEntity) {
-						ItemStack _stktoremove = new ItemStack(BlueberriesItem.block);
-						((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
-								((PlayerEntity) entity).container.func_234641_j_());
 					}
 					if (world instanceof World && !world.isRemote()) {
 						((World) world)
