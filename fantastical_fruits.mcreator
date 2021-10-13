@@ -2366,6 +2366,65 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "lime_tree"
+    },
+    {
+      "name": "PurpleGrapeVineTip",
+      "type": "block",
+      "sortid": 188,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_grape_vine_tip",
+      "path": "~/Nature"
+    },
+    {
+      "name": "PurpleGrapeVine0",
+      "type": "block",
+      "sortid": 189,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_grape_vine_0",
+      "path": "~/Nature"
+    },
+    {
+      "name": "PurpleGrapeVine1",
+      "type": "block",
+      "sortid": 190,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_grape_vine_1",
+      "path": "~/Nature"
+    },
+    {
+      "name": "PurpleGrapesPlace",
+      "type": "procedure",
+      "sortid": 191,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "purple_grapes_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2381,6 +2440,7 @@
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
+      "block.fantastical_fruits.purple_grape_vine_tip": "Purple Grape Vine Tip",
       "item.fantastical_fruits.lime": "Lime",
       "block.fantastical_fruits.stripped_maple_log": "Stripped Maple Log",
       "biome.fantastical_fruits.maple_forest": "Maple Forest",
@@ -2473,8 +2533,10 @@
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
       "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
       "block.fantastical_fruits.maple_fence": "Maple Fence",
+      "block.fantastical_fruits.purple_grape_vine_1": "Purple Grape Vine 1",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.purple_grape_vine_0": "Purple Grape Vine 0",
       "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "block.fantastical_fruits.maple_trapdoor": "Maple Trapdoor",
@@ -2495,6 +2557,7 @@
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
       "advancements.fiery_breath.descr": "Obtain a dragon fruit.",
+      "block.fantastical_fruits.purple_grape_vine_tip": "Purple Grape Vine Tip",
       "item.fantastical_fruits.lime": "Lime",
       "block.fantastical_fruits.stripped_maple_log": "Stripped Maple Log",
       "biome.fantastical_fruits.maple_forest": "Maple Forest",
@@ -2589,8 +2652,10 @@
       "block.fantastical_fruits.yellow_autumnal_leaves": "Yellow Autumnal Leaves",
       "advancements.the_yellow_forest.descr": "Enter an aspen forest.",
       "block.fantastical_fruits.maple_fence": "Aspen Fence",
+      "block.fantastical_fruits.purple_grape_vine_1": "Purple Grape Vine 1",
       "item.fantastical_fruits.green_grapes": "Green Grapes",
       "block.fantastical_fruits.stripped_maple_wood": "Stripped Maple Wood",
+      "block.fantastical_fruits.purple_grape_vine_0": "Purple Grape Vine 0",
       "block.fantastical_fruits.wharpley_crop_7": "Wharpley Crop 7",
       "block.fantastical_fruits.orange_autumnal_leaves": "Orange Autumnal Leaves",
       "block.fantastical_fruits.maple_trapdoor": "Maple Trapdoor",
