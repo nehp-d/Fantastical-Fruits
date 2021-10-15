@@ -17,7 +17,7 @@ public class RedGrapesItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:red_grapes")
 	public static final Item block = null;
 	public RedGrapesItem(FantasticalFruitsModElements instance) {
-		super(instance, 7);
+		super(instance, 9);
 	}
 
 	@Override

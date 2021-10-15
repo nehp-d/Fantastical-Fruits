@@ -17,7 +17,7 @@ public class TwistedBreadItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:twisted_bread")
 	public static final Item block = null;
 	public TwistedBreadItem(FantasticalFruitsModElements instance) {
-		super(instance, 173);
+		super(instance, 16);
 	}
 
 	@Override

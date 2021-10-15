@@ -30,7 +30,7 @@ public class YellowAutumnalLeavesBlock extends FantasticalFruitsModElements.ModE
 	@ObjectHolder("fantastical_fruits:yellow_autumnal_leaves")
 	public static final Block block = null;
 	public YellowAutumnalLeavesBlock(FantasticalFruitsModElements instance) {
-		super(instance, 40);
+		super(instance, 53);
 	}
 
 	@Override

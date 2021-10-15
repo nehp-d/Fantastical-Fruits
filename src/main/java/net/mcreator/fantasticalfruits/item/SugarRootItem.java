@@ -17,7 +17,7 @@ public class SugarRootItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:sugar_root")
 	public static final Item block = null;
 	public SugarRootItem(FantasticalFruitsModElements instance) {
-		super(instance, 9);
+		super(instance, 6);
 	}
 
 	@Override

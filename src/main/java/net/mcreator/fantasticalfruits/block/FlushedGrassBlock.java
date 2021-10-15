@@ -27,7 +27,7 @@ import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.FoliageColors;
+import net.minecraft.world.GrassColors;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.vector.Vector3d;
@@ -69,9 +69,8 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:flushed_grass")
 	public static final Block block = null;
 	public FlushedGrassBlock(FantasticalFruitsModElements instance) {
-		super(instance, 133);
+		super(instance, 66);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
-		FMLJavaModLoadingContext.get().getModEventBus().register(new ItemColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -93,17 +92,7 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 		@SubscribeEvent
 		public void blockColorLoad(ColorHandlerEvent.Block event) {
 			event.getBlockColors().register((bs, world, pos, index) -> {
-				return world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefault();
-			}, block);
-		}
-	}
-
-	private static class ItemColorRegisterHandler {
-		@OnlyIn(Dist.CLIENT)
-		@SubscribeEvent
-		public void itemColorLoad(ColorHandlerEvent.Item event) {
-			event.getItemColors().register((stack, index) -> {
-				return FoliageColors.getDefault();
+				return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.get(0.5D, 1.0D);
 			}, block);
 		}
 	}

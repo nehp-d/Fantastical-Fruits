@@ -17,7 +17,7 @@ public class BlightCookieItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:blight_cookie")
 	public static final Item block = null;
 	public BlightCookieItem(FantasticalFruitsModElements instance) {
-		super(instance, 178);
+		super(instance, 17);
 	}
 
 	@Override

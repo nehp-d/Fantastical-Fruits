@@ -30,7 +30,7 @@ public class MaplePressurePlateBlock extends FantasticalFruitsModElements.ModEle
 	@ObjectHolder("fantastical_fruits:maple_pressure_plate")
 	public static final Block block = null;
 	public MaplePressurePlateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 139);
+		super(instance, 42);
 	}
 
 	@Override

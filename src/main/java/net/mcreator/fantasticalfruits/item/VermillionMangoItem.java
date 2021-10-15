@@ -17,7 +17,7 @@ public class VermillionMangoItem extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:vermillion_mango")
 	public static final Item block = null;
 	public VermillionMangoItem(FantasticalFruitsModElements instance) {
-		super(instance, 43);
+		super(instance, 4);
 	}
 
 	@Override

@@ -56,7 +56,7 @@ public class ChristmasRoseBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:christmas_rose")
 	public static final Block block = null;
 	public ChristmasRoseBlock(FantasticalFruitsModElements instance) {
-		super(instance, 132);
+		super(instance, 65);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

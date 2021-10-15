@@ -21,9 +21,6 @@
     "forDogs": false,
     "isAlwaysEdible": false,
     "animation": "eat",
-    "hasGlow": false,
-    "onRightClickedOnBlock": {
-      "name": "PurpleGrapesPlace"
-    }
+    "hasGlow": false
   }
 }

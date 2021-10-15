@@ -25,7 +25,7 @@ import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 public class MangroveBiome extends FantasticalFruitsModElements.ModElement {
 	public static Biome biome;
 	public MangroveBiome(FantasticalFruitsModElements instance) {
-		super(instance, 173);
+		super(instance, 182);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

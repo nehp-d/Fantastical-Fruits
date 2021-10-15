@@ -45,7 +45,7 @@ public class BlueberryBushBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:blueberry_bush")
 	public static final Block block = null;
 	public BlueberryBushBlock(FantasticalFruitsModElements instance) {
-		super(instance, 104);
+		super(instance, 127);
 	}
 
 	@Override

@@ -51,7 +51,7 @@ public class MyceliteOreBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:mycelite_ore")
 	public static final Block block = null;
 	public MyceliteOreBlock(FantasticalFruitsModElements instance) {
-		super(instance, 89);
+		super(instance, 45);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

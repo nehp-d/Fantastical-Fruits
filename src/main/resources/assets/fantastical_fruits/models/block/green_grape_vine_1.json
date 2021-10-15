@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fantastical_fruits:blocks/green_grape_vine",
+    "particle": "fantastical_fruits:blocks/green_grape_vine"
+  }
+}

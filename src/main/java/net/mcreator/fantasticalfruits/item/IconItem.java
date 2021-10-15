@@ -15,7 +15,7 @@ public class IconItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:icon")
 	public static final Item block = null;
 	public IconItem(FantasticalFruitsModElements instance) {
-		super(instance, 151);
+		super(instance, 160);
 	}
 
 	@Override
