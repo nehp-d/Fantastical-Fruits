@@ -1,5 +1,5 @@
 {
-  "parent": "fantastical_fruits:custom/writingtable",
+  "parent": "fantastical_fruits:custom/writing_table",
   "textures": {
     "all": "fantastical_fruits:blocks/beehive_end",
     "particle": "fantastical_fruits:blocks/beehive_end",

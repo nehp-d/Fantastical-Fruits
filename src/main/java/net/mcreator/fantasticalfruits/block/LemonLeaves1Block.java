@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Hand;
@@ -53,6 +54,11 @@ public class LemonLeaves1Block extends FantasticalFruitsModElements.ModElement {
 		@Override
 		public int getOpacity(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			return 1;
+		}
+
+		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(LemonLeaves0Block.block);
 		}
 
 		@Override

@@ -45,7 +45,7 @@
     "customDrop": {
       "value": "Blocks.AIR"
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -74,10 +74,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "DESTROY",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "PLANT"
+      "value": "VINE"
     },
     "breakSound": {
       "value": ""

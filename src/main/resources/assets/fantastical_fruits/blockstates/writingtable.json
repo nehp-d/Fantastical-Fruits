@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "fantastical_fruits:block/writingtable"
+    },
+    "facing=east": {
+      "model": "fantastical_fruits:block/writingtable",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fantastical_fruits:block/writingtable",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fantastical_fruits:block/writingtable",
+      "y": 270
     }
   }
 }

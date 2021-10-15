@@ -5,6 +5,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Hand;
@@ -22,6 +23,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.fantasticalfruits.procedures.MangoHarvestProcedure;
+import net.mcreator.fantasticalfruits.item.MangoItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Map;
@@ -55,11 +57,16 @@ public class MangoLeaves1Block extends FantasticalFruitsModElements.ModElement {
 		}
 
 		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(MangoLeaves0Block.block);
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 0));
+			return Collections.singletonList(new ItemStack(MangoItem.block));
 		}
 
 		@Override

@@ -8,11 +8,17 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.vector.Vector3d;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
@@ -23,6 +29,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.item.PurpleGrapesItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
@@ -65,6 +72,17 @@ public class PurpleGrapeVineTipBlock extends FantasticalFruitsModElements.ModEle
 		}
 
 		@Override
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			Vector3d offset = state.getOffset(world, pos);
+			return VoxelShapes.or(makeCuboidShape(0, 7, 0, 16, 16, 16)).withOffset(offset.x, offset.y, offset.z);
+		}
+
+		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(PurpleGrapesItem.block);
+		}
+
+		@Override
 		public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
 			return true;
 		}
@@ -79,7 +97,7 @@ public class PurpleGrapeVineTipBlock extends FantasticalFruitsModElements.ModEle
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR));
+			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
 		}
 	}
 }

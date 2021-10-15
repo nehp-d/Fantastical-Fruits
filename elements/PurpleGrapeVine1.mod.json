@@ -19,7 +19,7 @@
     "isItemTinted": false,
     "hasTransparency": true,
     "connectedSides": false,
-    "transparencyType": "CUTOUT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -45,7 +45,7 @@
     "customDrop": {
       "value": "CUSTOM:PurpleGrapes"
     },
-    "dropAmount": 1,
+    "dropAmount": 2,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -63,7 +63,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:PurpleGrapes"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

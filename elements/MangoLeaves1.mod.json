@@ -44,9 +44,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:Mango"
     },
-    "dropAmount": 0,
+    "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -64,7 +64,7 @@
     },
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:MangoLeaves0"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",

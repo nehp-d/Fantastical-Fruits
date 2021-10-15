@@ -52,8 +52,8 @@ public class PurpleGrapeVine0Block extends FantasticalFruitsModElements.ModEleme
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0).notSolid()
-					.tickRandomly().setOpaque((bs, br, bp) -> false));
+			super(Block.Properties.create(Material.PLANTS).sound(SoundType.VINE).hardnessAndResistance(0f, 0f).setLightLevel(s -> 0)
+					.doesNotBlockMovement().notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
 			setRegistryName("purple_grape_vine_0");
 		}
 
@@ -87,7 +87,7 @@ public class PurpleGrapeVine0Block extends FantasticalFruitsModElements.ModEleme
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR));
+			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
 		}
 	}
 }
