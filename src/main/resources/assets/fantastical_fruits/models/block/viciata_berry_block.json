@@ -1,0 +1,8 @@
+{
+  "parent": "fantastical_fruits:custom/viciata",
+  "textures": {
+    "all": "fantastical_fruits:blocks/viciatatexture",
+    "particle": "fantastical_fruits:blocks/viciatatexture",
+    "2": "fantastical_fruits:blocks/viciatatexture"
+  }
+}
