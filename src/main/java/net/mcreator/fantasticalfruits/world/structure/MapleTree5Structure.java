@@ -66,7 +66,7 @@ public class MapleTree5Structure {
 								continue;
 							Rotation rotation = Rotation.values()[random.nextInt(3)];
 							Mirror mirror = Mirror.values()[random.nextInt(2)];
-							BlockPos spawnTo = new BlockPos(i + -4, j + 1, k + -5);
+							BlockPos spawnTo = new BlockPos(i + -4, j + -1, k + -5);
 							int x = spawnTo.getX();
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
