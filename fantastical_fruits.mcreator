@@ -2172,15 +2172,6 @@
       "path": "~/Nature"
     },
     {
-      "name": "Mangrove",
-      "type": "biome",
-      "sortid": 182,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "mangrove"
-    },
-    {
       "name": "BlightCookie",
       "type": "food",
       "sortid": 17,
@@ -2587,6 +2578,77 @@
           }
         ]
       }
+    },
+    {
+      "name": "ViciataBerryBlock",
+      "type": "block",
+      "sortid": 208,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viciata_berry_block"
+    },
+    {
+      "name": "ViciataPlace",
+      "type": "procedure",
+      "sortid": 209,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viciata_place",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ViciataGrow",
+      "type": "procedure",
+      "sortid": 210,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "viciata_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2651,6 +2713,7 @@
       "advancements.citrus_encounter.descr": "Obtain a lemon.",
       "advancements.natures_spice.title": "Nature\u0027s Spice",
       "block.fantastical_fruits.maple_log": "Maple Log",
+      "block.fantastical_fruits.viciata_berry_block": "Viciata Berry Block",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.twisted_bread": "Twisted Bread",
       "block.fantastical_fruits.green_grape_vine_1": "Green Grape Vine 1",
@@ -2662,7 +2725,6 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
-      "biome.fantastical_fruits.mangrove": "Mangrove",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
@@ -2775,6 +2837,7 @@
       "advancements.citrus_encounter.descr": "Obtain a lemon.",
       "advancements.natures_spice.title": "Nature\u0027s Spice",
       "block.fantastical_fruits.maple_log": "Maple Log",
+      "block.fantastical_fruits.viciata_berry_block": "Viciata Berry Block",
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.twisted_bread": "Twisted Bread",
       "block.fantastical_fruits.green_grape_vine_1": "Purple Grape Vine 1",
@@ -2786,7 +2849,6 @@
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
-      "biome.fantastical_fruits.mangrove": "Mangrove",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
