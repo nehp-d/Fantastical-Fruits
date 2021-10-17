@@ -124,6 +124,9 @@
     "onTickUpdate": {
       "name": "ViciataGrow"
     },
+    "onDestroyedByPlayer": {
+      "name": "ViciataDrop"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
