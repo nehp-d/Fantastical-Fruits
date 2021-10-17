@@ -24,35 +24,35 @@
     "boundingBoxes": [
       {
         "mx": 0.0,
-        "my": 0.0,
+        "my": 13.0,
         "mz": 0.0,
         "Mx": 16.0,
-        "My": 3.0,
+        "My": 16.0,
         "Mz": 16.0,
         "subtract": false
       }
     ],
     "name": "Viciata Berry Block",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 0.25,
+    "resistance": 0.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalFruits"
+      "value": "No creative tab entry"
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
     "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "PLANTS"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "GROUND"
+      "value": "PLANT"
     },
     "breakSound": {
       "value": ""
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "ViciataGrow"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
