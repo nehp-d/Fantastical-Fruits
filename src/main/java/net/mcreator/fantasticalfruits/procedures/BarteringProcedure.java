@@ -61,49 +61,49 @@ public class BarteringProcedure {
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == MyceliteItem.block)) {
 			entity.getPersistentData().putDouble("funglinloot", Math.random());
-			if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.875)) {
+			if (((entity.getPersistentData().getDouble("funglinloot")) < 0.875)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(SugarRootItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.75)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.75)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BananaItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.625)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.625)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(DragonfruitItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.5)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.5)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(WharpleySeedsItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.375)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.375)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(LemonItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.25)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.25)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(GlowSproutBlock.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0.125)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0.125)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(BlueberriesItem.block));
 					entityToSpawn.setPickupDelay((int) 10);
 					world.addEntity(entityToSpawn);
 				}
-			} else if (((entity.getPersistentData().getDouble("funglinloot")) >= 0)) {
+			} else if (((entity.getPersistentData().getDouble("funglinloot")) < 0)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(AspenSaplingBlock.block));
 					entityToSpawn.setPickupDelay((int) 10);
