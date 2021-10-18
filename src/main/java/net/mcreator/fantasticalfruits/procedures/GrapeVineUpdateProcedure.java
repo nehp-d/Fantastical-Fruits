@@ -9,10 +9,13 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.fantasticalfruits.block.RedGrapeVineTipBlock;
+import net.mcreator.fantasticalfruits.block.RedGrapeVine1Block;
 import net.mcreator.fantasticalfruits.block.RedGrapeVine0Block;
 import net.mcreator.fantasticalfruits.block.PurpleGrapeVineTipBlock;
+import net.mcreator.fantasticalfruits.block.PurpleGrapeVine1Block;
 import net.mcreator.fantasticalfruits.block.PurpleGrapeVine0Block;
 import net.mcreator.fantasticalfruits.block.GreenGrapeVineTipBlock;
+import net.mcreator.fantasticalfruits.block.GreenGrapeVine1Block;
 import net.mcreator.fantasticalfruits.block.GreenGrapeVine0Block;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
@@ -47,7 +50,8 @@ public class GrapeVineUpdateProcedure {
 		if (((world.getBlockState(new BlockPos((int) x, (int) (y + 1), (int) z))).getBlock() == Blocks.AIR)) {
 			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		} else if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR)) {
-			if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PurpleGrapeVine0Block.block)) {
+			if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PurpleGrapeVine0Block.block)
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == PurpleGrapeVine1Block.block))) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = PurpleGrapeVineTipBlock.block.getDefaultState();
@@ -77,7 +81,8 @@ public class GrapeVineUpdateProcedure {
 						}
 					}
 				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GreenGrapeVine0Block.block)) {
+			} else if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GreenGrapeVine0Block.block)
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == GreenGrapeVine1Block.block))) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = GreenGrapeVineTipBlock.block.getDefaultState();
@@ -107,7 +112,8 @@ public class GrapeVineUpdateProcedure {
 						}
 					}
 				}
-			} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGrapeVine0Block.block)) {
+			} else if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGrapeVine0Block.block)
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == RedGrapeVine1Block.block))) {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = RedGrapeVineTipBlock.block.getDefaultState();

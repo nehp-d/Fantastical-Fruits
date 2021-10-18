@@ -71,7 +71,7 @@ public class LemonTreeRareStructure {
 							int y = spawnTo.getY();
 							int z = spawnTo.getZ();
 							Template template = world.getWorld().getStructureTemplateManager()
-									.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "lemon_tree"));
+									.getTemplateDefaulted(new ResourceLocation("fantastical_fruits", "lemon_tree_rare"));
 							if (template == null)
 								return false;
 							template.func_237144_a_(world, spawnTo,

@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "lemon_tree",
+    "structure": "lemon_tree_rare",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 1000,
