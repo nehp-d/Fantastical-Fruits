@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/kiwileaves",
+    "up": "fantastical_fruits:blocks/kiwileaves",
+    "north": "fantastical_fruits:blocks/kiwileaves",
+    "east": "fantastical_fruits:blocks/kiwileaves",
+    "south": "fantastical_fruits:blocks/kiwileaves",
+    "west": "fantastical_fruits:blocks/kiwileaves",
+    "particle": "fantastical_fruits:blocks/kiwileaves"
+  }
+}

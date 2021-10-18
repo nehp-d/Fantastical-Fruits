@@ -2688,6 +2688,54 @@
       "ids": {},
       "registry_name": "suspine",
       "path": "~/Items"
+    },
+    {
+      "name": "TropicalLeaves",
+      "type": "block",
+      "sortid": 213,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tropical_leaves",
+      "path": "~/Nature"
+    },
+    {
+      "name": "DragonFruitBlock",
+      "type": "block",
+      "sortid": 214,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_fruit_block"
+    },
+    {
+      "name": "DragonFruitDrop",
+      "type": "procedure",
+      "sortid": 215,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dragon_fruit_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2697,8 +2745,8 @@
       "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
       "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -2719,8 +2767,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
@@ -2738,8 +2786,8 @@
       "item.fantastical_fruits.blueberries": "Blueberries",
       "block.fantastical_fruits.aspen_slab": "Aspen Slab",
       "block.fantastical_fruits.aspen_door": "Aspen Door",
-      "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "item.fantastical_fruits.lemon": "Lemon",
+      "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.tall_amber_fungus": "Tall Amber Fungus",
       "block.fantastical_fruits.maple_slab": "Maple Slab",
       "block.fantastical_fruits.aspen_grass": "Aspen Grass",
@@ -2757,6 +2805,7 @@
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.twisted_bread": "Twisted Bread",
       "block.fantastical_fruits.green_grape_vine_1": "Green Grape Vine 1",
+      "block.fantastical_fruits.tropical_leaves": "Tropical Leaves",
       "block.fantastical_fruits.green_grape_vine_0": "Green Grape Vine 0",
       "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
@@ -2764,6 +2813,7 @@
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
+      "block.fantastical_fruits.dragon_fruit_block": "Dragon Fruit Block",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
@@ -2821,8 +2871,8 @@
       "block.fantastical_fruits.lime_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -2844,8 +2894,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
@@ -2863,8 +2913,8 @@
       "item.fantastical_fruits.blueberries": "Mirtilos",
       "block.fantastical_fruits.aspen_slab": "Aspen Slab",
       "block.fantastical_fruits.aspen_door": "Aspen Door",
-      "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "item.fantastical_fruits.lemon": "Limão",
+      "item.fantastical_fruits.dragonfruit": "Dragonfruit",
       "block.fantastical_fruits.tall_amber_fungus": "Tall Amber Fungus",
       "block.fantastical_fruits.maple_slab": "Aspen Slab",
       "block.fantastical_fruits.aspen_grass": "Aspen Grass",
@@ -2882,6 +2932,7 @@
       "item.fantastical_fruits.kiwi": "Kiwi",
       "item.fantastical_fruits.twisted_bread": "Twisted Bread",
       "block.fantastical_fruits.green_grape_vine_1": "Purple Grape Vine 1",
+      "block.fantastical_fruits.tropical_leaves": "Tropical Leaves",
       "block.fantastical_fruits.green_grape_vine_0": "Purple Grape Vine 0",
       "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
@@ -2889,6 +2940,7 @@
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
+      "block.fantastical_fruits.dragon_fruit_block": "Dragon Fruit Block",
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
