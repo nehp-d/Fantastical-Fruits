@@ -15,7 +15,7 @@ public class RepulsionEssenceItem extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:repulsion_essence")
 	public static final Item block = null;
 	public RepulsionEssenceItem(FantasticalFruitsModElements instance) {
-		super(instance, 226);
+		super(instance, 204);
 	}
 
 	@Override

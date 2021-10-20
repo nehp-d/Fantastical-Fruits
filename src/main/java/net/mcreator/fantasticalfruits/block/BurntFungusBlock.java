@@ -58,7 +58,7 @@ public class BurntFungusBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:burnt_fungus")
 	public static final Block block = null;
 	public BurntFungusBlock(FantasticalFruitsModElements instance) {
-		super(instance, 64);
+		super(instance, 67);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

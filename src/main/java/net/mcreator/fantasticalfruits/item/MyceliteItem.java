@@ -16,7 +16,7 @@ public class MyceliteItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:mycelite")
 	public static final Item block = null;
 	public MyceliteItem(FantasticalFruitsModElements instance) {
-		super(instance, 47);
+		super(instance, 48);
 	}
 
 	@Override

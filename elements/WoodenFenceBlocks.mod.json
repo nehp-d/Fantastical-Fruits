@@ -6,15 +6,15 @@
     "items": [],
     "blocks": [
       {
-        "value": "CUSTOM:AspenLog"
+        "value": "CUSTOM:AspenFence"
       },
       {
-        "value": "CUSTOM:MapleLog"
+        "value": "CUSTOM:MapleFence"
       }
     ],
     "functions": [],
     "entities": [],
-    "name": "logs",
+    "name": "wooden_fences",
     "namespace": "minecraft"
   }
 }

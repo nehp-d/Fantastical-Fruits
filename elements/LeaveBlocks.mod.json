@@ -1,0 +1,47 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:AspenLeaves"
+      },
+      {
+        "value": "CUSTOM:OrangeAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:RedAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:YellowAutumnalLeaves"
+      },
+      {
+        "value": "CUSTOM:MangoLeaves0"
+      },
+      {
+        "value": "CUSTOM:MangoLeaves1"
+      },
+      {
+        "value": "CUSTOM:LemonLeaves0"
+      },
+      {
+        "value": "CUSTOM:LemonLeaves1"
+      },
+      {
+        "value": "CUSTOM:LimeLeaves0"
+      },
+      {
+        "value": "CUSTOM:LimeLeaves1"
+      },
+      {
+        "value": "CUSTOM:TropicalLeaves"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "leaves",
+    "namespace": "minecraft"
+  }
+}

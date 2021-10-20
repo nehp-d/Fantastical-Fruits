@@ -48,7 +48,7 @@ public class WritingtableBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:writingtable")
 	public static final Block block = null;
 	public WritingtableBlock(FantasticalFruitsModElements instance) {
-		super(instance, 19);
+		super(instance, 20);
 	}
 
 	@Override

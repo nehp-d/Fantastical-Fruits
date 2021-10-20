@@ -42,7 +42,7 @@ public class ViciataStage2Block extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:viciata_stage_2")
 	public static final Block block = null;
 	public ViciataStage2Block(FantasticalFruitsModElements instance) {
-		super(instance, 221);
+		super(instance, 199);
 	}
 
 	@Override

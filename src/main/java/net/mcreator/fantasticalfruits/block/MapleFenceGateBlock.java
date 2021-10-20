@@ -30,7 +30,7 @@ public class MapleFenceGateBlock extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:maple_fence_gate")
 	public static final Block block = null;
 	public MapleFenceGateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 40);
+		super(instance, 41);
 	}
 
 	@Override

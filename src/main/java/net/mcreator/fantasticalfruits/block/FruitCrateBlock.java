@@ -36,7 +36,7 @@ public class FruitCrateBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:fruit_crate")
 	public static final Block block = null;
 	public FruitCrateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 18);
+		super(instance, 19);
 	}
 
 	@Override

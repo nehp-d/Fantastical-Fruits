@@ -16,7 +16,7 @@ public class ViciataSporesItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:viciata_spores")
 	public static final Item block = null;
 	public ViciataSporesItem(FantasticalFruitsModElements instance) {
-		super(instance, 218);
+		super(instance, 52);
 	}
 
 	@Override

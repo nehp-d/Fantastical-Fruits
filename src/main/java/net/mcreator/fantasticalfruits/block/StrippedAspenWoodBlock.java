@@ -26,7 +26,7 @@ public class StrippedAspenWoodBlock extends FantasticalFruitsModElements.ModElem
 	@ObjectHolder("fantastical_fruits:stripped_aspen_wood")
 	public static final Block block = null;
 	public StrippedAspenWoodBlock(FantasticalFruitsModElements instance) {
-		super(instance, 52);
+		super(instance, 53);
 	}
 
 	@Override

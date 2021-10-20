@@ -30,7 +30,7 @@ public class AspenPressurePlateBlock extends FantasticalFruitsModElements.ModEle
 	@ObjectHolder("fantastical_fruits:aspen_pressure_plate")
 	public static final Block block = null;
 	public AspenPressurePlateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 29);
+		super(instance, 30);
 	}
 
 	@Override

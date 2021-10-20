@@ -5,13 +5,16 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:AspenSlab"
+        "value": "CUSTOM:AspenPlanks"
+      },
+      {
+        "value": "CUSTOM:MaplePlanks"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "slabwood",
-    "namespace": "forge"
+    "name": "planks",
+    "namespace": "minecraft"
   }
 }

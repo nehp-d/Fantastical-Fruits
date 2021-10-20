@@ -31,7 +31,7 @@ public class StrippedMapleLogBlock extends FantasticalFruitsModElements.ModEleme
 	@ObjectHolder("fantastical_fruits:stripped_maple_log")
 	public static final Block block = null;
 	public StrippedMapleLogBlock(FantasticalFruitsModElements instance) {
-		super(instance, 34);
+		super(instance, 35);
 	}
 
 	@Override

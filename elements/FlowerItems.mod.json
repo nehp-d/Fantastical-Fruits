@@ -5,13 +5,13 @@
     "type": "Items",
     "items": [
       {
-        "value": "CUSTOM:AspenFence"
+        "value": "CUSTOM:ChristmasRose"
       }
     ],
     "blocks": [],
     "functions": [],
     "entities": [],
-    "name": "fencewood",
-    "namespace": "forge"
+    "name": "flowers",
+    "namespace": "minecraft"
   }
 }

@@ -56,7 +56,7 @@ public class TallAmberFungusBlock extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:tall_amber_fungus")
 	public static final Block block = null;
 	public TallAmberFungusBlock(FantasticalFruitsModElements instance) {
-		super(instance, 62);
+		super(instance, 65);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

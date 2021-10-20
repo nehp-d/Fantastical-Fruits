@@ -32,7 +32,7 @@ public class StrippedAspenLogBlock extends FantasticalFruitsModElements.ModEleme
 	@ObjectHolder("fantastical_fruits:stripped_aspen_log")
 	public static final Block block = null;
 	public StrippedAspenLogBlock(FantasticalFruitsModElements instance) {
-		super(instance, 22);
+		super(instance, 23);
 	}
 
 	@Override

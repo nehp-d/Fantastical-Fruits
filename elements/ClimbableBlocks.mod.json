@@ -1,0 +1,41 @@
+{
+  "_fv": 24,
+  "_type": "tag",
+  "definition": {
+    "type": "Blocks",
+    "items": [],
+    "blocks": [
+      {
+        "value": "CUSTOM:PurpleGrapeVineTip"
+      },
+      {
+        "value": "CUSTOM:PurpleGrapeVine0"
+      },
+      {
+        "value": "CUSTOM:PurpleGrapeVine1"
+      },
+      {
+        "value": "CUSTOM:GreenGrapeVineTip"
+      },
+      {
+        "value": "CUSTOM:GreenGrapeVine0"
+      },
+      {
+        "value": "CUSTOM:GreenGrapeVine1"
+      },
+      {
+        "value": "CUSTOM:RedGrapeVineTip"
+      },
+      {
+        "value": "CUSTOM:RedGrapeVine0"
+      },
+      {
+        "value": "CUSTOM:RedGrapeVine1"
+      }
+    ],
+    "functions": [],
+    "entities": [],
+    "name": "climbable",
+    "namespace": "minecraft"
+  }
+}

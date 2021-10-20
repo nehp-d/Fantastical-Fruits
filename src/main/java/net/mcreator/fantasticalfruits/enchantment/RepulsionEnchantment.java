@@ -16,7 +16,7 @@ public class RepulsionEnchantment extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:repulsion")
 	public static final Enchantment enchantment = null;
 	public RepulsionEnchantment(FantasticalFruitsModElements instance) {
-		super(instance, 222);
+		super(instance, 200);
 	}
 
 	@Override

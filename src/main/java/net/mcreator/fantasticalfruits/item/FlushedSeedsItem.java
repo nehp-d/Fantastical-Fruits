@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalItemsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
@@ -16,7 +16,7 @@ public class FlushedSeedsItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:flushed_seeds")
 	public static final Item block = null;
 	public FlushedSeedsItem(FantasticalFruitsModElements instance) {
-		super(instance, 67);
+		super(instance, 70);
 	}
 
 	@Override
@@ -25,7 +25,7 @@ public class FlushedSeedsItem extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(FantasticalNatureItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
+			super(new Item.Properties().group(FantasticalItemsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON));
 			setRegistryName("flushed_seeds");
 		}
 
