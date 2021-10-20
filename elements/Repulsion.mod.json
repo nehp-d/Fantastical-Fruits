@@ -1,0 +1,23 @@
+{
+  "_fv": 24,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Repulsion",
+    "type": "BREAKABLE",
+    "rarity": "UNCOMMON",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 0,
+    "compatibleEnchantments": [],
+    "compatibleItems": [
+      {
+        "value": "Items.SHIELD"
+      }
+    ],
+    "isTreasureEnchantment": true,
+    "isCurse": false,
+    "isAllowedOnBooks": true,
+    "canGenerateInLootTables": true,
+    "canVillagerTrade": true
+  }
+}
