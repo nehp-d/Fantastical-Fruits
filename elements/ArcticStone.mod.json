@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "stripped_aspen_log",
-    "textureTop": "stripped_aspen_log",
-    "textureLeft": "stripped_aspen_log",
-    "textureFront": "stripped_aspen_log",
-    "textureRight": "stripped_aspen_log",
-    "textureBack": "stripped_aspen_log",
+    "texture": "stone",
+    "textureTop": "snow",
+    "textureLeft": "snowedstone",
+    "textureFront": "snowedstone",
+    "textureRight": "snowedstone",
+    "textureBack": "snowedstone",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,16 +32,16 @@
         "subtract": false
       }
     ],
-    "name": "Stripped Aspen Wood",
+    "name": "Arctic Stone",
     "specialInfo": [],
-    "hardness": 2.0,
-    "resistance": 2.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalBlocks"
+      "value": "CUSTOM:FantasticalNature"
     },
-    "destroyTool": "axe",
+    "destroyTool": "pickaxe",
     "customDrop": {
       "value": ""
     },
@@ -52,7 +52,7 @@
     "canRedstoneConnect": false,
     "lightOpacity": 15,
     "material": {
-      "value": "WOOD"
+      "value": "ROCK"
     },
     "tickRate": 10,
     "tickRandomly": false,
@@ -77,7 +77,7 @@
     "isNotColidable": false,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "WOOD"
+      "value": "STONE"
     },
     "breakSound": {
       "value": ""
@@ -96,10 +96,10 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 0,
+    "breakHarvestLevel": 1,
     "spawnParticles": false,
     "particleToSpawn": {
-      "value": "EXPLOSION_NORMAL"
+      "value": "CUSTOM:RepulsionEffect"
     },
     "particleSpawningShape": "Spread",
     "particleSpawningRadious": 0.5,
@@ -121,6 +121,9 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
+    "onTickUpdate": {
+      "name": "ArcticStoneChange"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

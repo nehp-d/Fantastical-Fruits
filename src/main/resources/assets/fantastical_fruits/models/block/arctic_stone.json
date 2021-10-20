@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/stone",
+    "up": "fantastical_fruits:blocks/snow",
+    "north": "fantastical_fruits:blocks/snowedstone",
+    "east": "fantastical_fruits:blocks/snowedstone",
+    "south": "fantastical_fruits:blocks/snowedstone",
+    "west": "fantastical_fruits:blocks/snowedstone",
+    "particle": "fantastical_fruits:blocks/stone"
+  }
+}
