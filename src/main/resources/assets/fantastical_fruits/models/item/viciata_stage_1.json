@@ -1,5 +1,5 @@
 {
-  "parent": "fantastical_fruits:block/viciata_berry_block",
+  "parent": "fantastical_fruits:block/viciata_stage_1",
   "display": {
     "thirdperson": {
       "rotation": [

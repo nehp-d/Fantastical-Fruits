@@ -19,8 +19,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.item.ViciataItem;
-import net.mcreator.fantasticalfruits.block.ViciataBerryBlockBlock;
+import net.mcreator.fantasticalfruits.item.ViciataSporesItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
 import java.util.Map;
@@ -83,10 +82,10 @@ public class ViciataPlaceProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == ViciataItem.block)) {
+		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY)
+				.getItem() == ViciataSporesItem.block)) {
 			if (((world.getBlockState(new BlockPos((int) x, (int) (y - 1), (int) z))).getBlock() == Blocks.AIR)) {
-				if ((((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.WARPED_WART_BLOCK)
-						|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.WARPED_WART_BLOCK))) {
+				if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.WARPED_WART_BLOCK)) {
 					if ((!(new Object() {
 						public boolean checkGamemode(Entity _ent) {
 							if (_ent instanceof ServerPlayerEntity) {
@@ -100,12 +99,12 @@ public class ViciataPlaceProcedure {
 						}
 					}.checkGamemode(entity)))) {
 						if (entity instanceof PlayerEntity) {
-							ItemStack _stktoremove = new ItemStack(ViciataItem.block);
+							ItemStack _stktoremove = new ItemStack(ViciataSporesItem.block);
 							((PlayerEntity) entity).inventory.func_234564_a_(p -> _stktoremove.getItem() == p.getItem(), (int) 1,
 									((PlayerEntity) entity).container.func_234641_j_());
 						}
 					}
-					world.setBlockState(new BlockPos((int) x, (int) (y - 1), (int) z), ViciataBerryBlockBlock.block.getDefaultState(), 3);
+					world.setBlockState(new BlockPos((int) x, (int) (y - 1), (int) z), Blocks.AIR.getDefaultState(), 3);
 					if (entity instanceof LivingEntity) {
 						((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
 					}

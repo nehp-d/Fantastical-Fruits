@@ -13,6 +13,7 @@ import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
 import net.minecraft.util.math.shapes.ISelectionContext;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
@@ -22,14 +23,16 @@ import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.fantasticalfruits.procedures.ViciataGrowProcedure;
 import net.mcreator.fantasticalfruits.procedures.ViciataDropProcedure;
+import net.mcreator.fantasticalfruits.item.ViciataSporesItem;
+import net.mcreator.fantasticalfruits.item.ViciataItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
@@ -39,11 +42,11 @@ import java.util.HashMap;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class ViciataBerryBlockBlock extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:viciata_berry_block")
+public class ViciataStage1Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:viciata_stage_1")
 	public static final Block block = null;
-	public ViciataBerryBlockBlock(FantasticalFruitsModElements instance) {
-		super(instance, 208);
+	public ViciataStage1Block(FantasticalFruitsModElements instance) {
+		super(instance, 220);
 	}
 
 	@Override
@@ -59,9 +62,9 @@ public class ViciataBerryBlockBlock extends FantasticalFruitsModElements.ModElem
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.PLANTS).sound(SoundType.PLANT).hardnessAndResistance(0.25f, 0f).setLightLevel(s -> 0).notSolid()
-					.setOpaque((bs, br, bp) -> false));
-			setRegistryName("viciata_berry_block");
+			super(Block.Properties.create(Material.NETHER_PLANTS).sound(SoundType.FUNGUS).hardnessAndResistance(0.25f, 0.25f).setLightLevel(s -> 0)
+					.notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
+			setRegistryName("viciata_stage_1");
 		}
 
 		@Override
@@ -77,7 +80,17 @@ public class ViciataBerryBlockBlock extends FantasticalFruitsModElements.ModElem
 		@Override
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
-			return VoxelShapes.or(makeCuboidShape(0, 13, 0, 16, 16, 16)).withOffset(offset.x, offset.y, offset.z);
+			return VoxelShapes.or(makeCuboidShape(0, 14, 0, 16, 16, 16)).withOffset(offset.x, offset.y, offset.z);
+		}
+
+		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(ViciataSporesItem.block);
+		}
+
+		@Override
+		public PushReaction getPushReaction(BlockState state) {
+			return PushReaction.DESTROY;
 		}
 
 		@Override
@@ -85,16 +98,7 @@ public class ViciataBerryBlockBlock extends FantasticalFruitsModElements.ModElem
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
-		}
-
-		@Override
-		public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-			super.onBlockAdded(blockstate, world, pos, oldState, moving);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			return Collections.singletonList(new ItemStack(ViciataItem.block));
 		}
 
 		@Override
@@ -111,7 +115,6 @@ public class ViciataBerryBlockBlock extends FantasticalFruitsModElements.ModElem
 				$_dependencies.put("world", world);
 				ViciataGrowProcedure.executeProcedure($_dependencies);
 			}
-			world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
 		}
 
 		@Override
