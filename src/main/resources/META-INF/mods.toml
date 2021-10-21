@@ -4,11 +4,14 @@ license="Academic Free License v3.0"
 
 [[mods]]
 modId="fantastical_fruits"
-version="1.0.0"
+version="0.0.1"
 displayName="Fantastical Fruits"
-credits="Created using mod maker MCreator - https://mcreator.net/about"
+credits="Nehp, Fruitologist, MalaNch0ly"
 displayURL="https://mcreator.net"
-authors="Pedro, MCreator"
+authors="Toasted Mahogany Studios"
+description='''
+A Nature Mod.
+'''
 
 [[dependencies.fantastical_fruits]]
     modId="minecraft"

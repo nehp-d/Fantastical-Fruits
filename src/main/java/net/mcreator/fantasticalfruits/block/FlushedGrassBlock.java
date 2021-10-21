@@ -69,7 +69,7 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:flushed_grass")
 	public static final Block block = null;
 	public FlushedGrassBlock(FantasticalFruitsModElements instance) {
-		super(instance, 69);
+		super(instance, 75);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BlockColorRegisterHandler());
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());

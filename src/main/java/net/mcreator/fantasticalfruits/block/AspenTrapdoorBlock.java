@@ -30,7 +30,7 @@ public class AspenTrapdoorBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:aspen_trapdoor")
 	public static final Block block = null;
 	public AspenTrapdoorBlock(FantasticalFruitsModElements instance) {
-		super(instance, 32);
+		super(instance, 33);
 	}
 
 	@Override

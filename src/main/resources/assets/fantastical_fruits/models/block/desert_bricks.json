@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/desert_bricks",
+    "up": "fantastical_fruits:blocks/desert_bricks",
+    "north": "fantastical_fruits:blocks/desert_bricks",
+    "east": "fantastical_fruits:blocks/desert_bricks",
+    "south": "fantastical_fruits:blocks/desert_bricks",
+    "west": "fantastical_fruits:blocks/desert_bricks",
+    "particle": "fantastical_fruits:blocks/desert_bricks"
+  }
+}

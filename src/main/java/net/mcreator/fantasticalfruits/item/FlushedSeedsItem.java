@@ -16,7 +16,7 @@ public class FlushedSeedsItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:flushed_seeds")
 	public static final Item block = null;
 	public FlushedSeedsItem(FantasticalFruitsModElements instance) {
-		super(instance, 70);
+		super(instance, 57);
 	}
 
 	@Override

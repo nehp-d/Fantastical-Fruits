@@ -34,16 +34,16 @@
     ],
     "name": "Arctic Stone",
     "specialInfo": [],
-    "hardness": 1.0,
-    "resistance": 10.0,
+    "hardness": 1.5,
+    "resistance": 6.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "CUSTOM:FantasticalBlocks"
     },
     "destroyTool": "pickaxe",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.STONE#0"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -55,7 +55,7 @@
       "value": "ROCK"
     },
     "tickRate": 10,
-    "tickRandomly": false,
+    "tickRandomly": true,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {

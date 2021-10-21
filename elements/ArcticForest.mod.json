@@ -43,7 +43,7 @@
       "value": "CUSTOM:RepulsionEffect"
     },
     "particlesProbability": 0.5,
-    "biomeCategory": "NONE",
+    "biomeCategory": "ICY",
     "parent": {
       "value": "No parent"
     },
@@ -54,7 +54,10 @@
     "biomeType": "ICY",
     "spawnBiome": true,
     "biomeWeight": 10,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "SNOWY",
+      "COLD"
+    ],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 0,
@@ -81,14 +84,14 @@
     "treeFruits": {
       "value": ""
     },
-    "spawnStronghold": false,
-    "spawnMineshaft": false,
+    "spawnStronghold": true,
+    "spawnMineshaft": true,
     "spawnPillagerOutpost": false,
     "villageType": "none",
     "spawnWoodlandMansion": false,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
-    "spawnIgloo": false,
+    "spawnIgloo": true,
     "spawnOceanMonument": false,
     "spawnShipwreck": false,
     "oceanRuinType": "NONE",
