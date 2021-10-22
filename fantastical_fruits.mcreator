@@ -2721,35 +2721,6 @@
       "registry_name": "leave_blocks"
     },
     {
-      "name": "ArcticStoneChange",
-      "type": "procedure",
-      "sortid": 215,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "arctic_stone_change",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "ArcticForest",
       "type": "biome",
       "sortid": 216,
@@ -3079,6 +3050,58 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "juniper_tree_4"
+    },
+    {
+      "name": "SpongefruitClusterRecipe",
+      "type": "recipe",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_cluster_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "SpongefruitClusterTransform",
+      "type": "procedure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_cluster_transform",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpongefruitSprout",
+      "type": "plant",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_sprout"
     }
   ],
   "variable_elements": [],
@@ -3368,6 +3391,7 @@
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "biome.fantastical_fruits.arctic_forest": "Arctic Forest",
+      "block.fantastical_fruits.spongefruit_sprout": "Spongefruit Sprout",
       "advancements.fruitastical_beginning.title": "Fruitastical Beginning",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",

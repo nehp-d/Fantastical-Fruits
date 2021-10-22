@@ -40,7 +40,7 @@ public class ArcticForestBiome extends FantasticalFruitsModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-2888961).setWaterFogColor(-2888961)
-						.withSkyColor(7972607).withFoliageColor(-1).withGrassColor(-1).build();
+						.withSkyColor(7972607).withFoliageColor(-12882886).withGrassColor(-12882886).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));
@@ -53,6 +53,7 @@ public class ArcticForestBiome extends FantasticalFruitsModElements.ModElement {
 				DefaultBiomeFeatures.withCavesAndCanyons(biomeGenerationSettings);
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
+				DefaultBiomeFeatures.withLavaAndWaterLakes(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
 				biome = new Biome.Builder().precipitation(Biome.RainType.SNOW).category(Biome.Category.ICY).depth(0.1f).scale(0.1f).temperature(-1f)
 						.downfall(0.1f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
@@ -64,7 +65,7 @@ public class ArcticForestBiome extends FantasticalFruitsModElements.ModElement {
 	@Override
 	public void init(FMLCommonSetupEvent event) {
 		BiomeDictionary.addTypes(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), BiomeDictionary.Type.SNOWY,
-				BiomeDictionary.Type.COLD);
+				BiomeDictionary.Type.COLD, BiomeDictionary.Type.FOREST);
 		BiomeManager.addBiome(BiomeManager.BiomeType.ICY,
 				new BiomeManager.BiomeEntry(RegistryKey.getOrCreateKey(Registry.BIOME_KEY, WorldGenRegistries.BIOME.getKey(biome)), 10));
 	}

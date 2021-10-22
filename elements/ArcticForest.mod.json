@@ -10,11 +10,11 @@
       "value": "Blocks.SNOW"
     },
     "grassColor": {
-      "value": -1,
+      "value": -12882886,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -1,
+      "value": -12882886,
       "falpha": 0.0
     },
     "waterColor": {
@@ -56,7 +56,8 @@
     "biomeWeight": 10,
     "biomeDictionaryTypes": [
       "SNOWY",
-      "COLD"
+      "COLD",
+      "FOREST"
     ],
     "grassPerChunk": 4,
     "seagrassPerChunk": 0,
@@ -98,7 +99,8 @@
     "defaultFeatures": [
       "Caves",
       "Ores",
-      "FrozenTopLayer"
+      "FrozenTopLayer",
+      "Lakes"
     ],
     "spawnEntries": []
   }
