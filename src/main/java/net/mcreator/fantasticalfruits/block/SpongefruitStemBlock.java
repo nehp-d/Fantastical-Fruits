@@ -1,18 +1,51 @@
 
 package net.mcreator.fantasticalfruits.block;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.IWorld;
+import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.Mirror;
+import net.minecraft.util.Direction;
+import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.state.StateContainer;
+import net.minecraft.state.DirectionProperty;
+import net.minecraft.state.BooleanProperty;
+import net.minecraft.loot.LootContext;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
+import net.minecraft.item.BlockItem;
+import net.minecraft.fluid.Fluids;
+import net.minecraft.fluid.FluidState;
+import net.minecraft.client.renderer.RenderTypeLookup;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
-import net.minecraft.util.SoundEvent;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.IWaterLoggable;
+import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+import net.minecraft.block.Block;
+
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
+import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
+
+import java.util.List;
+import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElement {
-
 	@ObjectHolder("fantastical_fruits:spongefruit_stem")
 	public static final Block block = null;
-
 	public SpongefruitStemBlock(FantasticalFruitsModElements instance) {
 		super(instance, 221);
-
 	}
 
 	@Override
@@ -27,18 +60,13 @@ public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElemen
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-
 	public static class CustomBlock extends Block implements IWaterLoggable {
-
 		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
-
 		public CustomBlock() {
 			super(Block.Properties.create(Material.OCEAN_PLANT).sound(SoundType.STEM).hardnessAndResistance(0.3f, 0.3f).setLightLevel(s -> 0)
 					.notSolid().tickRandomly().setOpaque((bs, br, bp) -> false));
-
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH).with(WATERLOGGED, false));
-
 			setRegistryName("spongefruit_stem");
 		}
 
@@ -94,13 +122,10 @@ public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElemen
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(Blocks.AIR));
 		}
-
 	}
-
 }
