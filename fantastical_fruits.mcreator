@@ -2954,8 +2954,8 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
-      "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
+      "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -2983,8 +2983,8 @@
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.juniper_fence_gate": "Juniper Fence Gate",
-      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
+      "advancements.natures_spice.descr": "Obtain a crimberry.",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
