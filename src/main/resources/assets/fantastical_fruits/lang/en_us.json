@@ -1,8 +1,8 @@
 {
   "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
-  "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
-  "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
   "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
+  "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
+  "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
   "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
   "block.fantastical_fruits.glow_sprout": "Glow Sprout",
   "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
@@ -119,6 +119,7 @@
   "block.fantastical_fruits.christmas_rose": "Christmas Rose",
   "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
   "biome.fantastical_fruits.arctic_forest": "Arctic Forest",
+  "block.fantastical_fruits.spongefruit_sprout": "Spongefruit Sprout",
   "advancements.fruitastical_beginning.title": "Fantastical Fruits",
   "item.fantastical_fruits.sugar_root": "Sugar Root",
   "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",

@@ -1,0 +1,42 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "1": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "2": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "3": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "4": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "5": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "6": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "7": {
+      "item": "fantastical_fruits:spongefruit"
+    },
+    "8": {
+      "item": "fantastical_fruits:spongefruit"
+    }
+  },
+  "result": {
+    "item": "fantastical_fruits:spongefruit_cluster",
+    "count": 1
+  }
+}
