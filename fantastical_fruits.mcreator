@@ -3066,6 +3066,42 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spongefruit_sprout"
+    },
+    {
+      "name": "JuniperTree3",
+      "type": "structure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_3"
+    },
+    {
+      "name": "JuniperTree4",
+      "type": "structure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_4"
+    },
+    {
+      "name": "JuniperTree1",
+      "type": "structure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_1"
+    },
+    {
+      "name": "JuniperTree2",
+      "type": "structure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_2"
     }
   ],
   "variable_elements": [],

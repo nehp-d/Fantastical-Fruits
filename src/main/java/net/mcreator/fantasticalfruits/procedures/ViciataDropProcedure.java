@@ -8,6 +8,8 @@ import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.fantasticalfruits.item.ViciataItem;
+import net.mcreator.fantasticalfruits.block.ViciataStage2Block;
+import net.mcreator.fantasticalfruits.block.ViciataStage1Block;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
 import java.util.Map;
@@ -38,7 +40,7 @@ public class ViciataDropProcedure {
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR)) {
+		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ViciataStage1Block.block)) {
 			if ((Math.random() < 0.6)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ViciataItem.block));
@@ -53,7 +55,7 @@ public class ViciataDropProcedure {
 					world.addEntity(entityToSpawn);
 				}
 			}
-		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR)) {
+		} else if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == ViciataStage2Block.block)) {
 			if ((Math.random() < 0.7)) {
 				if (world instanceof World && !world.isRemote()) {
 					ItemEntity entityToSpawn = new ItemEntity((World) world, x, y, z, new ItemStack(ViciataItem.block));
