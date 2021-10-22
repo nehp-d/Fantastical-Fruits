@@ -14,7 +14,7 @@
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -7953060,
+      "value": -3264215,
       "falpha": 0.0
     },
     "ambientSound": {
@@ -46,7 +46,9 @@
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 3,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "FOREST"
+    ],
     "grassPerChunk": 8,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 2,

@@ -2837,6 +2837,82 @@
       "ids": {},
       "registry_name": "plantain",
       "path": "~/Items"
+    },
+    {
+      "name": "SpongefruitClusterDrop",
+      "type": "procedure",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_cluster_drop",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SpongefruitCluster",
+      "type": "block",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_cluster"
+    },
+    {
+      "name": "SpongefruitStem",
+      "type": "block",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_stem"
+    },
+    {
+      "name": "SpongefruitSproutGrow",
+      "type": "procedure",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_sprout_grow",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2845,9 +2921,10 @@
     "en_us": {
       "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
       "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
+      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -2869,8 +2946,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
@@ -2942,6 +3019,7 @@
       "item.fantastical_fruits.crimberry_powder": "Crimberry Powder",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate",
       "item.fantastical_fruits.flushed_seeds": "Flushed Seeds",
+      "block.fantastical_fruits.spongefruit_stem": "Spongefruit Stem",
       "item.fantastical_fruits.wharpley": "Wharpley",
       "block.fantastical_fruits.red_grape_vine_1": "Green Grape Vine 1",
       "block.fantastical_fruits.red_grape_vine_0": "Red Grape Vine 0",
@@ -2989,9 +3067,10 @@
     "pt_br": {
       "block.fantastical_fruits.lime_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -3014,8 +3093,8 @@
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
@@ -3089,6 +3168,7 @@
       "block.fantastical_fruits.fruit_crate": "Fruit Crate",
       "item.fantastical_fruits.flushed_seeds": "Flushed Seeds",
       "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
+      "block.fantastical_fruits.spongefruit_stem": "Spongefruit Stem",
       "item.fantastical_fruits.wharpley": "Wharpley",
       "block.fantastical_fruits.red_grape_vine_1": "Green Grape Vine 1",
       "block.fantastical_fruits.red_grape_vine_0": "Green Grape Vine 0",

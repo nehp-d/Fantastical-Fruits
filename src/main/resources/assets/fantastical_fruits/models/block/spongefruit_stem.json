@@ -1,0 +1,8 @@
+{
+  "parent": "fantastical_fruits:custom/spongefruit_stem",
+  "textures": {
+    "all": "fantastical_fruits:blocks/spongefruit_stem",
+    "particle": "fantastical_fruits:blocks/spongefruit_stem",
+    "0": "fantastical_fruits:blocks/spongefruit_stem"
+  }
+}
