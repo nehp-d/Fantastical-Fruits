@@ -1,0 +1,6 @@
+{
+  "parent": "block/button",
+  "textures": {
+    "texture": "fantastical_fruits:blocks/juniper_planks"
+  }
+}
