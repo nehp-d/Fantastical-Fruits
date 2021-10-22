@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "fantastical_fruits:block/spongefruit_stem"
+    },
+    "facing=east": {
+      "model": "fantastical_fruits:block/spongefruit_stem",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "fantastical_fruits:block/spongefruit_stem",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "fantastical_fruits:block/spongefruit_stem",
+      "y": 270
+    }
+  }
+}
