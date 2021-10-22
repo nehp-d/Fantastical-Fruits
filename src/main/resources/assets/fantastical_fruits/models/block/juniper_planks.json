@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "fantastical_fruits:blocks/juniper_planks",
+    "up": "fantastical_fruits:blocks/juniper_planks",
+    "north": "fantastical_fruits:blocks/juniper_planks",
+    "east": "fantastical_fruits:blocks/juniper_planks",
+    "south": "fantastical_fruits:blocks/juniper_planks",
+    "west": "fantastical_fruits:blocks/juniper_planks",
+    "particle": "fantastical_fruits:blocks/juniper_planks"
+  }
+}

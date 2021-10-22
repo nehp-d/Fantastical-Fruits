@@ -1,0 +1,7 @@
+{
+  "parent": "block/fence_inventory",
+  "textures": {
+    "texture": "fantastical_fruits:blocks/juniper_planks",
+    "particle": "fantastical_fruits:blocks/juniper_planks"
+  }
+}

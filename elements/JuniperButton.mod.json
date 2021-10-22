@@ -2,22 +2,23 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "stone",
-    "textureTop": "snow",
-    "textureLeft": "snowedstone",
-    "textureFront": "snowedstone",
-    "textureRight": "snowedstone",
-    "textureBack": "snowedstone",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "juniper_planks",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Button",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": false,
+    "hasTransparency": true,
     "connectedSides": false,
     "transparencyType": "SOLID",
     "disableOffset": false,
@@ -32,30 +33,30 @@
         "subtract": false
       }
     ],
-    "name": "Arctic Stone",
+    "name": "Juniper Button",
     "specialInfo": [],
-    "hardness": 1.5,
-    "resistance": 6.0,
+    "hardness": 1.0,
+    "resistance": 10.0,
     "hasGravity": false,
     "isWaterloggable": false,
     "creativeTab": {
       "value": "CUSTOM:FantasticalBlocks"
     },
-    "destroyTool": "pickaxe",
+    "destroyTool": "Not specified",
     "customDrop": {
-      "value": "Blocks.STONE#0"
+      "value": ""
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
     "canRedstoneConnect": false,
-    "lightOpacity": 15,
+    "lightOpacity": 0,
     "material": {
-      "value": "ROCK"
+      "value": "WOOD"
     },
     "tickRate": 10,
-    "tickRandomly": true,
+    "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
     "emittedRedstonePower": {
@@ -74,10 +75,10 @@
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
-      "value": "STONE"
+      "value": "WOOD"
     },
     "breakSound": {
       "value": ""
@@ -121,9 +122,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": {
-      "name": "ArcticStoneChange"
-    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

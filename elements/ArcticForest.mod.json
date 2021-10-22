@@ -7,7 +7,7 @@
       "value": "Blocks.SNOW"
     },
     "undergroundBlock": {
-      "value": "CUSTOM:ArcticStone"
+      "value": "Blocks.SNOW"
     },
     "grassColor": {
       "value": -1,

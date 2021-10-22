@@ -26,7 +26,6 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.block.Blocks;
 
-import net.mcreator.fantasticalfruits.block.ArcticStoneBlock;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
@@ -44,7 +43,7 @@ public class ArcticForestBiome extends FantasticalFruitsModElements.ModElement {
 						.withSkyColor(7972607).withFoliageColor(-1).withGrassColor(-1).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
-								ArcticStoneBlock.block.getDefaultState(), ArcticStoneBlock.block.getDefaultState())));
+								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));
 				biomeGenerationSettings.withStructure(StructureFeatures.STRONGHOLD);
 				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
 				biomeGenerationSettings.withStructure(StructureFeatures.IGLOO);
