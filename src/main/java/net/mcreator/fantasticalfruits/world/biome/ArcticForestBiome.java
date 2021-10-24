@@ -40,7 +40,7 @@ public class ArcticForestBiome extends FantasticalFruitsModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(12638463).setWaterColor(-2888961).setWaterFogColor(-2888961)
-						.withSkyColor(7972607).withFoliageColor(-12882886).withGrassColor(-12882886).build();
+						.withSkyColor(7972607).withFoliageColor(-13013948).withGrassColor(-13013945).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.SNOW_BLOCK.getDefaultState(),
 								Blocks.SNOW_BLOCK.getDefaultState(), Blocks.SNOW_BLOCK.getDefaultState())));

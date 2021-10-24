@@ -3102,6 +3102,46 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "spongefruit_sprout"
+    },
+    {
+      "name": "Frigipome",
+      "type": "food",
+      "sortid": 238,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frigipome",
+      "path": "~/Items"
+    },
+    {
+      "name": "SpongeSproutCondition",
+      "type": "procedure",
+      "sortid": 244,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sponge_sprout_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -3109,9 +3149,9 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
-      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
-      "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
       "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
+      "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
+      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -3136,6 +3176,7 @@
       "item.fantastical_fruits.plantain": "Plantain",
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.juniper_slab": "Juniper Slab",
+      "item.fantastical_fruits.frigipome": "Frigipome",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.juniper_fence_gate": "Juniper Fence Gate",
@@ -3228,6 +3269,7 @@
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "biome.fantastical_fruits.arctic_forest": "Arctic Forest",
+      "block.fantastical_fruits.spongefruit_sprout": "Spongefruit Sprout",
       "advancements.fruitastical_beginning.title": "Fantastical Fruits",
       "item.fantastical_fruits.sugar_root": "Sugar Root",
       "block.fantastical_fruits.wharpley_crop_4": "Wharpley Crop 4",
@@ -3297,6 +3339,7 @@
       "item.fantastical_fruits.plantain": "Plantain",
       "block.fantastical_fruits.maple_leaves": "Maple Leaves",
       "block.fantastical_fruits.juniper_slab": "Juniper Slab",
+      "item.fantastical_fruits.frigipome": "Frigipome",
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.juniper_fence_gate": "Juniper Fence Gate",
