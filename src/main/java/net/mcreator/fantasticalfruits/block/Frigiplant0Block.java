@@ -12,7 +12,6 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.DefaultFlowersFeature;
@@ -23,6 +22,7 @@ import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -43,28 +43,23 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.procedures.SpongefruitSproutGrowProcedure;
-import net.mcreator.fantasticalfruits.procedures.SpongeSproutConditionProcedure;
-import net.mcreator.fantasticalfruits.item.SpongefruitItem;
+import net.mcreator.fantasticalfruits.item.FrigipomeItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
-import java.util.Map;
 import java.util.List;
-import java.util.HashMap;
 import java.util.Collections;
 
-import com.google.common.collect.ImmutableMap;
-
 @FantasticalFruitsModElements.ModElement.Tag
-public class SpongefruitSproutBlock extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:spongefruit_sprout")
+public class Frigiplant0Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:frigiplant_0")
 	public static final Block block = null;
-	public SpongefruitSproutBlock(FantasticalFruitsModElements instance) {
-		super(instance, 236);
+	public Frigiplant0Block(FantasticalFruitsModElements instance) {
+		super(instance, 245);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -99,33 +94,32 @@ public class SpongefruitSproutBlock extends FantasticalFruitsModElements.ModElem
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
-					int x = pos.getX();
-					int y = pos.getY();
-					int z = pos.getZ();
-					if (!SpongeSproutConditionProcedure.executeProcedure(ImmutableMap.of("x", x, "y", y, "z", z, "world", world)))
-						return false;
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
 			configuredFeature = feature
 					.withConfiguration(
 							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(64).build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("spongefruit_sprout"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:spongefruit_sprout"),
-					configuredFeature);
+									.tries(32).build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(2);
+			event.getRegistry().register(feature.setRegistryName("frigiplant_0"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:frigiplant_0"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("fantastical_fruits:arctic_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.STEM)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).tickRandomly().doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("spongefruit_sprout");
+			setRegistryName("frigiplant_0");
 		}
 
 		@Override
@@ -145,7 +139,7 @@ public class SpongefruitSproutBlock extends FantasticalFruitsModElements.ModElem
 
 		@Override
 		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
-			return new ItemStack(SpongefruitItem.block);
+			return new ItemStack(FrigipomeItem.block);
 		}
 
 		@Override
@@ -153,27 +147,27 @@ public class SpongefruitSproutBlock extends FantasticalFruitsModElements.ModElem
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(SpongefruitItem.block));
+			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
+		}
+
+		@Override
+		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			Block ground = state.getBlock();
+			return (ground == Blocks.SNOW_BLOCK || ground == Blocks.GRASS_BLOCK || ground == Blocks.DIRT || ground == Blocks.COARSE_DIRT
+					|| ground == Blocks.PODZOL);
+		}
+
+		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			BlockPos blockpos = pos.down();
+			BlockState groundState = worldIn.getBlockState(blockpos);
+			Block ground = groundState.getBlock();
+			return this.isValidGround(groundState, worldIn, blockpos);
 		}
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.WATER;
-		}
-
-		@Override
-		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				Map<String, Object> $_dependencies = new HashMap<>();
-				$_dependencies.put("x", x);
-				$_dependencies.put("y", y);
-				$_dependencies.put("z", z);
-				$_dependencies.put("world", world);
-				SpongefruitSproutGrowProcedure.executeProcedure($_dependencies);
-			}
+			return PlantType.PLAINS;
 		}
 	}
 }
