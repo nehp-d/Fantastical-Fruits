@@ -83,6 +83,9 @@
       "Surface"
     ],
     "restrictionBiomes": [],
+    "generateCondition": {
+      "name": "SpongeSproutCondition"
+    },
     "patchSize": 64,
     "onTickUpdate": {
       "name": "SpongefruitSproutGrow"
