@@ -1,7 +1,33 @@
 package net.mcreator.fantasticalfruits.procedures;
 
-public class SpongefruitClusterTransformProcedure {
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 
+import net.minecraft.world.IWorld;
+import net.minecraft.world.GameType;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Hand;
+import net.minecraft.state.Property;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.network.play.NetworkPlayerInfo;
+import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
+import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.fantasticalfruits.block.SpongefruitClusterBlock;
+import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
+
+import java.util.Map;
+import java.util.HashMap;
+
+public class SpongefruitClusterTransformProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -27,7 +53,6 @@ public class SpongefruitClusterTransformProcedure {
 			executeProcedure(dependencies);
 		}
 	}
-
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
@@ -54,13 +79,11 @@ public class SpongefruitClusterTransformProcedure {
 				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure SpongefruitClusterTransform!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
 		double x = dependencies.get("x") instanceof Integer ? (int) dependencies.get("x") : (double) dependencies.get("x");
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-
 		if (((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == SpongefruitClusterBlock.block)) {
 			if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() == Items.POTION)) {
 				if ((!(new Object() {
@@ -86,9 +109,7 @@ public class SpongefruitClusterTransformProcedure {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = Blocks.WET_SPONGE.getDefaultState();
-
 					BlockState _bso = world.getBlockState(_bp);
-
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
 						if (_property != null && _bs.get(_property) != null)
@@ -97,9 +118,7 @@ public class SpongefruitClusterTransformProcedure {
 							} catch (Exception e) {
 							}
 					}
-
 					world.setBlockState(_bp, _bs, 3);
-
 				}
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
@@ -129,9 +148,7 @@ public class SpongefruitClusterTransformProcedure {
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 					BlockState _bs = Blocks.WET_SPONGE.getDefaultState();
-
 					BlockState _bso = world.getBlockState(_bp);
-
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
 						if (_property != null && _bs.get(_property) != null)
@@ -140,9 +157,7 @@ public class SpongefruitClusterTransformProcedure {
 							} catch (Exception e) {
 							}
 					}
-
 					world.setBlockState(_bp, _bs, 3);
-
 				}
 				if (entity instanceof LivingEntity) {
 					((LivingEntity) entity).swing(Hand.OFF_HAND, true);
@@ -150,5 +165,4 @@ public class SpongefruitClusterTransformProcedure {
 			}
 		}
 	}
-
 }
