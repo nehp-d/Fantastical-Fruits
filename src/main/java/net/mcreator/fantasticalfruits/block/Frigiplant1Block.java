@@ -7,6 +7,7 @@ import net.minecraftforge.common.PlantType;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.RayTraceResult;
@@ -27,10 +28,14 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.procedures.FrigiplantGrowProcedure;
 import net.mcreator.fantasticalfruits.item.FrigipomeItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
+import java.util.Random;
+import java.util.Map;
 import java.util.List;
+import java.util.HashMap;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
@@ -38,7 +43,7 @@ public class Frigiplant1Block extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:frigiplant_1")
 	public static final Block block = null;
 	public Frigiplant1Block(FantasticalFruitsModElements instance) {
-		super(instance, 249);
+		super(instance, 246);
 	}
 
 	@Override
@@ -105,6 +110,21 @@ public class Frigiplant1Block extends FantasticalFruitsModElements.ModElement {
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
 			return PlantType.PLAINS;
+		}
+
+		@Override
+		public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				FrigiplantGrowProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }
