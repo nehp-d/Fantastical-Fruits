@@ -103,6 +103,9 @@
         "value": "CUSTOM:ArcticForest"
       }
     ],
-    "patchSize": 32
+    "patchSize": 32,
+    "onTickUpdate": {
+      "name": "FrigiplantGrow"
+    }
   }
 }
