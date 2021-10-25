@@ -3152,6 +3152,46 @@
       "ids": {},
       "registry_name": "sugar_root_sprout",
       "path": "~/Nature"
+    },
+    {
+      "name": "Frigiplant0",
+      "type": "plant",
+      "sortid": 245,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frigiplant_0",
+      "path": "~/Nature"
+    },
+    {
+      "name": "Frigiplant1",
+      "type": "plant",
+      "sortid": 246,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frigiplant_1",
+      "path": "~/Nature"
+    },
+    {
+      "name": "Frigiplant2",
+      "type": "plant",
+      "sortid": 247,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frigiplant_2",
+      "path": "~/Nature"
+    },
+    {
+      "name": "Frigiplant3",
+      "type": "plant",
+      "sortid": 248,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "frigiplant_3",
+      "path": "~/Nature"
     }
   ],
   "variable_elements": [],
@@ -3252,7 +3292,6 @@
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
-      "block.fantastical_fruits.sugar_root_sprout": "Sugar Root Sprout",
       "enchantment.fantastical_fruits.repulsion": "Repulsion",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.repulsion_essence": "Repulsion Essence",
@@ -3341,8 +3380,12 @@
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "block.fantastical_fruits.juniper_stairs": "Juniper Stairs",
+      "block.fantastical_fruits.frigiplant_0": "Frigiplant 0",
       "block.fantastical_fruits.green_grape_vine_tip": "Purple Grape Vine Tip",
+      "block.fantastical_fruits.frigiplant_1": "Frigiplant 1",
+      "block.fantastical_fruits.frigiplant_2": "Frigiplant 2",
       "item.fantastical_fruits.suspine": "Suspine",
+      "block.fantastical_fruits.frigiplant_3": "Frigiplant 3",
       "block.fantastical_fruits.large_leaf_pile": "Large Leaf Pile",
       "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
