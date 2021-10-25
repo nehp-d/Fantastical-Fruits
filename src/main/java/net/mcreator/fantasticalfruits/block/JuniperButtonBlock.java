@@ -29,7 +29,7 @@ public class JuniperButtonBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:juniper_button")
 	public static final Block block = null;
 	public JuniperButtonBlock(FantasticalFruitsModElements instance) {
-		super(instance, 230);
+		super(instance, 59);
 	}
 
 	@Override

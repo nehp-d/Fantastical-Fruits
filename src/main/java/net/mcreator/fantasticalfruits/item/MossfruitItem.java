@@ -17,7 +17,7 @@ public class MossfruitItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:mossfruit")
 	public static final Item block = null;
 	public MossfruitItem(FantasticalFruitsModElements instance) {
-		super(instance, 217);
+		super(instance, 18);
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class StrippedJuniperLogBlock extends FantasticalFruitsModElements.ModEle
 	@ObjectHolder("fantastical_fruits:stripped_juniper_log")
 	public static final Block block = null;
 	public StrippedJuniperLogBlock(FantasticalFruitsModElements instance) {
-		super(instance, 223);
+		super(instance, 52);
 	}
 
 	@Override

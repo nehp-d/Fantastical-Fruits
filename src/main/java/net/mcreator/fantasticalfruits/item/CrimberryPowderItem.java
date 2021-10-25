@@ -16,7 +16,7 @@ public class CrimberryPowderItem extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:crimberry_powder")
 	public static final Item block = null;
 	public CrimberryPowderItem(FantasticalFruitsModElements instance) {
-		super(instance, 52);
+		super(instance, 69);
 	}
 
 	@Override

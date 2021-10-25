@@ -36,7 +36,7 @@ public class MangoLeaves1Block extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:mango_leaves_1")
 	public static final Block block = null;
 	public MangoLeaves1Block(FantasticalFruitsModElements instance) {
-		super(instance, 134);
+		super(instance, 156);
 	}
 
 	@Override

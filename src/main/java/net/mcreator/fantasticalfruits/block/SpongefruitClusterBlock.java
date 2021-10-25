@@ -32,7 +32,7 @@ public class SpongefruitClusterBlock extends FantasticalFruitsModElements.ModEle
 	@ObjectHolder("fantastical_fruits:spongefruit_cluster")
 	public static final Block block = null;
 	public SpongefruitClusterBlock(FantasticalFruitsModElements instance) {
-		super(instance, 220);
+		super(instance, 68);
 	}
 
 	@Override

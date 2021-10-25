@@ -30,7 +30,7 @@ public class JuniperTrapdoorBlock extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:juniper_trapdoor")
 	public static final Block block = null;
 	public JuniperTrapdoorBlock(FantasticalFruitsModElements instance) {
-		super(instance, 233);
+		super(instance, 62);
 	}
 
 	@Override

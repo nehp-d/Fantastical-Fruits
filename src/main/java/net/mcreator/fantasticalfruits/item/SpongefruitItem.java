@@ -17,7 +17,7 @@ public class SpongefruitItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:spongefruit")
 	public static final Item block = null;
 	public SpongefruitItem(FantasticalFruitsModElements instance) {
-		super(instance, 218);
+		super(instance, 19);
 	}
 
 	@Override

@@ -17,7 +17,7 @@ public class FrigipomeItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:frigipome")
 	public static final Item block = null;
 	public FrigipomeItem(FantasticalFruitsModElements instance) {
-		super(instance, 238);
+		super(instance, 20);
 	}
 
 	@Override

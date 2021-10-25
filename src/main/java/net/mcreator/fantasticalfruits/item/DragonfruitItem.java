@@ -17,7 +17,7 @@ public class DragonfruitItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:dragonfruit")
 	public static final Item block = null;
 	public DragonfruitItem(FantasticalFruitsModElements instance) {
-		super(instance, 13);
+		super(instance, 14);
 	}
 
 	@Override

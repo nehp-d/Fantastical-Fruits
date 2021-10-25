@@ -31,7 +31,7 @@ public class StrippedJuniperWoodBlock extends FantasticalFruitsModElements.ModEl
 	@ObjectHolder("fantastical_fruits:stripped_juniper_wood")
 	public static final Block block = null;
 	public StrippedJuniperWoodBlock(FantasticalFruitsModElements instance) {
-		super(instance, 225);
+		super(instance, 53);
 	}
 
 	@Override

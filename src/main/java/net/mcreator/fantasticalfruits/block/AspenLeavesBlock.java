@@ -36,7 +36,7 @@ public class AspenLeavesBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:aspen_leaves")
 	public static final Block block = null;
 	public AspenLeavesBlock(FantasticalFruitsModElements instance) {
-		super(instance, 59);
+		super(instance, 76);
 	}
 
 	@Override

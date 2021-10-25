@@ -45,7 +45,7 @@ public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:spongefruit_stem")
 	public static final Block block = null;
 	public SpongefruitStemBlock(FantasticalFruitsModElements instance) {
-		super(instance, 221);
+		super(instance, 97);
 	}
 
 	@Override

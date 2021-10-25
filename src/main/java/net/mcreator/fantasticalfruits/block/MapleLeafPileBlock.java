@@ -61,7 +61,7 @@ public class MapleLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:maple_leaf_pile")
 	public static final Block block = null;
 	public MapleLeafPileBlock(FantasticalFruitsModElements instance) {
-		super(instance, 78);
+		super(instance, 95);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

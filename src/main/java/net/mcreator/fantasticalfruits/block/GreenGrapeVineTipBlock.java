@@ -47,7 +47,7 @@ public class GreenGrapeVineTipBlock extends FantasticalFruitsModElements.ModElem
 	@ObjectHolder("fantastical_fruits:green_grape_vine_tip")
 	public static final Block block = null;
 	public GreenGrapeVineTipBlock(FantasticalFruitsModElements instance) {
-		super(instance, 183);
+		super(instance, 205);
 	}
 
 	@Override

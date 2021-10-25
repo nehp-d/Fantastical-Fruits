@@ -67,7 +67,7 @@ public class BlueberryBush3Block extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:blueberry_bush_3")
 	public static final Block block = null;
 	public BlueberryBush3Block(FantasticalFruitsModElements instance) {
-		super(instance, 128);
+		super(instance, 150);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

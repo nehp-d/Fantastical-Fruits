@@ -17,7 +17,7 @@ public class SuspineItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:suspine")
 	public static final Item block = null;
 	public SuspineItem(FantasticalFruitsModElements instance) {
-		super(instance, 16);
+		super(instance, 17);
 	}
 
 	@Override

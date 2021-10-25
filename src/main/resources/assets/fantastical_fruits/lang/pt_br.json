@@ -1,8 +1,8 @@
 {
   "block.fantastical_fruits.lime_leaves_1": "Lemon Leaves 1",
   "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
-  "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
   "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
+  "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
   "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
   "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
   "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -99,6 +99,7 @@
   "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
   "block.fantastical_fruits.amber_fungus": "Amber Fungus",
   "item.fantastical_fruits.red_grapes": "Red Grapes",
+  "block.fantastical_fruits.sugar_root_sprout": "Sugar Root Sprout",
   "enchantment.fantastical_fruits.repulsion": "Repulsion",
   "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
   "item.fantastical_fruits.repulsion_essence": "Repulsion Essence",

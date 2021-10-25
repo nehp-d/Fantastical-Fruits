@@ -17,7 +17,7 @@ public class BlueberriesItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:blueberries")
 	public static final Item block = null;
 	public BlueberriesItem(FantasticalFruitsModElements instance) {
-		super(instance, 7);
+		super(instance, 8);
 	}
 
 	@Override

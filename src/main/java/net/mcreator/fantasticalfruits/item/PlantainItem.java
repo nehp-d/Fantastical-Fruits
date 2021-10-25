@@ -17,7 +17,7 @@ public class PlantainItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:plantain")
 	public static final Item block = null;
 	public PlantainItem(FantasticalFruitsModElements instance) {
-		super(instance, 219);
+		super(instance, 6);
 	}
 
 	@Override
