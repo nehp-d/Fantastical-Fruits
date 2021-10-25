@@ -8,7 +8,7 @@
     "customModelName": "leafpile:default",
     "itemTexture": "",
     "particleTexture": "",
-    "tintType": "Foliage",
+    "tintType": "Grass",
     "isItemTinted": true,
     "plantType": "normal",
     "staticPlantGenerationType": "Flower",
