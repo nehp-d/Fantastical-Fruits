@@ -2800,6 +2800,126 @@
       "path": "~/Items"
     },
     {
+      "name": "JuniperLeaves",
+      "type": "block",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_leaves",
+      "path": "~/Nature"
+    },
+    {
+      "name": "JuniperLog",
+      "type": "block",
+      "sortid": 221,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_log",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperPlanks",
+      "type": "block",
+      "sortid": 222,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_planks",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StrippedJuniperLog",
+      "type": "block",
+      "sortid": 223,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_juniper_log",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperWood",
+      "type": "block",
+      "sortid": 224,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_wood",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "StrippedJuniperWood",
+      "type": "block",
+      "sortid": 225,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_juniper_wood",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperSlab",
+      "type": "block",
+      "sortid": 226,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_slab",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperStairs",
+      "type": "block",
+      "sortid": 227,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_stairs",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperFence",
+      "type": "block",
+      "sortid": 228,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_fence",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperFenceGate",
+      "type": "block",
+      "sortid": 229,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_fence_gate",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperButton",
+      "type": "block",
+      "sortid": 230,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_button",
+      "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperPressurePlate",
+      "type": "block",
+      "sortid": 231,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_pressure_plate",
+      "path": "~/Blocks"
+    },
+    {
       "name": "SpongefruitSproutGrow",
       "type": "procedure",
       "sortid": 222,
@@ -2867,135 +2987,6 @@
       "registry_name": "spongefruit_stem"
     },
     {
-      "name": "SpongefruitCluster",
-      "type": "block",
-      "sortid": 220,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "spongefruit_cluster"
-    },
-    {
-      "name": "JuniperButton",
-      "type": "block",
-      "sortid": 230,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_button",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperSlab",
-      "type": "block",
-      "sortid": 226,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_slab",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperFence",
-      "type": "block",
-      "sortid": 228,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_fence",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperPressurePlate",
-      "type": "block",
-      "sortid": 231,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_pressure_plate",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperStairs",
-      "type": "block",
-      "sortid": 227,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_stairs",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperWood",
-      "type": "block",
-      "sortid": 224,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_wood",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "StrippedJuniperLog",
-      "type": "block",
-      "sortid": 223,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stripped_juniper_log",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperLog",
-      "type": "block",
-      "sortid": 221,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_log",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperFenceGate",
-      "type": "block",
-      "sortid": 229,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_fence_gate",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "JuniperLeaves",
-      "type": "block",
-      "sortid": 220,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_leaves",
-      "path": "~/Nature"
-    },
-    {
-      "name": "JuniperPlanks",
-      "type": "block",
-      "sortid": 222,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_planks",
-      "path": "~/Blocks"
-    },
-    {
-      "name": "StrippedJuniperWood",
-      "type": "block",
-      "sortid": 225,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "stripped_juniper_wood",
-      "path": "~/Blocks"
-    },
-    {
       "name": "JuniperDoor",
       "type": "block",
       "sortid": 232,
@@ -3006,6 +2997,15 @@
       "path": "~/Blocks"
     },
     {
+      "name": "SpongefruitCluster",
+      "type": "block",
+      "sortid": 220,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongefruit_cluster"
+    },
+    {
       "name": "JuniperTrapdoor",
       "type": "block",
       "sortid": 233,
@@ -3014,6 +3014,42 @@
       "ids": {},
       "registry_name": "juniper_trapdoor",
       "path": "~/Blocks"
+    },
+    {
+      "name": "JuniperTree1",
+      "type": "structure",
+      "sortid": 234,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_1"
+    },
+    {
+      "name": "JuniperTree2",
+      "type": "structure",
+      "sortid": 235,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_2"
+    },
+    {
+      "name": "JuniperTree3",
+      "type": "structure",
+      "sortid": 236,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_3"
+    },
+    {
+      "name": "JuniperTree4",
+      "type": "structure",
+      "sortid": 237,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_tree_4"
     },
     {
       "name": "SpongefruitClusterRecipe",
@@ -3068,40 +3104,14 @@
       "registry_name": "spongefruit_sprout"
     },
     {
-      "name": "JuniperTree3",
-      "type": "structure",
-      "sortid": 236,
+      "name": "Frigipome",
+      "type": "food",
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_tree_3"
-    },
-    {
-      "name": "JuniperTree4",
-      "type": "structure",
-      "sortid": 237,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_tree_4"
-    },
-    {
-      "name": "JuniperTree1",
-      "type": "structure",
-      "sortid": 234,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_tree_1"
-    },
-    {
-      "name": "JuniperTree2",
-      "type": "structure",
-      "sortid": 235,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "juniper_tree_2"
+      "registry_name": "frigipome",
+      "path": "~/Items"
     },
     {
       "name": "SpongeSproutCondition",
@@ -3134,14 +3144,14 @@
       }
     },
     {
-      "name": "Frigipome",
-      "type": "food",
-      "sortid": 238,
+      "name": "SugarRootSprout",
+      "type": "plant",
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "frigipome",
-      "path": "~/Items"
+      "registry_name": "sugar_root_sprout",
+      "path": "~/Nature"
     },
     {
       "name": "Frigiplant0",
@@ -3189,12 +3199,12 @@
   "language_map": {
     "en_us": {
       "block.fantastical_fruits.lime_leaves_1": "Lime Leaves 1",
+      "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
       "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
-      "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
-      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
+      "block.fantastical_fruits.glow_sprout": "Glow Sprout",
       "block.fantastical_fruits.aspen_button": "Aspen Button",
       "entity.fantastical_fruits.wandering_funglin": "Wandering Funglin",
       "block.fantastical_fruits.aspen_sapling": "Aspen Sapling",
@@ -3208,12 +3218,8 @@
       "biome.fantastical_fruits.aspen_forest": "Aspen Forest",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "block.fantastical_fruits.juniper_stairs": "Juniper Stairs",
-      "block.fantastical_fruits.frigiplant_0": "Frigiplant 0",
       "block.fantastical_fruits.green_grape_vine_tip": "Green Grape Vine Tip",
-      "block.fantastical_fruits.frigiplant_1": "Frigiplant 1",
-      "block.fantastical_fruits.frigiplant_2": "Frigiplant 2",
       "item.fantastical_fruits.suspine": "Suspine",
-      "block.fantastical_fruits.frigiplant_3": "Frigiplant 3",
       "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "block.fantastical_fruits.blueberry_bush_3": "Blueberry Bush 3",
@@ -3224,8 +3230,8 @@
       "block.fantastical_fruits.blueberry_bush_2": "Blueberry Bush 2",
       "block.fantastical_fruits.blueberry_bush_1": "Blueberry Bush 1",
       "block.fantastical_fruits.juniper_fence_gate": "Juniper Fence Gate",
-      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "advancements.natures_spice.descr": "Obtain a crimberry.",
+      "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
@@ -3356,8 +3362,8 @@
     "pt_br": {
       "block.fantastical_fruits.lime_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
-      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
       "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
+      "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -3454,6 +3460,7 @@
       "block.fantastical_fruits.mango_leaves_1": "Mango Leaves 1",
       "block.fantastical_fruits.amber_fungus": "Amber Fungus",
       "item.fantastical_fruits.red_grapes": "Red Grapes",
+      "block.fantastical_fruits.sugar_root_sprout": "Sugar Root Sprout",
       "enchantment.fantastical_fruits.repulsion": "Repulsion",
       "block.fantastical_fruits.mango_leaves_0": "Mango Leaves",
       "item.fantastical_fruits.repulsion_essence": "Repulsion Essence",

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "fantastical_fruits:items/juniperdoor"
+    "layer0": "fantastical_fruits:blocks/sugarroot"
   }
 }

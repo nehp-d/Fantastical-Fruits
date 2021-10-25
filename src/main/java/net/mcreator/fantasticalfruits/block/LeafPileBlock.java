@@ -26,7 +26,7 @@ import net.minecraft.world.biome.BiomeColors;
 import net.minecraft.world.World;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
-import net.minecraft.world.FoliageColors;
+import net.minecraft.world.GrassColors;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.vector.Vector3d;
@@ -87,7 +87,7 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 		@SubscribeEvent
 		public void blockColorLoad(ColorHandlerEvent.Block event) {
 			event.getBlockColors().register((bs, world, pos, index) -> {
-				return world != null && pos != null ? BiomeColors.getFoliageColor(world, pos) : FoliageColors.getDefault();
+				return world != null && pos != null ? BiomeColors.getGrassColor(world, pos) : GrassColors.get(0.5D, 1.0D);
 			}, block);
 		}
 	}
@@ -97,7 +97,7 @@ public class LeafPileBlock extends FantasticalFruitsModElements.ModElement {
 		@SubscribeEvent
 		public void itemColorLoad(ColorHandlerEvent.Item event) {
 			event.getItemColors().register((stack, index) -> {
-				return FoliageColors.getDefault();
+				return GrassColors.get(0.5D, 1.0D);
 			}, block);
 		}
 	}
