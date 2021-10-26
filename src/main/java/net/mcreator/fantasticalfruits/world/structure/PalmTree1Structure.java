@@ -94,6 +94,12 @@ public class PalmTree1Structure {
 		boolean biomeCriteria = false;
 		if (new ResourceLocation("beach").equals(event.getName()))
 			biomeCriteria = true;
+		if (new ResourceLocation("desert").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("desert_hills").equals(event.getName()))
+			biomeCriteria = true;
+		if (new ResourceLocation("desert_lakes").equals(event.getName()))
+			biomeCriteria = true;
 		if (!biomeCriteria)
 			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.SURFACE_STRUCTURES).add(() -> configuredFeature);
