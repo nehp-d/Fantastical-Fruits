@@ -3270,6 +3270,15 @@
       "ids": {},
       "registry_name": "tiny_cactus",
       "path": "~/Nature"
+    },
+    {
+      "name": "Oasis",
+      "type": "structure",
+      "sortid": 253,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "oasis"
     }
   ],
   "variable_elements": [],
