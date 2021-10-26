@@ -29,7 +29,7 @@ import net.minecraft.block.material.PushReaction;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.IWaterLoggable;
-import net.minecraft.block.HorizontalBlock;
+import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
@@ -61,7 +61,7 @@ public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElemen
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
 	public static class CustomBlock extends Block implements IWaterLoggable {
-		public static final DirectionProperty FACING = HorizontalBlock.HORIZONTAL_FACING;
+		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 		public CustomBlock() {
 			super(Block.Properties.create(Material.OCEAN_PLANT).sound(SoundType.STEM).hardnessAndResistance(0.3f, 0.3f).setLightLevel(s -> 0)
@@ -95,10 +95,9 @@ public class SpongefruitStemBlock extends FantasticalFruitsModElements.ModElemen
 
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
+			Direction facing = context.getFace();
 			boolean flag = context.getWorld().getFluidState(context.getPos()).getFluid() == Fluids.WATER;;
-			if (context.getFace() == Direction.UP || context.getFace() == Direction.DOWN)
-				return this.getDefaultState().with(FACING, Direction.NORTH).with(WATERLOGGED, flag);
-			return this.getDefaultState().with(FACING, context.getFace()).with(WATERLOGGED, flag);
+			return this.getDefaultState().with(FACING, facing).with(WATERLOGGED, flag);
 		}
 
 		@Override

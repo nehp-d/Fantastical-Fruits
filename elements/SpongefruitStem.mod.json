@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "spongefruit_stem:default",
-    "rotationMode": 3,
+    "rotationMode": 4,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
     "itemTexture": "",
