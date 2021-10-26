@@ -12,13 +12,13 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.gen.feature.RandomPatchFeature;
 import net.minecraft.world.gen.feature.Features;
 import net.minecraft.world.gen.feature.Feature;
-import net.minecraft.world.gen.feature.DefaultFlowersFeature;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
 import net.minecraft.world.gen.feature.BlockClusterFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
-import net.minecraft.world.gen.blockplacer.SimpleBlockPlacer;
+import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
@@ -30,22 +30,21 @@ import net.minecraft.util.registry.Registry;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
-import net.minecraft.util.Direction;
-import net.minecraft.potion.Effects;
+import net.minecraft.state.properties.DoubleBlockHalf;
+import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
+import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
-import net.minecraft.item.BlockItem;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.FlowerBlock;
+import net.minecraft.block.DoublePlantBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
@@ -53,11 +52,11 @@ import java.util.List;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:small_cactus")
+public class HogsportPlant0Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:hogsport_plant_0")
 	public static final Block block = null;
-	public SmallCactusBlock(FantasticalFruitsModElements instance) {
-		super(instance, 251);
+	public HogsportPlant0Block(FantasticalFruitsModElements instance) {
+		super(instance, 255);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}
@@ -65,8 +64,7 @@ public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(FantasticalNatureItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new TallBlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -79,64 +77,46 @@ public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
 	private static class FeatureRegisterHandler {
 		@SubscribeEvent
 		public void registerFeature(RegistryEvent.Register<Feature<?>> event) {
-			feature = new DefaultFlowersFeature(BlockClusterFeatureConfig.field_236587_a_) {
-				@Override
-				public BlockState getFlowerToPlace(Random random, BlockPos bp, BlockClusterFeatureConfig fc) {
-					return block.getDefaultState();
-				}
-
+			feature = new RandomPatchFeature(BlockClusterFeatureConfig.field_236587_a_) {
 				@Override
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == World.THE_NETHER)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
 					return super.generate(world, generator, random, pos, config);
 				}
 			};
-			configuredFeature = feature
-					.withConfiguration(
-							(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new SimpleBlockPlacer()))
-									.tries(25).build())
+			configuredFeature = feature.withConfiguration(
+					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new DoublePlantBlockPlacer()))
+							.tries(64).func_227317_b_().build())
 					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
-			event.getRegistry().register(feature.setRegistryName("small_cactus"));
-			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:small_cactus"), configuredFeature);
+			event.getRegistry().register(feature.setRegistryName("hogsport_plant_0"));
+			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:hogsport_plant_0"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
-		boolean biomeCriteria = false;
-		if (new ResourceLocation("desert").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("desert_hills").equals(event.getName()))
-			biomeCriteria = true;
-		if (new ResourceLocation("desert_lakes").equals(event.getName()))
-			biomeCriteria = true;
-		if (!biomeCriteria)
-			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
-	public static class BlockCustomFlower extends FlowerBlock {
+	public static class BlockCustomFlower extends DoublePlantBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
-					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
-			setRegistryName("small_cactus");
+			super(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.NETHER_VINE).hardnessAndResistance(0f, 0f)
+					.setLightLevel(s -> 0));
+			setRegistryName("hogsport_plant_0");
 		}
 
 		@Override
-		public int getFlammability(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 100;
-		}
-
-		@Override
-		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
-			return 60;
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
 		}
 
 		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
+				return Collections.emptyList();
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
@@ -146,7 +126,7 @@ public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
 		@Override
 		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
 			Block ground = state.getBlock();
-			return (ground == Blocks.SAND);
+			return (ground == Blocks.CRIMSON_NYLIUM);
 		}
 
 		@Override
@@ -154,12 +134,15 @@ public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
 			BlockPos blockpos = pos.down();
 			BlockState groundState = worldIn.getBlockState(blockpos);
 			Block ground = groundState.getBlock();
-			return this.isValidGround(groundState, worldIn, blockpos);
+			if (blockstate.get(HALF) == DoubleBlockHalf.UPPER)
+				return groundState.isIn(this) && groundState.get(HALF) == DoubleBlockHalf.LOWER;
+			else
+				return this.isValidGround(groundState, worldIn, blockpos);
 		}
 
 		@Override
 		public PlantType getPlantType(IBlockReader world, BlockPos pos) {
-			return PlantType.PLAINS;
+			return PlantType.NETHER;
 		}
 	}
 }
