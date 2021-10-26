@@ -2,36 +2,23 @@
   "_fv": 24,
   "_type": "structure",
   "definition": {
-    "structure": "palm_tree_2",
+    "structure": "oasis",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 100000,
+    "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": -1,
-    "spawnXOffset": -4,
-    "spawnZOffset": -4,
+    "spawnHeightOffset": -3,
+    "spawnXOffset": 0,
+    "spawnZOffset": 0,
     "spawnWorldTypes": [
       "Surface"
     ],
-    "restrictionBlocks": [
-      {
-        "value": "Blocks.SAND#0"
-      }
-    ],
+    "restrictionBlocks": [],
     "restrictionBiomes": [
       {
-        "value": "beaches"
-      },
-      {
         "value": "desert"
-      },
-      {
-        "value": "desert_hills"
-      },
-      {
-        "value": "mutated_desert"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"

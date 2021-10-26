@@ -44,7 +44,7 @@ public class Frigiplant2Block extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:frigiplant_2")
 	public static final Block block = null;
 	public Frigiplant2Block(FantasticalFruitsModElements instance) {
-		super(instance, 247);
+		super(instance, 101);
 	}
 
 	@Override

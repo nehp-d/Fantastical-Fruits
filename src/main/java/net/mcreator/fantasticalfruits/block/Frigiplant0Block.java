@@ -63,7 +63,7 @@ public class Frigiplant0Block extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:frigiplant_0")
 	public static final Block block = null;
 	public Frigiplant0Block(FantasticalFruitsModElements instance) {
-		super(instance, 245);
+		super(instance, 248);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

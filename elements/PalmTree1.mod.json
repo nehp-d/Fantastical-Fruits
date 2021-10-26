@@ -23,6 +23,15 @@
     "restrictionBiomes": [
       {
         "value": "beaches"
+      },
+      {
+        "value": "desert"
+      },
+      {
+        "value": "desert_hills"
+      },
+      {
+        "value": "mutated_desert"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
