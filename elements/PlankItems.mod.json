@@ -9,6 +9,9 @@
       },
       {
         "value": "CUSTOM:MaplePlanks"
+      },
+      {
+        "value": "CUSTOM:JuniperPlanks"
       }
     ],
     "blocks": [],

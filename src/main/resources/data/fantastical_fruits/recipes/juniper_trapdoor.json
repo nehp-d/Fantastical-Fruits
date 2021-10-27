@@ -1,0 +1,32 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "fantastical_fruits:juniper_planks"
+    },
+    "1": {
+      "item": "fantastical_fruits:juniper_planks"
+    },
+    "2": {
+      "item": "fantastical_fruits:juniper_planks"
+    },
+    "3": {
+      "item": "fantastical_fruits:juniper_planks"
+    },
+    "4": {
+      "item": "fantastical_fruits:juniper_planks"
+    },
+    "5": {
+      "item": "fantastical_fruits:juniper_planks"
+    }
+  },
+  "result": {
+    "item": "fantastical_fruits:juniper_trapdoor",
+    "count": 2
+  }
+}

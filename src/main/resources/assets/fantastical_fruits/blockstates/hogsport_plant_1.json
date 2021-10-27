@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "fantastical_fruits:block/hogsport_plant_1"
+    },
+    "half=lower": {
+      "model": "fantastical_fruits:block/hogsport_plant_1_bottom"
+    }
+  }
+}

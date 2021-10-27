@@ -1,0 +1,16 @@
+{
+  "group": "fantastical_fruits",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "fantastical_fruits:stripped_juniper_log"
+    }
+  },
+  "result": {
+    "item": "fantastical_fruits:juniper_planks",
+    "count": 4
+  }
+}

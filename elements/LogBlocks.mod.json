@@ -16,6 +16,12 @@
       },
       {
         "value": "CUSTOM:MapleWood"
+      },
+      {
+        "value": "CUSTOM:JuniperLog"
+      },
+      {
+        "value": "CUSTOM:JuniperWood"
       }
     ],
     "functions": [],

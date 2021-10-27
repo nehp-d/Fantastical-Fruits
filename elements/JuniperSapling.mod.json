@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "aubadeberry",
+    "texture": "juniper_sapling",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",
@@ -30,10 +30,10 @@
         "subtract": false
       }
     ],
-    "name": "Aubadeberry",
+    "name": "Juniper Sapling",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "No creative tab entry"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -60,7 +60,7 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:JuniperBranch"
     },
     "dropAmount": 1,
     "forceTicking": false,
@@ -69,24 +69,18 @@
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:JuniperBranch"
     },
-    "offsetType": "XZ",
+    "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
     "flammability": 100,
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
     "canBePlacedOn": [],
-    "frequencyOnChunks": 3,
-    "spawnWorldTypes": [
-      "Surface"
-    ],
-    "restrictionBiomes": [
-      {
-        "value": "plains"
-      }
-    ],
-    "patchSize": 20
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": [],
+    "patchSize": 64
   }
 }

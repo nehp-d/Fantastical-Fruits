@@ -2,24 +2,25 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "kiwileaves",
-    "textureTop": "kiwileaves",
-    "textureLeft": "kiwileaves",
-    "textureFront": "kiwileaves",
-    "textureRight": "kiwileaves",
-    "textureBack": "kiwileaves",
-    "renderType": 10,
-    "customModelName": "Normal",
+    "texture": "tropical_leaves",
+    "textureTop": "tropical_leaves",
+    "textureLeft": "tropical_leaves",
+    "textureFront": "tropical_leaves",
+    "textureRight": "tropical_leaves",
+    "textureBack": "tropical_leaves",
+    "renderType": 11,
+    "customModelName": "Single texture",
     "rotationMode": 0,
     "emissiveRendering": false,
     "displayFluidOverlay": true,
     "itemTexture": "",
     "particleTexture": "",
+    "blockBase": "Leaves",
     "tintType": "No tint",
     "isItemTinted": false,
-    "hasTransparency": true,
+    "hasTransparency": false,
     "connectedSides": true,
-    "transparencyType": "TRANSLUCENT",
+    "transparencyType": "SOLID",
     "disableOffset": false,
     "boundingBoxes": [
       {
@@ -43,7 +44,7 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
     "dropAmount": 1,
     "useLootTableForDrops": false,
@@ -96,7 +97,7 @@
     },
     "luminance": 0,
     "unbreakable": false,
-    "breakHarvestLevel": 1,
+    "breakHarvestLevel": 0,
     "spawnParticles": false,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"

@@ -42,11 +42,13 @@ import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
+import net.minecraft.block.material.MaterialColor;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.FlowerBlock;
@@ -132,7 +134,7 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 	}
 	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS, MaterialColor.GRASS).doesNotBlockMovement().sound(SoundType.PLANT)
 					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
 			setRegistryName("flushed_grass");
 		}
@@ -141,6 +143,11 @@ public class FlushedGrassBlock extends FantasticalFruitsModElements.ModElement {
 		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
 			Vector3d offset = state.getOffset(world, pos);
 			return VoxelShapes.or(makeCuboidShape(0, 0, 0, 16, 15, 16)).withOffset(offset.x, offset.y, offset.z);
+		}
+
+		@Override
+		public boolean isReplaceable(BlockState state, BlockItemUseContext useContext) {
+			return useContext.getItem().getItem() != this.asItem();
 		}
 
 		@Override

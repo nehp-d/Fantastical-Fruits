@@ -66,8 +66,8 @@
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
-    "isReplaceable": false,
-    "colorOnMap": "DEFAULT",
+    "isReplaceable": true,
+    "colorOnMap": "GRASS",
     "creativePickItem": {
       "value": ""
     },

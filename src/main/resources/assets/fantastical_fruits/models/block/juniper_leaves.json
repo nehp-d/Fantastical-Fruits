@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "fantastical_fruits:blocks/junipertest",
-    "up": "fantastical_fruits:blocks/junipertest",
-    "north": "fantastical_fruits:blocks/junipertest",
-    "east": "fantastical_fruits:blocks/junipertest",
-    "south": "fantastical_fruits:blocks/junipertest",
-    "west": "fantastical_fruits:blocks/junipertest",
-    "particle": "fantastical_fruits:blocks/junipertest"
+    "all": "fantastical_fruits:blocks/juniper_leaves",
+    "particle": "fantastical_fruits:blocks/juniper_leaves"
   }
 }

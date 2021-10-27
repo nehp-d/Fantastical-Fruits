@@ -37,6 +37,12 @@
       },
       {
         "value": "CUSTOM:TropicalLeaves"
+      },
+      {
+        "value": "CUSTOM:JuniperLeaves"
+      },
+      {
+        "value": "CUSTOM:MapleLeaves"
       }
     ],
     "functions": [],

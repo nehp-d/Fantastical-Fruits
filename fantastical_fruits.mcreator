@@ -328,39 +328,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "AspenWoodStrip",
-      "type": "procedure",
-      "sortid": 110,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspen_wood_strip",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "AspenForest",
       "type": "biome",
       "sortid": 111,
@@ -376,7 +343,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_1"
+      "registry_name": "aspen_tree_1",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree2",
@@ -385,7 +353,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_2"
+      "registry_name": "aspen_tree_2",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree3",
@@ -394,7 +363,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_3"
+      "registry_name": "aspen_tree_3",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree4",
@@ -403,7 +373,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_4"
+      "registry_name": "aspen_tree_4",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree5",
@@ -412,7 +383,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_5"
+      "registry_name": "aspen_tree_5",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree6",
@@ -421,7 +393,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_6"
+      "registry_name": "aspen_tree_6",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree7",
@@ -430,7 +403,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_7"
+      "registry_name": "aspen_tree_7",
+      "path": "~/Structures"
     },
     {
       "name": "AspenTree8",
@@ -439,7 +413,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_tree_8"
+      "registry_name": "aspen_tree_8",
+      "path": "~/Structures"
     },
     {
       "name": "OrangeAutumnalLeaves",
@@ -970,36 +945,6 @@
       }
     },
     {
-      "name": "AspenTreeCondition",
-      "type": "procedure",
-      "sortid": 145,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspen_tree_condition",
-      "metadata": {
-        "return_type": "logic",
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Saplings",
       "type": "tag",
       "sortid": 146,
@@ -1383,7 +1328,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_tree_1"
+      "registry_name": "maple_tree_1",
+      "path": "~/Structures"
     },
     {
       "name": "MapleTree2",
@@ -1392,7 +1338,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_tree_2"
+      "registry_name": "maple_tree_2",
+      "path": "~/Structures"
     },
     {
       "name": "MapleTree3",
@@ -1401,7 +1348,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_tree_3"
+      "registry_name": "maple_tree_3",
+      "path": "~/Structures"
     },
     {
       "name": "GlowSprout",
@@ -1647,7 +1595,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_tree_4"
+      "registry_name": "maple_tree_4",
+      "path": "~/Structures"
     },
     {
       "name": "MapleTree5",
@@ -1656,7 +1605,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "maple_tree_5"
+      "registry_name": "maple_tree_5",
+      "path": "~/Structures"
     },
     {
       "name": "WharpleyCrop7",
@@ -2127,7 +2077,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "aspen_sapling_tree"
+      "registry_name": "aspen_sapling_tree",
+      "path": "~/Structures"
     },
     {
       "name": "LemonTree",
@@ -2136,7 +2087,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lemon_tree"
+      "registry_name": "lemon_tree",
+      "path": "~/Structures"
     },
     {
       "name": "LemonTreeRare",
@@ -2145,7 +2097,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lemon_tree_rare"
+      "registry_name": "lemon_tree_rare",
+      "path": "~/Structures"
     },
     {
       "name": "LimeTree",
@@ -2154,7 +2107,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "lime_tree"
+      "registry_name": "lime_tree",
+      "path": "~/Structures"
     },
     {
       "name": "PurpleGrapeVineTip",
@@ -2488,7 +2442,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "dragon_fruit_block"
+      "registry_name": "dragon_fruit_block",
+      "path": "~/Nature"
     },
     {
       "name": "DragonFruitDrop",
@@ -2526,7 +2481,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "palm_tree_1"
+      "registry_name": "palm_tree_1",
+      "path": "~/Structures"
     },
     {
       "name": "PalmTree2",
@@ -2535,7 +2491,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "palm_tree_2"
+      "registry_name": "palm_tree_2",
+      "path": "~/Structures"
     },
     {
       "name": "ViciataSpores",
@@ -2554,7 +2511,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viciata_stage_0"
+      "registry_name": "viciata_stage_0",
+      "path": "~/Nature"
     },
     {
       "name": "ViciataStage1",
@@ -2563,7 +2521,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viciata_stage_1"
+      "registry_name": "viciata_stage_1",
+      "path": "~/Nature"
     },
     {
       "name": "ViciataStage2",
@@ -2572,7 +2531,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "viciata_stage_2"
+      "registry_name": "viciata_stage_2",
+      "path": "~/Nature"
     },
     {
       "name": "Repulsion",
@@ -2984,7 +2944,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spongefruit_stem"
+      "registry_name": "spongefruit_stem",
+      "path": "~/Nature"
     },
     {
       "name": "JuniperDoor",
@@ -3003,7 +2964,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spongefruit_cluster"
+      "registry_name": "spongefruit_cluster",
+      "path": "~/Nature"
     },
     {
       "name": "JuniperTrapdoor",
@@ -3022,7 +2984,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_tree_1"
+      "registry_name": "juniper_tree_1",
+      "path": "~/Structures"
     },
     {
       "name": "JuniperTree2",
@@ -3031,7 +2994,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_tree_2"
+      "registry_name": "juniper_tree_2",
+      "path": "~/Structures"
     },
     {
       "name": "JuniperTree3",
@@ -3040,7 +3004,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_tree_3"
+      "registry_name": "juniper_tree_3",
+      "path": "~/Structures"
     },
     {
       "name": "JuniperTree4",
@@ -3049,7 +3014,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "juniper_tree_4"
+      "registry_name": "juniper_tree_4",
+      "path": "~/Structures"
     },
     {
       "name": "SpongefruitClusterRecipe",
@@ -3101,7 +3067,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "spongefruit_sprout"
+      "registry_name": "spongefruit_sprout",
+      "path": "~/Nature"
     },
     {
       "name": "Frigipome",
@@ -3278,17 +3245,8 @@
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "oasis"
-    },
-    {
-      "name": "Aubadeberry",
-      "type": "plant",
-      "sortid": 254,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aubadeberry",
-      "path": "~/Nature"
+      "registry_name": "oasis",
+      "path": "~/Structures"
     },
     {
       "name": "Hogsport",
@@ -3352,6 +3310,219 @@
           }
         ]
       }
+    },
+    {
+      "name": "HogsportPlant1",
+      "type": "plant",
+      "sortid": 258,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "hogsport_plant_1",
+      "path": "~/Nature"
+    },
+    {
+      "name": "JuniperSapling",
+      "type": "plant",
+      "sortid": 259,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_sapling",
+      "path": "~/Nature"
+    },
+    {
+      "name": "WoodStrip",
+      "type": "procedure",
+      "sortid": 260,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wood_strip",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "JuniperPlanksRecipe",
+      "type": "recipe",
+      "sortid": 261,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_planks_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenPlanksRecipe3",
+      "type": "recipe",
+      "sortid": 262,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_planks_recipe_3",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "AspenPlanksRecipe4",
+      "type": "recipe",
+      "sortid": 263,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "aspen_planks_recipe_4",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperPlanksRecipe2",
+      "type": "recipe",
+      "sortid": 264,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_planks_recipe_2",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperPlanksRecipe3",
+      "type": "recipe",
+      "sortid": 265,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_planks_recipe_3",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperPlanksRecipe4",
+      "type": "recipe",
+      "sortid": 266,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_planks_recipe_4",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperSlabRecipe",
+      "type": "recipe",
+      "sortid": 267,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_slab_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperStairsRecipe",
+      "type": "recipe",
+      "sortid": 268,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_stairs_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperWoodRecipe",
+      "type": "recipe",
+      "sortid": 269,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_wood_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperButtonRecipe",
+      "type": "recipe",
+      "sortid": 270,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_button_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperDoorRecipe",
+      "type": "recipe",
+      "sortid": 271,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_door_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperFenceRecipe",
+      "type": "recipe",
+      "sortid": 272,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_fence_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperFenceGateRecipe",
+      "type": "recipe",
+      "sortid": 273,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_fence_gate_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "StrippedJuniperWoodRecipe",
+      "type": "recipe",
+      "sortid": 274,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "stripped_juniper_wood_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperPressurePlateRecipe",
+      "type": "recipe",
+      "sortid": 275,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_pressure_plate_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "JuniperTrapdoorRecipe",
+      "type": "recipe",
+      "sortid": 276,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "juniper_trapdoor_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -3385,6 +3556,7 @@
       "item.fantastical_fruits.suspine": "Suspine",
       "block.fantastical_fruits.frigiplant_3": "Frigiplant 3",
       "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
+      "item.fantastical_fruits.hogsport": "Hogsport",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
       "block.fantastical_fruits.blueberry_bush_3": "Blueberry Bush 3",
       "item.fantastical_fruits.plantain": "Plantain",
@@ -3449,6 +3621,7 @@
       "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
+      "block.fantastical_fruits.juniper_sapling": "Juniper Sapling",
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "block.fantastical_fruits.juniper_log": "Juniper Log",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
@@ -3521,7 +3694,9 @@
       "block.fantastical_fruits.stripped_juniper_wood": "Stripped Juniper Wood",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
       "block.fantastical_fruits.juniper_fence": "Juniper Fence",
+      "block.fantastical_fruits.hogsport_plant_1": "Hogsport Plant 1",
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
+      "block.fantastical_fruits.hogsport_plant_0": "Hogsport Plant 0",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_items": "Fantastical Items",
@@ -3622,6 +3797,7 @@
       "item.fantastical_fruits.wharpley_seeds": "Wharpley Seeds",
       "item.fantastical_fruits.viciata": "Viciata Berry",
       "block.fantastical_fruits.aspen_stairs": "Aspen Stairs",
+      "block.fantastical_fruits.juniper_sapling": "Juniper Sapling",
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "block.fantastical_fruits.juniper_log": "Juniper Log",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
@@ -3650,7 +3826,6 @@
       "block.fantastical_fruits.juniper_door": "Juniper Door",
       "block.fantastical_fruits.fruit_crate": "Fruit Crate",
       "item.fantastical_fruits.flushed_seeds": "Flushed Seeds",
-      "block.fantastical_fruits.aubadeberry": "Aubadeberry",
       "block.fantastical_fruits.small_leaf_pile": "Small Leaf Pile",
       "block.fantastical_fruits.spongefruit_stem": "Spongefruit Stem",
       "item.fantastical_fruits.wharpley": "Wharpley",
@@ -3696,6 +3871,7 @@
       "block.fantastical_fruits.stripped_juniper_wood": "Stripped Juniper Wood",
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
       "block.fantastical_fruits.juniper_fence": "Juniper Fence",
+      "block.fantastical_fruits.hogsport_plant_1": "Hogsport Plant 1",
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
       "block.fantastical_fruits.hogsport_plant_0": "Hogsport Plant 0",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
@@ -3721,6 +3897,10 @@
       },
       {
         "name": "Blocks",
+        "children": []
+      },
+      {
+        "name": "Structures",
         "children": []
       }
     ]
