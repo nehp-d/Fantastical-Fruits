@@ -1,0 +1,26 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "juniper_bough",
+    "customModelName": "Normal",
+    "name": "Juniper Branch",
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:FantasticalItems"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 3,
+    "saturation": 3.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "Items.STICK"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": false,
+    "animation": "eat",
+    "hasGlow": false
+  }
+}
