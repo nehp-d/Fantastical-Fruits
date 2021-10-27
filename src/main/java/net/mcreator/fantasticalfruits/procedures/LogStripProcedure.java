@@ -26,19 +26,19 @@ import net.minecraft.client.entity.player.AbstractClientPlayerEntity;
 import net.minecraft.client.Minecraft;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.fantasticalfruits.block.StrippedMapleWoodBlock;
-import net.mcreator.fantasticalfruits.block.StrippedJuniperWoodBlock;
-import net.mcreator.fantasticalfruits.block.StrippedAspenWoodBlock;
-import net.mcreator.fantasticalfruits.block.MapleWoodBlock;
-import net.mcreator.fantasticalfruits.block.JuniperWoodBlock;
-import net.mcreator.fantasticalfruits.block.AspenWoodBlock;
+import net.mcreator.fantasticalfruits.block.StrippedMapleLogBlock;
+import net.mcreator.fantasticalfruits.block.StrippedJuniperLogBlock;
+import net.mcreator.fantasticalfruits.block.StrippedAspenLogBlock;
+import net.mcreator.fantasticalfruits.block.MapleLogBlock;
+import net.mcreator.fantasticalfruits.block.JuniperLogBlock;
+import net.mcreator.fantasticalfruits.block.AspenLogBlock;
 import net.mcreator.fantasticalfruits.FantasticalFruitsMod;
 
 import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
-public class WoodStripProcedure {
+public class LogStripProcedure {
 	@Mod.EventBusSubscriber
 	private static class GlobalTrigger {
 		@SubscribeEvent
@@ -67,27 +67,27 @@ public class WoodStripProcedure {
 	public static void executeProcedure(Map<String, Object> dependencies) {
 		if (dependencies.get("entity") == null) {
 			if (!dependencies.containsKey("entity"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency entity for procedure WoodStrip!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency entity for procedure LogStrip!");
 			return;
 		}
 		if (dependencies.get("x") == null) {
 			if (!dependencies.containsKey("x"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency x for procedure WoodStrip!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency x for procedure LogStrip!");
 			return;
 		}
 		if (dependencies.get("y") == null) {
 			if (!dependencies.containsKey("y"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency y for procedure WoodStrip!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency y for procedure LogStrip!");
 			return;
 		}
 		if (dependencies.get("z") == null) {
 			if (!dependencies.containsKey("z"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency z for procedure WoodStrip!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency z for procedure LogStrip!");
 			return;
 		}
 		if (dependencies.get("world") == null) {
 			if (!dependencies.containsKey("world"))
-				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure WoodStrip!");
+				FantasticalFruitsMod.LOGGER.warn("Failed to load dependency world for procedure LogStrip!");
 			return;
 		}
 		Entity entity = (Entity) dependencies.get("entity");
@@ -96,7 +96,69 @@ public class WoodStripProcedure {
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
 		if ((((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY).getItem() instanceof AxeItem)) {
-			if ((AspenWoodBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
+			if ((AspenLogBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
+				if ((!(new Object() {
+					public boolean checkGamemode(Entity _ent) {
+						if (_ent instanceof ServerPlayerEntity) {
+							return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
+						} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
+							NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
+									.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
+							return _npi != null && _npi.getGameType() == GameType.CREATIVE;
+						}
+						return false;
+					}
+				}.checkGamemode(entity)))) {
+					{
+						ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
+						if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
+							_ist.shrink(1);
+							_ist.setDamage(0);
+						}
+					}
+					if (world instanceof World && !world.isRemote()) {
+						((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+								SoundCategory.BLOCKS, (float) 1, (float) 1);
+					} else {
+						((World) world).playSound(x, y, z,
+								(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
+								SoundCategory.BLOCKS, (float) 1, (float) 1, false);
+					}
+					{
+						BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
+						BlockState _bs = StrippedAspenLogBlock.block.getDefaultState();
+						BlockState _bso = world.getBlockState(_bp);
+						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+							Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
+							if (_property != null && _bs.get(_property) != null)
+								try {
+									_bs = _bs.with(_property, (Comparable) entry.getValue());
+								} catch (Exception e) {
+								}
+						}
+						TileEntity _te = world.getTileEntity(_bp);
+						CompoundNBT _bnbt = null;
+						if (_te != null) {
+							_bnbt = _te.write(new CompoundNBT());
+							_te.remove();
+						}
+						world.setBlockState(_bp, _bs, 3);
+						if (_bnbt != null) {
+							_te = world.getTileEntity(_bp);
+							if (_te != null) {
+								try {
+									_te.read(_bso, _bnbt);
+								} catch (Exception ignored) {
+								}
+							}
+						}
+					}
+				}
+				if (entity instanceof LivingEntity) {
+					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
+				}
+			} else if ((MapleLogBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
 				if ((!(new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayerEntity) {
@@ -131,7 +193,7 @@ public class WoodStripProcedure {
 				}
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = StrippedAspenWoodBlock.block.getDefaultState();
+					BlockState _bs = StrippedMapleLogBlock.block.getDefaultState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
@@ -158,7 +220,7 @@ public class WoodStripProcedure {
 						}
 					}
 				}
-			} else if ((MapleWoodBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
+			} else if ((JuniperLogBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
 				if ((!(new Object() {
 					public boolean checkGamemode(Entity _ent) {
 						if (_ent instanceof ServerPlayerEntity) {
@@ -193,69 +255,7 @@ public class WoodStripProcedure {
 				}
 				{
 					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = StrippedMapleWoodBlock.block.getDefaultState();
-					BlockState _bso = world.getBlockState(_bp);
-					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
-						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
-						if (_property != null && _bs.get(_property) != null)
-							try {
-								_bs = _bs.with(_property, (Comparable) entry.getValue());
-							} catch (Exception e) {
-							}
-					}
-					TileEntity _te = world.getTileEntity(_bp);
-					CompoundNBT _bnbt = null;
-					if (_te != null) {
-						_bnbt = _te.write(new CompoundNBT());
-						_te.remove();
-					}
-					world.setBlockState(_bp, _bs, 3);
-					if (_bnbt != null) {
-						_te = world.getTileEntity(_bp);
-						if (_te != null) {
-							try {
-								_te.read(_bso, _bnbt);
-							} catch (Exception ignored) {
-							}
-						}
-					}
-				}
-			} else if ((JuniperWoodBlock.block == (world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock())) {
-				if ((!(new Object() {
-					public boolean checkGamemode(Entity _ent) {
-						if (_ent instanceof ServerPlayerEntity) {
-							return ((ServerPlayerEntity) _ent).interactionManager.getGameType() == GameType.CREATIVE;
-						} else if (_ent instanceof PlayerEntity && _ent.world.isRemote()) {
-							NetworkPlayerInfo _npi = Minecraft.getInstance().getConnection()
-									.getPlayerInfo(((AbstractClientPlayerEntity) _ent).getGameProfile().getId());
-							return _npi != null && _npi.getGameType() == GameType.CREATIVE;
-						}
-						return false;
-					}
-				}.checkGamemode(entity)))) {
-					{
-						ItemStack _ist = ((entity instanceof LivingEntity) ? ((LivingEntity) entity).getHeldItemMainhand() : ItemStack.EMPTY);
-						if (_ist.attemptDamageItem((int) 1, new Random(), null)) {
-							_ist.shrink(1);
-							_ist.setDamage(0);
-						}
-					}
-				}
-				if (entity instanceof LivingEntity) {
-					((LivingEntity) entity).swing(Hand.MAIN_HAND, true);
-				}
-				if (world instanceof World && !world.isRemote()) {
-					((World) world).playSound(null, new BlockPos((int) x, (int) y, (int) z),
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
-							SoundCategory.BLOCKS, (float) 1, (float) 1);
-				} else {
-					((World) world).playSound(x, y, z,
-							(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("item.axe.strip")),
-							SoundCategory.BLOCKS, (float) 1, (float) 1, false);
-				}
-				{
-					BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
-					BlockState _bs = StrippedJuniperWoodBlock.block.getDefaultState();
+					BlockState _bs = StrippedJuniperLogBlock.block.getDefaultState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateContainer().getProperty(entry.getKey().getName());
