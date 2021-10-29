@@ -22,6 +22,7 @@ import net.minecraft.world.gen.blockplacer.DoublePlantBlockPlacer;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.gen.ChunkGenerator;
 import net.minecraft.world.World;
+import net.minecraft.world.IWorldReader;
 import net.minecraft.world.ISeedReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.registry.WorldGenRegistries;
@@ -42,6 +43,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.DoublePlantBlock;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
@@ -83,7 +85,7 @@ public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement
 				public boolean generate(ISeedReader world, ChunkGenerator generator, Random random, BlockPos pos, BlockClusterFeatureConfig config) {
 					RegistryKey<World> dimensionType = world.getWorld().getDimensionKey();
 					boolean dimensionCriteria = false;
-					if (dimensionType == World.OVERWORLD)
+					if (dimensionType == World.THE_NETHER)
 						dimensionCriteria = true;
 					if (!dimensionCriteria)
 						return false;
@@ -92,14 +94,19 @@ public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement
 			};
 			configuredFeature = feature.withConfiguration(
 					(new BlockClusterFeatureConfig.Builder(new SimpleBlockStateProvider(block.getDefaultState()), new DoublePlantBlockPlacer()))
-							.tries(64).func_227317_b_().build())
-					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(5);
+							.tries(50).func_227317_b_().build())
+					.withPlacement(Features.Placements.VEGETATION_PLACEMENT).withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT).func_242731_b(3);
 			event.getRegistry().register(feature.setRegistryName("hogsport_plant_1"));
 			Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, new ResourceLocation("fantastical_fruits:hogsport_plant_1"), configuredFeature);
 		}
 	}
 	@SubscribeEvent
 	public void addFeatureToBiomes(BiomeLoadingEvent event) {
+		boolean biomeCriteria = false;
+		if (new ResourceLocation("crimson_forest").equals(event.getName()))
+			biomeCriteria = true;
+		if (!biomeCriteria)
+			return;
 		event.getGeneration().getFeatures(GenerationStage.Decoration.VEGETAL_DECORATION).add(() -> configuredFeature);
 	}
 	public static class BlockCustomFlower extends DoublePlantBlock {
@@ -127,6 +134,23 @@ public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public boolean isValidGround(BlockState state, IBlockReader worldIn, BlockPos pos) {
+			Block ground = state.getBlock();
+			return (ground == Blocks.CRIMSON_NYLIUM);
+		}
+
+		@Override
+		public boolean isValidPosition(BlockState blockstate, IWorldReader worldIn, BlockPos pos) {
+			BlockPos blockpos = pos.down();
+			BlockState groundState = worldIn.getBlockState(blockpos);
+			Block ground = groundState.getBlock();
+			if (blockstate.get(HALF) == DoubleBlockHalf.UPPER)
+				return groundState.isIn(this) && groundState.get(HALF) == DoubleBlockHalf.LOWER;
+			else
+				return this.isValidGround(groundState, worldIn, blockpos);
 		}
 
 		@Override

@@ -1,7 +1,7 @@
 {
   "parent": "block/tinted_cross",
   "textures": {
-    "cross": "fantastical_fruits:blocks/sugarroot",
-    "particle": "fantastical_fruits:blocks/sugarroot"
+    "cross": "fantastical_fruits:blocks/sugar_root",
+    "particle": "fantastical_fruits:blocks/sugar_root"
   }
 }

@@ -3,7 +3,7 @@
   "_type": "plant",
   "definition": {
     "renderType": 120,
-    "texture": "sugarroot",
+    "texture": "sugar_root",
     "textureBottom": "",
     "customModelName": "Cross model",
     "itemTexture": "",

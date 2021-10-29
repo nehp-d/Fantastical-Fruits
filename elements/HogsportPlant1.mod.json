@@ -77,12 +77,20 @@
     "fireSpreadSpeed": 60,
     "jumpFactor": 1.0,
     "speedFactor": 1.0,
-    "canBePlacedOn": [],
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [
-      "Surface"
+    "canBePlacedOn": [
+      {
+        "value": "Blocks.CRIMSON_NYLIUM"
+      }
     ],
-    "restrictionBiomes": [],
-    "patchSize": 64
+    "frequencyOnChunks": 3,
+    "spawnWorldTypes": [
+      "Nether"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "crimson_forest"
+      }
+    ],
+    "patchSize": 50
   }
 }
