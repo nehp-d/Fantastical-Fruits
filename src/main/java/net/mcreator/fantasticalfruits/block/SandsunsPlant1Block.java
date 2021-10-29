@@ -8,41 +8,41 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Direction;
-import net.minecraft.state.properties.DoubleBlockHalf;
-import net.minecraft.state.properties.BlockStateProperties;
+import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
-import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
+import net.minecraft.item.BlockItem;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
-import net.minecraft.block.DoublePlantBlock;
+import net.minecraft.block.FlowerBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.item.SandsunsItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
 import java.util.Collections;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:hogsport_plant_1")
+public class SandsunsPlant1Block extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:sandsuns_plant_1")
 	public static final Block block = null;
-	public HogsportPlant1Block(FantasticalFruitsModElements instance) {
-		super(instance, 258);
+	public SandsunsPlant1Block(FantasticalFruitsModElements instance) {
+		super(instance, 280);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items
-				.add(() -> new TallBlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
@@ -50,11 +50,11 @@ public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement
 	public void clientLoad(FMLClientSetupEvent event) {
 		RenderTypeLookup.setRenderLayer(block, RenderType.getCutout());
 	}
-	public static class BlockCustomFlower extends DoublePlantBlock {
+	public static class BlockCustomFlower extends FlowerBlock {
 		public BlockCustomFlower() {
-			super(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT).hardnessAndResistance(0f, 0f)
-					.setLightLevel(s -> 0));
-			setRegistryName("hogsport_plant_1");
+			super(Effects.SPEED, 5, Block.Properties.create(Material.PLANTS).doesNotBlockMovement().sound(SoundType.PLANT)
+					.hardnessAndResistance(0f, 0f).setLightLevel(s -> 0));
+			setRegistryName("sandsuns_plant_1");
 		}
 
 		@Override
@@ -63,18 +63,26 @@ public class HogsportPlant1Block extends FantasticalFruitsModElements.ModElement
 		}
 
 		@Override
+		public Block.OffsetType getOffsetType() {
+			return Block.OffsetType.NONE;
+		}
+
+		@Override
 		public int getFireSpreadSpeed(BlockState state, IBlockReader world, BlockPos pos, Direction face) {
 			return 60;
 		}
 
 		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(SandsunsItem.block);
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
-			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
-				return Collections.emptyList();
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(SandsunsItem.block, (int) (2)));
 		}
 
 		@Override

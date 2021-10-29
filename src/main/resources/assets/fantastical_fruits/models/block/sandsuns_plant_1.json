@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "fantastical_fruits:blocks/sandsun_plant1",
+    "particle": "fantastical_fruits:blocks/sandsun_plant1"
+  }
+}
