@@ -82,10 +82,8 @@
         "value": "Blocks.CRIMSON_NYLIUM"
       }
     ],
-    "frequencyOnChunks": 5,
-    "spawnWorldTypes": [
-      "Nether"
-    ],
+    "frequencyOnChunks": 0,
+    "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "patchSize": 64
   }
