@@ -3582,6 +3582,43 @@
           }
         ]
       }
+    },
+    {
+      "name": "AbsorptiveBrewEffect",
+      "type": "procedure",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absorptive_brew_effect",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AbsorptiveBrew",
+      "type": "food",
+      "sortid": 282,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absorptive_brew",
+      "path": "~/Items"
+    },
+    {
+      "name": "AbsorptiveBrewRecipe",
+      "type": "recipe",
+      "sortid": 283,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "absorptive_brew_recipe",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -3686,6 +3723,7 @@
       "block.fantastical_fruits.juniper_sapling": "Juniper Sapling",
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "block.fantastical_fruits.juniper_log": "Juniper Log",
+      "item.fantastical_fruits.absorptive_brew": "Absorptive Brew",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.juniper_planks": "Juniper Planks",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",
@@ -3865,6 +3903,7 @@
       "block.fantastical_fruits.juniper_sapling": "Juniper Sapling",
       "item.fantastical_fruits.rough_mycelite": "Rough Mycelite",
       "block.fantastical_fruits.juniper_log": "Juniper Log",
+      "item.fantastical_fruits.absorptive_brew": "Absorptive Brew",
       "item.fantastical_fruits.vermillion_mango": "Vermillion Mango",
       "block.fantastical_fruits.juniper_planks": "Juniper Planks",
       "block.fantastical_fruits.aspen_leaf_pile": "Aspen Leaf Pile",

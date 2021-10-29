@@ -1,0 +1,31 @@
+{
+  "_fv": 24,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "absorptive_brew",
+    "customModelName": "Normal",
+    "name": "Absorptive Brew",
+    "rarity": "COMMON",
+    "specialInfo": [
+      "§9Absorption (3:00)"
+    ],
+    "creativeTab": {
+      "value": "CUSTOM:FantasticalFruits"
+    },
+    "stackSize": 1,
+    "nutritionalValue": 0,
+    "saturation": 0.0,
+    "eatingSpeed": 32,
+    "resultItem": {
+      "value": "Items.GLASS_BOTTLE"
+    },
+    "forDogs": false,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": true,
+    "onEaten": {
+      "name": "AbsorptiveBrewEffect"
+    }
+  }
+}
