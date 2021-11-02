@@ -3,13 +3,13 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "sunsands",
+    "texture": "sandsuns",
     "customModelName": "Normal",
     "name": "Sandsuns",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
-      "value": "FOOD"
+      "value": "CUSTOM:FantasticalFruits"
     },
     "stackSize": 64,
     "nutritionalValue": 2,
