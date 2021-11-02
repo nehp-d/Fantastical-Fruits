@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "fantastical_fruits:block/stripped_mahogany_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "fantastical_fruits:block/stripped_mahogany_wood"
+    },
+    "axis=z": {
+      "model": "fantastical_fruits:block/stripped_mahogany_wood",
+      "x": 90
+    }
+  }
+}
