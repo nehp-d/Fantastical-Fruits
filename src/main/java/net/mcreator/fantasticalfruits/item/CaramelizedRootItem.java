@@ -13,11 +13,11 @@ import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 @FantasticalFruitsModElements.ModElement.Tag
-public class SugarRootItem extends FantasticalFruitsModElements.ModElement {
-	@ObjectHolder("fantastical_fruits:sugar_root")
+public class CaramelizedRootItem extends FantasticalFruitsModElements.ModElement {
+	@ObjectHolder("fantastical_fruits:caramelized_root")
 	public static final Item block = null;
-	public SugarRootItem(FantasticalFruitsModElements instance) {
-		super(instance, 7);
+	public CaramelizedRootItem(FantasticalFruitsModElements instance) {
+		super(instance, 290);
 	}
 
 	@Override
@@ -27,8 +27,8 @@ public class SugarRootItem extends FantasticalFruitsModElements.ModElement {
 	public static class FoodItemCustom extends Item {
 		public FoodItemCustom() {
 			super(new Item.Properties().group(FantasticalFruitsItemGroup.tab).maxStackSize(64).rarity(Rarity.COMMON)
-					.food((new Food.Builder()).hunger(2).saturation(1f).build()));
-			setRegistryName("sugar_root");
+					.food((new Food.Builder()).hunger(5).saturation(2f).build()));
+			setRegistryName("caramelized_root");
 		}
 
 		@Override

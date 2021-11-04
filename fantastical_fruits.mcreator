@@ -3679,6 +3679,36 @@
       "ids": {},
       "registry_name": "stripped_mahogany_wood",
       "path": "~/Blocks"
+    },
+    {
+      "name": "CaramelizedRoot",
+      "type": "food",
+      "sortid": 290,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caramelized_root",
+      "path": "~/Items"
+    },
+    {
+      "name": "CaramelRootRecipe",
+      "type": "recipe",
+      "sortid": 291,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caramel_root_recipe",
+      "path": "~/Recipes"
+    },
+    {
+      "name": "CaramelRootRecipe1",
+      "type": "recipe",
+      "sortid": 292,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "caramel_root_recipe_1",
+      "path": "~/Recipes"
     }
   ],
   "variable_elements": [],
@@ -3689,6 +3719,7 @@
       "block.fantastical_fruits.lime_leaves_0": "Lime Leaves",
       "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
       "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
+      "item.fantastical_fruits.caramelized_root": "Caramelized Root",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",
@@ -3873,6 +3904,7 @@
       "block.fantastical_fruits.lime_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.juniper_leaves": "Juniper Leaves",
       "block.fantastical_fruits.spongefruit_cluster": "Spongefruit Cluster",
+      "item.fantastical_fruits.caramelized_root": "Caramelized Root",
       "block.fantastical_fruits.lemon_leaves_1": "Lemon Leaves 1",
       "block.fantastical_fruits.lemon_leaves_0": "Lemon Leaves",
       "block.fantastical_fruits.glow_sprout": "Glow Sprout",

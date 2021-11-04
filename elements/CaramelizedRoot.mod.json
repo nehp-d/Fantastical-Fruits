@@ -3,17 +3,17 @@
   "_type": "food",
   "definition": {
     "renderType": 0,
-    "texture": "sugar_root",
+    "texture": "caramel_root",
     "customModelName": "Normal",
-    "name": "Sugar Root",
+    "name": "Caramelized Root",
     "rarity": "COMMON",
     "specialInfo": [],
     "creativeTab": {
       "value": "CUSTOM:FantasticalFruits"
     },
     "stackSize": 64,
-    "nutritionalValue": 2,
-    "saturation": 1.0,
+    "nutritionalValue": 5,
+    "saturation": 2.0,
     "eatingSpeed": 32,
     "resultItem": {
       "value": ""
