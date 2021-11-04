@@ -1,12 +1,7 @@
 {
-  "parent": "block/cube",
+  "parent": "block/cube_all",
   "textures": {
-    "down": "fantastical_fruits:blocks/mahogany_leaves",
-    "up": "fantastical_fruits:blocks/mahogany_leaves",
-    "north": "fantastical_fruits:blocks/mahogany_leaves",
-    "east": "fantastical_fruits:blocks/mahogany_leaves",
-    "south": "fantastical_fruits:blocks/mahogany_leaves",
-    "west": "fantastical_fruits:blocks/mahogany_leaves",
+    "all": "fantastical_fruits:blocks/mahogany_leaves",
     "particle": "fantastical_fruits:blocks/mahogany_leaves"
   }
 }

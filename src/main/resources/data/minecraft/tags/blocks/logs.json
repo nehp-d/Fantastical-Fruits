@@ -6,6 +6,16 @@
     "fantastical_fruits:maple_log",
     "fantastical_fruits:maple_wood",
     "fantastical_fruits:juniper_log",
-    "fantastical_fruits:juniper_wood"
+    "fantastical_fruits:juniper_wood",
+    "fantastical_fruits:mahogany_log",
+    "fantastical_fruits:stripped_mahogany_log",
+    "fantastical_fruits:mahogany_wood",
+    "fantastical_fruits:stripped_mahogany_wood",
+    "fantastical_fruits:stripped_aspen_log",
+    "fantastical_fruits:stripped_aspen_wood",
+    "fantastical_fruits:stripped_maple_log",
+    "fantastical_fruits:stripped_maple_wood",
+    "fantastical_fruits:stripped_juniper_log",
+    "fantastical_fruits:stripped_juniper_wood"
   ]
 }

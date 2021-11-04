@@ -22,6 +22,36 @@
       },
       {
         "value": "CUSTOM:JuniperWood"
+      },
+      {
+        "value": "CUSTOM:MahoganyLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMahoganyLog"
+      },
+      {
+        "value": "CUSTOM:MahoganyWood"
+      },
+      {
+        "value": "CUSTOM:StrippedMahoganyWood"
+      },
+      {
+        "value": "CUSTOM:StrippedAspenLog"
+      },
+      {
+        "value": "CUSTOM:StrippedAspenWood"
+      },
+      {
+        "value": "CUSTOM:StrippedMapleLog"
+      },
+      {
+        "value": "CUSTOM:StrippedMapleWood"
+      },
+      {
+        "value": "CUSTOM:StrippedJuniperLog"
+      },
+      {
+        "value": "CUSTOM:StrippedJuniperWood"
       }
     ],
     "functions": [],
