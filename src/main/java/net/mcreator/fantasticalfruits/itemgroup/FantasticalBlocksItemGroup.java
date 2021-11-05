@@ -13,7 +13,7 @@ import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 @FantasticalFruitsModElements.ModElement.Tag
 public class FantasticalBlocksItemGroup extends FantasticalFruitsModElements.ModElement {
 	public FantasticalBlocksItemGroup(FantasticalFruitsModElements instance) {
-		super(instance, 105);
+		super(instance, 116);
 	}
 
 	@Override

@@ -23,7 +23,7 @@ public class CrimberryItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:crimberry")
 	public static final Item block = null;
 	public CrimberryItem(FantasticalFruitsModElements instance) {
-		super(instance, 13);
+		super(instance, 15);
 	}
 
 	@Override

@@ -38,7 +38,7 @@ public class StoneGolemEntity extends FantasticalFruitsModElements.ModElement {
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(32).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
 			.size(0.6f, 1.8f)).build("stone_golem").setRegistryName("stone_golem");
 	public StoneGolemEntity(FantasticalFruitsModElements instance) {
-		super(instance, 99);
+		super(instance, 113);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new StoneGolemRenderer.ModelRegisterHandler());
 		FMLJavaModLoadingContext.get().getModEventBus().register(new EntityAttributesRegisterHandler());
 	}

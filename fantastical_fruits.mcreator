@@ -14,7 +14,7 @@
     {
       "name": "Blueberries",
       "type": "food",
-      "sortid": 8,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -44,7 +44,7 @@
     {
       "name": "FantasticalFruits",
       "type": "tab",
-      "sortid": 103,
+      "sortid": 114,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -53,7 +53,7 @@
     {
       "name": "PurpleGrapes",
       "type": "food",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -63,7 +63,7 @@
     {
       "name": "RedGrapes",
       "type": "food",
-      "sortid": 10,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -73,7 +73,7 @@
     {
       "name": "GreenGrapes",
       "type": "food",
-      "sortid": 11,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -93,7 +93,7 @@
     {
       "name": "SugarRecipe",
       "type": "recipe",
-      "sortid": 104,
+      "sortid": 115,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -103,7 +103,7 @@
     {
       "name": "FruitCrate",
       "type": "block",
-      "sortid": 22,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -113,7 +113,7 @@
     {
       "name": "FantasticalBlocks",
       "type": "tab",
-      "sortid": 105,
+      "sortid": 116,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -132,7 +132,7 @@
     {
       "name": "Kiwi",
       "type": "food",
-      "sortid": 15,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -142,7 +142,7 @@
     {
       "name": "Dragonfruit",
       "type": "food",
-      "sortid": 14,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -152,7 +152,7 @@
     {
       "name": "Viciata",
       "type": "food",
-      "sortid": 12,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -162,7 +162,7 @@
     {
       "name": "Writingtable",
       "type": "block",
-      "sortid": 23,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -172,7 +172,7 @@
     {
       "name": "Crimberry",
       "type": "food",
-      "sortid": 13,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -182,7 +182,7 @@
     {
       "name": "AspenLog",
       "type": "block",
-      "sortid": 24,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -192,7 +192,7 @@
     {
       "name": "StrippedAspenLog",
       "type": "block",
-      "sortid": 26,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -202,7 +202,7 @@
     {
       "name": "FantasticalNature",
       "type": "tab",
-      "sortid": 106,
+      "sortid": 117,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -211,7 +211,7 @@
     {
       "name": "AspenPlanks",
       "type": "block",
-      "sortid": 28,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -221,7 +221,7 @@
     {
       "name": "CrimberryFoodEaten",
       "type": "procedure",
-      "sortid": 107,
+      "sortid": 118,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -238,7 +238,7 @@
     {
       "name": "CrimberryPowderRecipe",
       "type": "recipe",
-      "sortid": 108,
+      "sortid": 119,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -248,7 +248,7 @@
     {
       "name": "CrimberryPowder",
       "type": "item",
-      "sortid": 69,
+      "sortid": 78,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -258,7 +258,7 @@
     {
       "name": "AspenLeaves",
       "type": "block",
-      "sortid": 76,
+      "sortid": 87,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -268,7 +268,7 @@
     {
       "name": "WanderingFunglin",
       "type": "livingentity",
-      "sortid": 98,
+      "sortid": 112,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -277,7 +277,7 @@
     {
       "name": "AspenWood",
       "type": "block",
-      "sortid": 25,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -287,7 +287,7 @@
     {
       "name": "StrippedAspenWood",
       "type": "block",
-      "sortid": 27,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -297,7 +297,7 @@
     {
       "name": "AspenForest",
       "type": "biome",
-      "sortid": 111,
+      "sortid": 120,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -306,7 +306,7 @@
     {
       "name": "AspenTree1",
       "type": "structure",
-      "sortid": 112,
+      "sortid": 121,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -316,7 +316,7 @@
     {
       "name": "AspenTree2",
       "type": "structure",
-      "sortid": 113,
+      "sortid": 122,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -326,7 +326,7 @@
     {
       "name": "AspenTree3",
       "type": "structure",
-      "sortid": 114,
+      "sortid": 123,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -336,7 +336,7 @@
     {
       "name": "AspenTree4",
       "type": "structure",
-      "sortid": 115,
+      "sortid": 124,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -346,7 +346,7 @@
     {
       "name": "AspenTree5",
       "type": "structure",
-      "sortid": 116,
+      "sortid": 125,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -356,7 +356,7 @@
     {
       "name": "AspenTree6",
       "type": "structure",
-      "sortid": 117,
+      "sortid": 126,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -366,7 +366,7 @@
     {
       "name": "AspenTree7",
       "type": "structure",
-      "sortid": 118,
+      "sortid": 127,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -376,7 +376,7 @@
     {
       "name": "AspenTree8",
       "type": "structure",
-      "sortid": 119,
+      "sortid": 128,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -386,7 +386,7 @@
     {
       "name": "OrangeAutumnalLeaves",
       "type": "block",
-      "sortid": 78,
+      "sortid": 89,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -396,7 +396,7 @@
     {
       "name": "RedAutumnalLeaves",
       "type": "block",
-      "sortid": 79,
+      "sortid": 90,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -406,7 +406,7 @@
     {
       "name": "YellowAutumnalLeaves",
       "type": "block",
-      "sortid": 77,
+      "sortid": 88,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -416,7 +416,7 @@
     {
       "name": "LeafPile",
       "type": "plant",
-      "sortid": 93,
+      "sortid": 107,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -436,7 +436,7 @@
     {
       "name": "AspenPlanksRecipe",
       "type": "recipe",
-      "sortid": 120,
+      "sortid": 129,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -446,7 +446,7 @@
     {
       "name": "AspenPlanksRecipe2",
       "type": "recipe",
-      "sortid": 121,
+      "sortid": 130,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -456,7 +456,7 @@
     {
       "name": "AspenWoodRecipe",
       "type": "recipe",
-      "sortid": 122,
+      "sortid": 131,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -466,7 +466,7 @@
     {
       "name": "StrippedAspenWoodRecipe",
       "type": "recipe",
-      "sortid": 123,
+      "sortid": 132,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -476,7 +476,7 @@
     {
       "name": "AspenStairs",
       "type": "block",
-      "sortid": 29,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -486,7 +486,7 @@
     {
       "name": "AspenSlab",
       "type": "block",
-      "sortid": 30,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -496,7 +496,7 @@
     {
       "name": "AspenFence",
       "type": "block",
-      "sortid": 31,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -506,7 +506,7 @@
     {
       "name": "AspenFenceGate",
       "type": "block",
-      "sortid": 32,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -516,7 +516,7 @@
     {
       "name": "AspenButton",
       "type": "block",
-      "sortid": 33,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -526,7 +526,7 @@
     {
       "name": "AspenPressurePlate",
       "type": "block",
-      "sortid": 34,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -536,7 +536,7 @@
     {
       "name": "AspenStairsRecipe",
       "type": "recipe",
-      "sortid": 124,
+      "sortid": 133,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -546,7 +546,7 @@
     {
       "name": "AspenSlabRecipe",
       "type": "recipe",
-      "sortid": 125,
+      "sortid": 134,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -556,7 +556,7 @@
     {
       "name": "AspenFenceRecipe",
       "type": "recipe",
-      "sortid": 126,
+      "sortid": 135,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -566,7 +566,7 @@
     {
       "name": "AspenPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 127,
+      "sortid": 136,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -576,7 +576,7 @@
     {
       "name": "AspenButtonRecipe",
       "type": "recipe",
-      "sortid": 128,
+      "sortid": 137,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -586,7 +586,7 @@
     {
       "name": "AmberFungus",
       "type": "plant",
-      "sortid": 87,
+      "sortid": 101,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -596,7 +596,7 @@
     {
       "name": "TallAmberFungus",
       "type": "plant",
-      "sortid": 88,
+      "sortid": 102,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -606,7 +606,7 @@
     {
       "name": "FruitasticalBeginning",
       "type": "achievement",
-      "sortid": 129,
+      "sortid": 138,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -615,7 +615,7 @@
     {
       "name": "AspenDoor",
       "type": "block",
-      "sortid": 35,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -625,7 +625,7 @@
     {
       "name": "AspenTrapdoor",
       "type": "block",
-      "sortid": 36,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -635,7 +635,7 @@
     {
       "name": "AspenFenceGateRecipe",
       "type": "recipe",
-      "sortid": 130,
+      "sortid": 139,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -645,7 +645,7 @@
     {
       "name": "AspenDoorRecipe",
       "type": "recipe",
-      "sortid": 131,
+      "sortid": 140,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -655,7 +655,7 @@
     {
       "name": "AspenTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 132,
+      "sortid": 141,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -665,7 +665,7 @@
     {
       "name": "Scourapple",
       "type": "food",
-      "sortid": 16,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -675,7 +675,7 @@
     {
       "name": "FieryBreath",
       "type": "achievement",
-      "sortid": 133,
+      "sortid": 142,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -684,7 +684,7 @@
     {
       "name": "CitrusEncounter",
       "type": "achievement",
-      "sortid": 134,
+      "sortid": 143,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -693,7 +693,7 @@
     {
       "name": "GreenishGlow",
       "type": "achievement",
-      "sortid": 135,
+      "sortid": 144,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -702,7 +702,7 @@
     {
       "name": "NaturesSpice",
       "type": "achievement",
-      "sortid": 136,
+      "sortid": 145,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -711,7 +711,7 @@
     {
       "name": "TheYellowForest",
       "type": "achievement",
-      "sortid": 137,
+      "sortid": 146,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -720,7 +720,7 @@
     {
       "name": "MyceliteOre",
       "type": "block",
-      "sortid": 67,
+      "sortid": 76,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -730,7 +730,7 @@
     {
       "name": "Mycelite",
       "type": "item",
-      "sortid": 70,
+      "sortid": 79,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -740,7 +740,7 @@
     {
       "name": "FantasticalItems",
       "type": "tab",
-      "sortid": 138,
+      "sortid": 147,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -749,7 +749,7 @@
     {
       "name": "RoughMycelite",
       "type": "item",
-      "sortid": 71,
+      "sortid": 80,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -759,7 +759,7 @@
     {
       "name": "MyceliteRecipe",
       "type": "recipe",
-      "sortid": 139,
+      "sortid": 148,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -769,7 +769,7 @@
     {
       "name": "MyceliteRecipe2",
       "type": "recipe",
-      "sortid": 140,
+      "sortid": 149,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -779,7 +779,7 @@
     {
       "name": "Wharpley",
       "type": "item",
-      "sortid": 72,
+      "sortid": 81,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -789,7 +789,7 @@
     {
       "name": "AspenSapling",
       "type": "plant",
-      "sortid": 86,
+      "sortid": 100,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -799,7 +799,7 @@
     {
       "name": "AspenSaplingGrow",
       "type": "procedure",
-      "sortid": 141,
+      "sortid": 150,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -828,7 +828,7 @@
     {
       "name": "AspenSaplingBonemeal",
       "type": "procedure",
-      "sortid": 142,
+      "sortid": 151,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -861,7 +861,7 @@
     {
       "name": "WildWharpley",
       "type": "plant",
-      "sortid": 143,
+      "sortid": 152,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -871,7 +871,7 @@
     {
       "name": "WharpleySeeds",
       "type": "item",
-      "sortid": 73,
+      "sortid": 82,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -881,7 +881,7 @@
     {
       "name": "WharpleyDrop",
       "type": "procedure",
-      "sortid": 144,
+      "sortid": 153,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -914,7 +914,7 @@
     {
       "name": "Saplings",
       "type": "tag",
-      "sortid": 146,
+      "sortid": 154,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -923,7 +923,7 @@
     {
       "name": "BlueberryBush",
       "type": "plant",
-      "sortid": 147,
+      "sortid": 155,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -933,7 +933,7 @@
     {
       "name": "BlueberryBush1",
       "type": "plant",
-      "sortid": 148,
+      "sortid": 156,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -943,7 +943,7 @@
     {
       "name": "BlueberryBush2",
       "type": "plant",
-      "sortid": 149,
+      "sortid": 157,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -953,7 +953,7 @@
     {
       "name": "BlueberryBush3",
       "type": "plant",
-      "sortid": 150,
+      "sortid": 158,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -963,7 +963,7 @@
     {
       "name": "BlueberryBushAge",
       "type": "procedure",
-      "sortid": 151,
+      "sortid": 159,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -992,7 +992,7 @@
     {
       "name": "BlueberryBushHarvest",
       "type": "procedure",
-      "sortid": 152,
+      "sortid": 160,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1025,7 +1025,7 @@
     {
       "name": "BlueberryBushPlace",
       "type": "procedure",
-      "sortid": 153,
+      "sortid": 161,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1058,7 +1058,7 @@
     {
       "name": "LemonHarvest",
       "type": "procedure",
-      "sortid": 154,
+      "sortid": 162,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1091,7 +1091,7 @@
     {
       "name": "LemonGrow",
       "type": "procedure",
-      "sortid": 155,
+      "sortid": 163,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1120,7 +1120,7 @@
     {
       "name": "MangoLeaves0",
       "type": "block",
-      "sortid": 84,
+      "sortid": 96,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1130,7 +1130,7 @@
     {
       "name": "MangoLeaves1",
       "type": "block",
-      "sortid": 156,
+      "sortid": 164,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1140,7 +1140,7 @@
     {
       "name": "LemonLeaves0",
       "type": "block",
-      "sortid": 85,
+      "sortid": 97,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1150,7 +1150,7 @@
     {
       "name": "LemonLeaves1",
       "type": "block",
-      "sortid": 157,
+      "sortid": 165,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1160,7 +1160,7 @@
     {
       "name": "MangoGrow",
       "type": "procedure",
-      "sortid": 158,
+      "sortid": 166,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1189,7 +1189,7 @@
     {
       "name": "MangoHarvest",
       "type": "procedure",
-      "sortid": 159,
+      "sortid": 167,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1222,7 +1222,7 @@
     {
       "name": "MapleLeaves",
       "type": "block",
-      "sortid": 80,
+      "sortid": 91,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1232,7 +1232,7 @@
     {
       "name": "MapleLog",
       "type": "block",
-      "sortid": 37,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1242,7 +1242,7 @@
     {
       "name": "MaplePlanks",
       "type": "block",
-      "sortid": 41,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1252,7 +1252,7 @@
     {
       "name": "MapleWood",
       "type": "block",
-      "sortid": 38,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1262,7 +1262,7 @@
     {
       "name": "StrippedMapleLog",
       "type": "block",
-      "sortid": 39,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1272,7 +1272,7 @@
     {
       "name": "StrippedMapleWood",
       "type": "block",
-      "sortid": 40,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1282,7 +1282,7 @@
     {
       "name": "MapleForest",
       "type": "biome",
-      "sortid": 160,
+      "sortid": 168,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1291,7 +1291,7 @@
     {
       "name": "MapleTree1",
       "type": "structure",
-      "sortid": 161,
+      "sortid": 169,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1301,7 +1301,7 @@
     {
       "name": "MapleTree2",
       "type": "structure",
-      "sortid": 162,
+      "sortid": 170,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1311,7 +1311,7 @@
     {
       "name": "MapleTree3",
       "type": "structure",
-      "sortid": 163,
+      "sortid": 171,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1321,7 +1321,7 @@
     {
       "name": "GlowSprout",
       "type": "plant",
-      "sortid": 96,
+      "sortid": 110,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1331,7 +1331,7 @@
     {
       "name": "BurntFungus",
       "type": "plant",
-      "sortid": 90,
+      "sortid": 104,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1341,7 +1341,7 @@
     {
       "name": "ScarletFungus",
       "type": "plant",
-      "sortid": 89,
+      "sortid": 103,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1351,7 +1351,7 @@
     {
       "name": "ChristmasRose",
       "type": "plant",
-      "sortid": 91,
+      "sortid": 105,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1361,7 +1361,7 @@
     {
       "name": "FlushedGrass",
       "type": "plant",
-      "sortid": 92,
+      "sortid": 106,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1371,7 +1371,7 @@
     {
       "name": "MapleFence",
       "type": "block",
-      "sortid": 44,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1381,7 +1381,7 @@
     {
       "name": "MapleFenceGate",
       "type": "block",
-      "sortid": 45,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1391,7 +1391,7 @@
     {
       "name": "MapleStairs",
       "type": "block",
-      "sortid": 42,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1401,7 +1401,7 @@
     {
       "name": "MaplePressurePlate",
       "type": "block",
-      "sortid": 47,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1411,7 +1411,7 @@
     {
       "name": "MapleSlab",
       "type": "block",
-      "sortid": 43,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1421,7 +1421,7 @@
     {
       "name": "MapleButton",
       "type": "block",
-      "sortid": 46,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1431,7 +1431,7 @@
     {
       "name": "GlowSproutCondition",
       "type": "procedure",
-      "sortid": 164,
+      "sortid": 172,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1461,7 +1461,7 @@
     {
       "name": "WharpleyCrop5",
       "type": "plant",
-      "sortid": 165,
+      "sortid": 173,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1471,7 +1471,7 @@
     {
       "name": "WharpleyCrop4",
       "type": "plant",
-      "sortid": 166,
+      "sortid": 174,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1481,7 +1481,7 @@
     {
       "name": "WharpleyCrop3",
       "type": "plant",
-      "sortid": 167,
+      "sortid": 175,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1491,7 +1491,7 @@
     {
       "name": "WharpleyCrop2",
       "type": "plant",
-      "sortid": 168,
+      "sortid": 176,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1501,7 +1501,7 @@
     {
       "name": "WharpleyCrop1",
       "type": "plant",
-      "sortid": 169,
+      "sortid": 177,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1511,7 +1511,7 @@
     {
       "name": "WharpleyCrop0",
       "type": "plant",
-      "sortid": 170,
+      "sortid": 178,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1521,7 +1521,7 @@
     {
       "name": "Bartering",
       "type": "procedure",
-      "sortid": 171,
+      "sortid": 179,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1558,7 +1558,7 @@
     {
       "name": "MapleTree4",
       "type": "structure",
-      "sortid": 172,
+      "sortid": 180,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1568,7 +1568,7 @@
     {
       "name": "MapleTree5",
       "type": "structure",
-      "sortid": 173,
+      "sortid": 181,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1578,7 +1578,7 @@
     {
       "name": "WharpleyCrop7",
       "type": "plant",
-      "sortid": 174,
+      "sortid": 182,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1588,7 +1588,7 @@
     {
       "name": "WharpleyCrop6",
       "type": "plant",
-      "sortid": 175,
+      "sortid": 183,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1598,7 +1598,7 @@
     {
       "name": "WharpleyGrow",
       "type": "procedure",
-      "sortid": 176,
+      "sortid": 184,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1627,7 +1627,7 @@
     {
       "name": "WharpleyPlant",
       "type": "procedure",
-      "sortid": 177,
+      "sortid": 185,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1660,7 +1660,7 @@
     {
       "name": "Icon",
       "type": "item",
-      "sortid": 178,
+      "sortid": 186,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1669,7 +1669,7 @@
     {
       "name": "MapleLeafPile",
       "type": "plant",
-      "sortid": 95,
+      "sortid": 109,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1679,7 +1679,7 @@
     {
       "name": "FlushedSeeds",
       "type": "item",
-      "sortid": 74,
+      "sortid": 83,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1689,7 +1689,7 @@
     {
       "name": "Seeds",
       "type": "procedure",
-      "sortid": 179,
+      "sortid": 187,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1722,7 +1722,7 @@
     {
       "name": "MapleButtonRecipe",
       "type": "recipe",
-      "sortid": 180,
+      "sortid": 188,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1732,7 +1732,7 @@
     {
       "name": "MapleFenceGateRecipe",
       "type": "recipe",
-      "sortid": 181,
+      "sortid": 189,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1742,7 +1742,7 @@
     {
       "name": "MaplePlanksRecipe2",
       "type": "recipe",
-      "sortid": 182,
+      "sortid": 190,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1752,7 +1752,7 @@
     {
       "name": "MaplePressurePlateRecipe",
       "type": "recipe",
-      "sortid": 183,
+      "sortid": 191,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1762,7 +1762,7 @@
     {
       "name": "MapleSlabRecipe",
       "type": "recipe",
-      "sortid": 184,
+      "sortid": 192,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1772,7 +1772,7 @@
     {
       "name": "MapleFenceRecipe",
       "type": "recipe",
-      "sortid": 185,
+      "sortid": 193,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1782,7 +1782,7 @@
     {
       "name": "MapleWoodRecipe",
       "type": "recipe",
-      "sortid": 186,
+      "sortid": 194,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1792,7 +1792,7 @@
     {
       "name": "StrippedMapleWoodRecipe",
       "type": "recipe",
-      "sortid": 187,
+      "sortid": 195,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1802,7 +1802,7 @@
     {
       "name": "MapleStairsRecipe",
       "type": "recipe",
-      "sortid": 188,
+      "sortid": 196,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1812,7 +1812,7 @@
     {
       "name": "MaplePlanksRecipe",
       "type": "recipe",
-      "sortid": 189,
+      "sortid": 197,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1822,7 +1822,7 @@
     {
       "name": "AspenLeafPile",
       "type": "plant",
-      "sortid": 94,
+      "sortid": 108,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1832,7 +1832,7 @@
     {
       "name": "MapleDoor",
       "type": "block",
-      "sortid": 48,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1842,7 +1842,7 @@
     {
       "name": "MapleTrapdoor",
       "type": "block",
-      "sortid": 49,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1852,7 +1852,7 @@
     {
       "name": "TwistedBread",
       "type": "food",
-      "sortid": 21,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1862,7 +1862,7 @@
     {
       "name": "MapleDoorRecipe",
       "type": "recipe",
-      "sortid": 190,
+      "sortid": 198,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1872,7 +1872,7 @@
     {
       "name": "MapleTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 191,
+      "sortid": 199,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1882,7 +1882,7 @@
     {
       "name": "LimeLeaves0",
       "type": "block",
-      "sortid": 83,
+      "sortid": 95,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1892,7 +1892,7 @@
     {
       "name": "LimeLeaves1",
       "type": "block",
-      "sortid": 192,
+      "sortid": 200,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1902,7 +1902,7 @@
     {
       "name": "TwistedBreadRecipe",
       "type": "recipe",
-      "sortid": 193,
+      "sortid": 201,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1912,7 +1912,7 @@
     {
       "name": "AspenSaplingDrop",
       "type": "procedure",
-      "sortid": 194,
+      "sortid": 202,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1945,7 +1945,7 @@
     {
       "name": "LimeGrow",
       "type": "procedure",
-      "sortid": 195,
+      "sortid": 203,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -1974,7 +1974,7 @@
     {
       "name": "LimeHarvest",
       "type": "procedure",
-      "sortid": 196,
+      "sortid": 204,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2007,7 +2007,7 @@
     {
       "name": "FlushedSeedsPlace",
       "type": "procedure",
-      "sortid": 197,
+      "sortid": 205,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2040,7 +2040,7 @@
     {
       "name": "AspenSaplingTree",
       "type": "structure",
-      "sortid": 198,
+      "sortid": 206,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2050,7 +2050,7 @@
     {
       "name": "LemonTree",
       "type": "structure",
-      "sortid": 199,
+      "sortid": 207,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2060,7 +2060,7 @@
     {
       "name": "LemonTreeRare",
       "type": "structure",
-      "sortid": 200,
+      "sortid": 208,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2070,7 +2070,7 @@
     {
       "name": "LimeTree",
       "type": "structure",
-      "sortid": 201,
+      "sortid": 209,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2080,7 +2080,7 @@
     {
       "name": "PurpleGrapeVineTip",
       "type": "block",
-      "sortid": 202,
+      "sortid": 210,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2090,7 +2090,7 @@
     {
       "name": "PurpleGrapeVine0",
       "type": "block",
-      "sortid": 203,
+      "sortid": 211,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2100,7 +2100,7 @@
     {
       "name": "PurpleGrapeVine1",
       "type": "block",
-      "sortid": 204,
+      "sortid": 212,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2110,7 +2110,7 @@
     {
       "name": "GreenGrapeVineTip",
       "type": "block",
-      "sortid": 205,
+      "sortid": 213,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2120,7 +2120,7 @@
     {
       "name": "GreenGrapeVine0",
       "type": "block",
-      "sortid": 206,
+      "sortid": 214,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2130,7 +2130,7 @@
     {
       "name": "GreenGrapeVine1",
       "type": "block",
-      "sortid": 207,
+      "sortid": 215,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2140,7 +2140,7 @@
     {
       "name": "RedGrapeVineTip",
       "type": "block",
-      "sortid": 208,
+      "sortid": 216,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2150,7 +2150,7 @@
     {
       "name": "RedGrapeVine0",
       "type": "block",
-      "sortid": 209,
+      "sortid": 217,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2160,7 +2160,7 @@
     {
       "name": "RedGrapeVine1",
       "type": "block",
-      "sortid": 210,
+      "sortid": 218,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2170,7 +2170,7 @@
     {
       "name": "GrapeVineUpdate",
       "type": "procedure",
-      "sortid": 211,
+      "sortid": 219,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2199,7 +2199,7 @@
     {
       "name": "GrapeHarvest",
       "type": "procedure",
-      "sortid": 212,
+      "sortid": 220,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2232,7 +2232,7 @@
     {
       "name": "GrapeVineGrow",
       "type": "procedure",
-      "sortid": 213,
+      "sortid": 221,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2261,7 +2261,7 @@
     {
       "name": "GrapesPlace",
       "type": "procedure",
-      "sortid": 214,
+      "sortid": 222,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2294,7 +2294,7 @@
     {
       "name": "ViciataPlace",
       "type": "procedure",
-      "sortid": 215,
+      "sortid": 223,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2327,7 +2327,7 @@
     {
       "name": "ViciataGrow",
       "type": "procedure",
-      "sortid": 216,
+      "sortid": 224,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2356,7 +2356,7 @@
     {
       "name": "ViciataDrop",
       "type": "procedure",
-      "sortid": 217,
+      "sortid": 225,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2385,7 +2385,7 @@
     {
       "name": "Suspine",
       "type": "food",
-      "sortid": 17,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2395,7 +2395,7 @@
     {
       "name": "TropicalLeaves",
       "type": "block",
-      "sortid": 82,
+      "sortid": 94,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2405,7 +2405,7 @@
     {
       "name": "DragonFruitBlock",
       "type": "block",
-      "sortid": 218,
+      "sortid": 226,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2415,7 +2415,7 @@
     {
       "name": "DragonFruitDrop",
       "type": "procedure",
-      "sortid": 219,
+      "sortid": 227,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2444,7 +2444,7 @@
     {
       "name": "PalmTree1",
       "type": "structure",
-      "sortid": 220,
+      "sortid": 228,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2454,7 +2454,7 @@
     {
       "name": "PalmTree2",
       "type": "structure",
-      "sortid": 221,
+      "sortid": 229,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2464,7 +2464,7 @@
     {
       "name": "ViciataSpores",
       "type": "item",
-      "sortid": 75,
+      "sortid": 84,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2474,7 +2474,7 @@
     {
       "name": "ViciataStage0",
       "type": "block",
-      "sortid": 222,
+      "sortid": 230,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2484,7 +2484,7 @@
     {
       "name": "ViciataStage1",
       "type": "block",
-      "sortid": 223,
+      "sortid": 231,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2494,7 +2494,7 @@
     {
       "name": "ViciataStage2",
       "type": "block",
-      "sortid": 224,
+      "sortid": 232,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2504,7 +2504,7 @@
     {
       "name": "Repulsion",
       "type": "enchantment",
-      "sortid": 225,
+      "sortid": 233,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2513,7 +2513,7 @@
     {
       "name": "RepulsionProcedure",
       "type": "procedure",
-      "sortid": 226,
+      "sortid": 234,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2550,7 +2550,7 @@
     {
       "name": "RepulsionEffect",
       "type": "particle",
-      "sortid": 227,
+      "sortid": 235,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2559,7 +2559,7 @@
     {
       "name": "Begone",
       "type": "achievement",
-      "sortid": 228,
+      "sortid": 236,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2568,7 +2568,7 @@
     {
       "name": "RepulsionEssence",
       "type": "item",
-      "sortid": 229,
+      "sortid": 237,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2578,7 +2578,7 @@
     {
       "name": "StoneGolem",
       "type": "livingentity",
-      "sortid": 99,
+      "sortid": 113,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2587,7 +2587,7 @@
     {
       "name": "LogBlocks",
       "type": "tag",
-      "sortid": 230,
+      "sortid": 238,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2596,7 +2596,7 @@
     {
       "name": "FlowerItems",
       "type": "tag",
-      "sortid": 231,
+      "sortid": 239,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2605,7 +2605,7 @@
     {
       "name": "SmallFlowerBlocks",
       "type": "tag",
-      "sortid": 232,
+      "sortid": 240,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2614,7 +2614,7 @@
     {
       "name": "PlankItems",
       "type": "tag",
-      "sortid": 233,
+      "sortid": 241,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2623,7 +2623,7 @@
     {
       "name": "WoodenFenceBlocks",
       "type": "tag",
-      "sortid": 234,
+      "sortid": 242,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2632,7 +2632,7 @@
     {
       "name": "ClimbableBlocks",
       "type": "tag",
-      "sortid": 235,
+      "sortid": 243,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2641,7 +2641,7 @@
     {
       "name": "LeaveBlocks",
       "type": "tag",
-      "sortid": 236,
+      "sortid": 244,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2650,7 +2650,7 @@
     {
       "name": "ArcticForest",
       "type": "biome",
-      "sortid": 237,
+      "sortid": 245,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2659,7 +2659,7 @@
     {
       "name": "DesertBricks",
       "type": "block",
-      "sortid": 63,
+      "sortid": 72,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2669,7 +2669,7 @@
     {
       "name": "DesertBrickSlab",
       "type": "block",
-      "sortid": 65,
+      "sortid": 73,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2679,7 +2679,7 @@
     {
       "name": "DesertBrickStairs",
       "type": "block",
-      "sortid": 64,
+      "sortid": 74,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2689,7 +2689,7 @@
     {
       "name": "DesertBrickWall",
       "type": "block",
-      "sortid": 66,
+      "sortid": 75,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2699,7 +2699,7 @@
     {
       "name": "Mossfruit",
       "type": "food",
-      "sortid": 18,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2709,7 +2709,7 @@
     {
       "name": "Spongefruit",
       "type": "food",
-      "sortid": 19,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2729,7 +2729,7 @@
     {
       "name": "JuniperLeaves",
       "type": "block",
-      "sortid": 81,
+      "sortid": 93,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2739,7 +2739,7 @@
     {
       "name": "JuniperLog",
       "type": "block",
-      "sortid": 50,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2749,7 +2749,7 @@
     {
       "name": "JuniperPlanks",
       "type": "block",
-      "sortid": 54,
+      "sortid": 58,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2759,7 +2759,7 @@
     {
       "name": "StrippedJuniperLog",
       "type": "block",
-      "sortid": 52,
+      "sortid": 56,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2769,7 +2769,7 @@
     {
       "name": "JuniperWood",
       "type": "block",
-      "sortid": 51,
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2779,7 +2779,7 @@
     {
       "name": "StrippedJuniperWood",
       "type": "block",
-      "sortid": 53,
+      "sortid": 57,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2789,7 +2789,7 @@
     {
       "name": "JuniperSlab",
       "type": "block",
-      "sortid": 56,
+      "sortid": 60,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2799,7 +2799,7 @@
     {
       "name": "JuniperStairs",
       "type": "block",
-      "sortid": 55,
+      "sortid": 59,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2809,7 +2809,7 @@
     {
       "name": "JuniperFence",
       "type": "block",
-      "sortid": 57,
+      "sortid": 61,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2819,7 +2819,7 @@
     {
       "name": "JuniperFenceGate",
       "type": "block",
-      "sortid": 58,
+      "sortid": 62,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2829,7 +2829,7 @@
     {
       "name": "JuniperButton",
       "type": "block",
-      "sortid": 59,
+      "sortid": 63,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2839,7 +2839,7 @@
     {
       "name": "JuniperPressurePlate",
       "type": "block",
-      "sortid": 60,
+      "sortid": 64,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2849,7 +2849,7 @@
     {
       "name": "SpongefruitSproutGrow",
       "type": "procedure",
-      "sortid": 238,
+      "sortid": 246,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2878,7 +2878,7 @@
     {
       "name": "SpongefruitClusterDrop",
       "type": "procedure",
-      "sortid": 239,
+      "sortid": 247,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2907,7 +2907,7 @@
     {
       "name": "SpongefruitStem",
       "type": "block",
-      "sortid": 97,
+      "sortid": 111,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2917,7 +2917,7 @@
     {
       "name": "JuniperDoor",
       "type": "block",
-      "sortid": 61,
+      "sortid": 65,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2927,7 +2927,7 @@
     {
       "name": "SpongefruitCluster",
       "type": "block",
-      "sortid": 68,
+      "sortid": 77,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2937,7 +2937,7 @@
     {
       "name": "JuniperTrapdoor",
       "type": "block",
-      "sortid": 62,
+      "sortid": 66,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2947,7 +2947,7 @@
     {
       "name": "JuniperTree1",
       "type": "structure",
-      "sortid": 240,
+      "sortid": 248,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2957,7 +2957,7 @@
     {
       "name": "JuniperTree2",
       "type": "structure",
-      "sortid": 241,
+      "sortid": 249,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2967,7 +2967,7 @@
     {
       "name": "JuniperTree3",
       "type": "structure",
-      "sortid": 242,
+      "sortid": 250,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2977,7 +2977,7 @@
     {
       "name": "JuniperTree4",
       "type": "structure",
-      "sortid": 243,
+      "sortid": 251,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2987,7 +2987,7 @@
     {
       "name": "SpongefruitClusterRecipe",
       "type": "recipe",
-      "sortid": 244,
+      "sortid": 252,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -2997,7 +2997,7 @@
     {
       "name": "SpongefruitClusterTransform",
       "type": "procedure",
-      "sortid": 245,
+      "sortid": 253,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3030,7 +3030,7 @@
     {
       "name": "SpongefruitSprout",
       "type": "plant",
-      "sortid": 246,
+      "sortid": 254,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3040,7 +3040,7 @@
     {
       "name": "Frigipome",
       "type": "food",
-      "sortid": 20,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3050,7 +3050,7 @@
     {
       "name": "SpongeSproutCondition",
       "type": "procedure",
-      "sortid": 247,
+      "sortid": 255,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3080,7 +3080,7 @@
     {
       "name": "SugarRootSprout",
       "type": "plant",
-      "sortid": 100,
+      "sortid": 256,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3090,7 +3090,7 @@
     {
       "name": "Frigiplant0",
       "type": "plant",
-      "sortid": 248,
+      "sortid": 257,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3100,7 +3100,7 @@
     {
       "name": "Frigiplant1",
       "type": "plant",
-      "sortid": 249,
+      "sortid": 258,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3110,7 +3110,7 @@
     {
       "name": "Frigiplant2",
       "type": "plant",
-      "sortid": 101,
+      "sortid": 259,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3120,7 +3120,7 @@
     {
       "name": "Frigiplant3",
       "type": "plant",
-      "sortid": 102,
+      "sortid": 260,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3130,7 +3130,7 @@
     {
       "name": "FrigiplantGrow",
       "type": "procedure",
-      "sortid": 249,
+      "sortid": 261,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3159,7 +3159,7 @@
     {
       "name": "FrigipomeDrop",
       "type": "procedure",
-      "sortid": 250,
+      "sortid": 262,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3188,7 +3188,7 @@
     {
       "name": "SmallCactus",
       "type": "plant",
-      "sortid": 251,
+      "sortid": 98,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3198,7 +3198,7 @@
     {
       "name": "TinyCactus",
       "type": "plant",
-      "sortid": 252,
+      "sortid": 99,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3208,7 +3208,7 @@
     {
       "name": "Oasis",
       "type": "structure",
-      "sortid": 253,
+      "sortid": 263,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3218,7 +3218,7 @@
     {
       "name": "Hogsport",
       "type": "food",
-      "sortid": 254,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3228,7 +3228,7 @@
     {
       "name": "HogsportPlant0",
       "type": "plant",
-      "sortid": 255,
+      "sortid": 264,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3238,7 +3238,7 @@
     {
       "name": "JuniperBranch",
       "type": "food",
-      "sortid": 256,
+      "sortid": 85,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3248,7 +3248,7 @@
     {
       "name": "JuniperBranchDrop",
       "type": "procedure",
-      "sortid": 257,
+      "sortid": 265,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3281,7 +3281,7 @@
     {
       "name": "HogsportPlant1",
       "type": "plant",
-      "sortid": 258,
+      "sortid": 266,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3291,7 +3291,7 @@
     {
       "name": "JuniperSapling",
       "type": "plant",
-      "sortid": 259,
+      "sortid": 267,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3301,7 +3301,7 @@
     {
       "name": "WoodStrip",
       "type": "procedure",
-      "sortid": 260,
+      "sortid": 268,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3334,7 +3334,7 @@
     {
       "name": "JuniperPlanksRecipe",
       "type": "recipe",
-      "sortid": 261,
+      "sortid": 269,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3344,7 +3344,7 @@
     {
       "name": "AspenPlanksRecipe3",
       "type": "recipe",
-      "sortid": 262,
+      "sortid": 270,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3354,7 +3354,7 @@
     {
       "name": "AspenPlanksRecipe4",
       "type": "recipe",
-      "sortid": 263,
+      "sortid": 271,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3364,7 +3364,7 @@
     {
       "name": "JuniperPlanksRecipe2",
       "type": "recipe",
-      "sortid": 264,
+      "sortid": 272,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3374,7 +3374,7 @@
     {
       "name": "JuniperPlanksRecipe3",
       "type": "recipe",
-      "sortid": 265,
+      "sortid": 273,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3384,7 +3384,7 @@
     {
       "name": "JuniperPlanksRecipe4",
       "type": "recipe",
-      "sortid": 266,
+      "sortid": 274,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3394,7 +3394,7 @@
     {
       "name": "JuniperSlabRecipe",
       "type": "recipe",
-      "sortid": 267,
+      "sortid": 275,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3404,7 +3404,7 @@
     {
       "name": "JuniperStairsRecipe",
       "type": "recipe",
-      "sortid": 268,
+      "sortid": 276,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3414,7 +3414,7 @@
     {
       "name": "JuniperWoodRecipe",
       "type": "recipe",
-      "sortid": 269,
+      "sortid": 277,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3424,7 +3424,7 @@
     {
       "name": "JuniperButtonRecipe",
       "type": "recipe",
-      "sortid": 270,
+      "sortid": 278,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3434,7 +3434,7 @@
     {
       "name": "JuniperDoorRecipe",
       "type": "recipe",
-      "sortid": 271,
+      "sortid": 279,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3444,7 +3444,7 @@
     {
       "name": "JuniperFenceRecipe",
       "type": "recipe",
-      "sortid": 272,
+      "sortid": 280,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3454,7 +3454,7 @@
     {
       "name": "JuniperFenceGateRecipe",
       "type": "recipe",
-      "sortid": 273,
+      "sortid": 281,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3464,7 +3464,7 @@
     {
       "name": "StrippedJuniperWoodRecipe",
       "type": "recipe",
-      "sortid": 274,
+      "sortid": 282,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3474,7 +3474,7 @@
     {
       "name": "JuniperPressurePlateRecipe",
       "type": "recipe",
-      "sortid": 275,
+      "sortid": 283,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3484,7 +3484,7 @@
     {
       "name": "JuniperTrapdoorRecipe",
       "type": "recipe",
-      "sortid": 276,
+      "sortid": 284,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3494,7 +3494,7 @@
     {
       "name": "LogStrip",
       "type": "procedure",
-      "sortid": 277,
+      "sortid": 285,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3527,7 +3527,7 @@
     {
       "name": "Sandsuns",
       "type": "food",
-      "sortid": 278,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3537,7 +3537,7 @@
     {
       "name": "SandsunsPlant0",
       "type": "plant",
-      "sortid": 279,
+      "sortid": 286,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3547,7 +3547,7 @@
     {
       "name": "SandsunsPlant1",
       "type": "plant",
-      "sortid": 280,
+      "sortid": 287,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3557,7 +3557,7 @@
     {
       "name": "SandsunsGrow",
       "type": "procedure",
-      "sortid": 281,
+      "sortid": 288,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3586,7 +3586,7 @@
     {
       "name": "AbsorptiveBrewEffect",
       "type": "procedure",
-      "sortid": 282,
+      "sortid": 289,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3603,7 +3603,7 @@
     {
       "name": "AbsorptiveBrew",
       "type": "food",
-      "sortid": 282,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3613,7 +3613,7 @@
     {
       "name": "AbsorptiveBrewRecipe",
       "type": "recipe",
-      "sortid": 283,
+      "sortid": 290,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3623,7 +3623,7 @@
     {
       "name": "MahoganyLeaves",
       "type": "block",
-      "sortid": 284,
+      "sortid": 92,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3633,7 +3633,7 @@
     {
       "name": "MahoganyLog",
       "type": "block",
-      "sortid": 285,
+      "sortid": 67,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3643,7 +3643,7 @@
     {
       "name": "MahoganyPlanks",
       "type": "block",
-      "sortid": 286,
+      "sortid": 71,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3653,7 +3653,7 @@
     {
       "name": "StrippedMahoganyLog",
       "type": "block",
-      "sortid": 287,
+      "sortid": 69,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3663,7 +3663,7 @@
     {
       "name": "MahoganyWood",
       "type": "block",
-      "sortid": 288,
+      "sortid": 68,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3673,7 +3673,7 @@
     {
       "name": "StrippedMahoganyWood",
       "type": "block",
-      "sortid": 289,
+      "sortid": 70,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3683,7 +3683,7 @@
     {
       "name": "CaramelizedRoot",
       "type": "food",
-      "sortid": 290,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3722,7 +3722,7 @@
     {
       "name": "Honey",
       "type": "fluid",
-      "sortid": 293,
+      "sortid": 86,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -3797,12 +3797,12 @@
       "block.fantastical_fruits.honey": "Honey",
       "item.fantastical_fruits.wandering_funglin_spawn_egg": "Wandering Funglin Spawn Egg",
       "block.fantastical_fruits.juniper_stairs": "Juniper Stairs",
-      "block.fantastical_fruits.frigiplant_0": "Frigiplant 0",
+      "block.fantastical_fruits.frigiplant_0": "Frigiplant",
       "block.fantastical_fruits.green_grape_vine_tip": "Green Grape Vine Tip",
-      "block.fantastical_fruits.frigiplant_1": "Frigiplant 1",
-      "block.fantastical_fruits.frigiplant_2": "Frigiplant 2",
+      "block.fantastical_fruits.frigiplant_1": "Frigiplant",
+      "block.fantastical_fruits.frigiplant_2": "Frigiplant",
       "item.fantastical_fruits.suspine": "Suspine",
-      "block.fantastical_fruits.frigiplant_3": "Frigiplant 3",
+      "block.fantastical_fruits.frigiplant_3": "Frigiplant",
       "block.fantastical_fruits.blueberry_bush": "Blueberry Bush",
       "item.fantastical_fruits.hogsport": "Hogsport",
       "block.fantastical_fruits.stripped_aspen_wood": "Stripped Aspen Wood",
@@ -3954,10 +3954,10 @@
       "advancements.greenish_glow.descr": "Obtain the scourapple.",
       "block.fantastical_fruits.juniper_fence": "Juniper Fence",
       "block.fantastical_fruits.stripped_mahogany_wood": "Stripped Mahogany Wood",
-      "block.fantastical_fruits.hogsport_plant_1": "Hogsport Plant 1",
+      "block.fantastical_fruits.hogsport_plant_1": "Hogsport Plant",
       "block.fantastical_fruits.stripped_mahogany_log": "Stripped Mahogany Log",
       "block.fantastical_fruits.aspen_leaves": "Aspen Leaves",
-      "block.fantastical_fruits.hogsport_plant_0": "Hogsport Plant 0",
+      "block.fantastical_fruits.hogsport_plant_0": "Hogsport Plant",
       "item.fantastical_fruits.purple_grapes": "Purple Grapes",
       "block.fantastical_fruits.writingtable": "Writing Table",
       "itemGroup.tabfantastical_items": "Fantastical Items",

@@ -9,6 +9,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.RayTraceResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.properties.DoubleBlockHalf;
 import net.minecraft.state.properties.BlockStateProperties;
@@ -16,6 +17,7 @@ import net.minecraft.loot.LootContext;
 import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.Material;
@@ -25,6 +27,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.item.HogsportItem;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
@@ -35,7 +38,7 @@ public class HogsportPlant0Block extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:hogsport_plant_0")
 	public static final Block block = null;
 	public HogsportPlant0Block(FantasticalFruitsModElements instance) {
-		super(instance, 255);
+		super(instance, 264);
 	}
 
 	@Override
@@ -62,13 +65,18 @@ public class HogsportPlant0Block extends FantasticalFruitsModElements.ModElement
 		}
 
 		@Override
+		public ItemStack getPickBlock(BlockState state, RayTraceResult target, IBlockReader world, BlockPos pos, PlayerEntity player) {
+			return new ItemStack(HogsportItem.block);
+		}
+
+		@Override
 		public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
 			if (state.get(BlockStateProperties.DOUBLE_BLOCK_HALF) != DoubleBlockHalf.LOWER)
 				return Collections.emptyList();
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(this, 1));
+			return Collections.singletonList(new ItemStack(Blocks.AIR, (int) (0)));
 		}
 
 		@Override

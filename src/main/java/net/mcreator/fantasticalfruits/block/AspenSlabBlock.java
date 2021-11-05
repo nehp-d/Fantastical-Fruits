@@ -26,7 +26,7 @@ public class AspenSlabBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:aspen_slab")
 	public static final Block block = null;
 	public AspenSlabBlock(FantasticalFruitsModElements instance) {
-		super(instance, 30);
+		super(instance, 34);
 	}
 
 	@Override

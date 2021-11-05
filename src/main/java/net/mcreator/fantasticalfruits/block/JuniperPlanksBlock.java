@@ -26,7 +26,7 @@ public class JuniperPlanksBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:juniper_planks")
 	public static final Block block = null;
 	public JuniperPlanksBlock(FantasticalFruitsModElements instance) {
-		super(instance, 54);
+		super(instance, 58);
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class MapleButtonBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:maple_button")
 	public static final Block block = null;
 	public MapleButtonBlock(FantasticalFruitsModElements instance) {
-		super(instance, 46);
+		super(instance, 50);
 	}
 
 	@Override

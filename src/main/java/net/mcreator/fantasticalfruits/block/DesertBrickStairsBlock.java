@@ -32,7 +32,7 @@ public class DesertBrickStairsBlock extends FantasticalFruitsModElements.ModElem
 	@ObjectHolder("fantastical_fruits:desert_brick_stairs")
 	public static final Block block = null;
 	public DesertBrickStairsBlock(FantasticalFruitsModElements instance) {
-		super(instance, 64);
+		super(instance, 74);
 	}
 
 	@Override

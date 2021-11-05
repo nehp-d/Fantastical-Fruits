@@ -32,7 +32,7 @@ public class MapleWoodBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:maple_wood")
 	public static final Block block = null;
 	public MapleWoodBlock(FantasticalFruitsModElements instance) {
-		super(instance, 38);
+		super(instance, 42);
 	}
 
 	@Override

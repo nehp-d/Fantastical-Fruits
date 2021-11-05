@@ -17,7 +17,7 @@ public class CaramelizedRootItem extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:caramelized_root")
 	public static final Item block = null;
 	public CaramelizedRootItem(FantasticalFruitsModElements instance) {
-		super(instance, 290);
+		super(instance, 8);
 	}
 
 	@Override

@@ -30,7 +30,7 @@ public class JuniperFenceGateBlock extends FantasticalFruitsModElements.ModEleme
 	@ObjectHolder("fantastical_fruits:juniper_fence_gate")
 	public static final Block block = null;
 	public JuniperFenceGateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 58);
+		super(instance, 62);
 	}
 
 	@Override

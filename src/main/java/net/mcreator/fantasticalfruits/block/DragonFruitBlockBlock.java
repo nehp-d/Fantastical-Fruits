@@ -46,7 +46,7 @@ public class DragonFruitBlockBlock extends FantasticalFruitsModElements.ModEleme
 	@ObjectHolder("fantastical_fruits:dragon_fruit_block")
 	public static final Block block = null;
 	public DragonFruitBlockBlock(FantasticalFruitsModElements instance) {
-		super(instance, 218);
+		super(instance, 226);
 	}
 
 	@Override

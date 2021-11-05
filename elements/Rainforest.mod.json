@@ -54,7 +54,13 @@
     "biomeType": "WARM",
     "spawnBiome": true,
     "biomeWeight": 7,
-    "biomeDictionaryTypes": [],
+    "biomeDictionaryTypes": [
+      "FOREST",
+      "DENSE",
+      "WET",
+      "JUNGLE",
+      "LUSH"
+    ],
     "grassPerChunk": 9,
     "seagrassPerChunk": 0,
     "flowersPerChunk": 5,

@@ -31,7 +31,7 @@ public class AbsorptiveBrewItem extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:absorptive_brew")
 	public static final Item block = null;
 	public AbsorptiveBrewItem(FantasticalFruitsModElements instance) {
-		super(instance, 282);
+		super(instance, 25);
 	}
 
 	@Override

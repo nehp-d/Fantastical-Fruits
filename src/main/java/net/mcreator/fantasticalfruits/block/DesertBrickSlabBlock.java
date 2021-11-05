@@ -26,7 +26,7 @@ public class DesertBrickSlabBlock extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:desert_brick_slab")
 	public static final Block block = null;
 	public DesertBrickSlabBlock(FantasticalFruitsModElements instance) {
-		super(instance, 65);
+		super(instance, 73);
 	}
 
 	@Override

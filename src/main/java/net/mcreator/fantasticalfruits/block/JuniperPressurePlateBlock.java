@@ -30,7 +30,7 @@ public class JuniperPressurePlateBlock extends FantasticalFruitsModElements.ModE
 	@ObjectHolder("fantastical_fruits:juniper_pressure_plate")
 	public static final Block block = null;
 	public JuniperPressurePlateBlock(FantasticalFruitsModElements instance) {
-		super(instance, 60);
+		super(instance, 64);
 	}
 
 	@Override

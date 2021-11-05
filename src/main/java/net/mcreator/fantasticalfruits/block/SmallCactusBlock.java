@@ -57,7 +57,7 @@ public class SmallCactusBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:small_cactus")
 	public static final Block block = null;
 	public SmallCactusBlock(FantasticalFruitsModElements instance) {
-		super(instance, 251);
+		super(instance, 98);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

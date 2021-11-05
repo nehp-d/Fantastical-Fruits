@@ -16,7 +16,7 @@ public class RoughMyceliteItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:rough_mycelite")
 	public static final Item block = null;
 	public RoughMyceliteItem(FantasticalFruitsModElements instance) {
-		super(instance, 71);
+		super(instance, 80);
 	}
 
 	@Override

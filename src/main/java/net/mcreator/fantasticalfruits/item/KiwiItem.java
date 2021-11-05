@@ -17,7 +17,7 @@ public class KiwiItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:kiwi")
 	public static final Item block = null;
 	public KiwiItem(FantasticalFruitsModElements instance) {
-		super(instance, 15);
+		super(instance, 18);
 	}
 
 	@Override

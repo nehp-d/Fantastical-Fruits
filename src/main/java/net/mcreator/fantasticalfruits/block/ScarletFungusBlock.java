@@ -55,7 +55,7 @@ public class ScarletFungusBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:scarlet_fungus")
 	public static final Block block = null;
 	public ScarletFungusBlock(FantasticalFruitsModElements instance) {
-		super(instance, 89);
+		super(instance, 103);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

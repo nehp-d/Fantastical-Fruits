@@ -16,7 +16,6 @@ import net.minecraft.util.Direction;
 import net.minecraft.potion.Effects;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.fluid.FluidState;
@@ -44,13 +43,13 @@ public class Frigiplant3Block extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:frigiplant_3")
 	public static final Block block = null;
 	public Frigiplant3Block(FantasticalFruitsModElements instance) {
-		super(instance, 102);
+		super(instance, 260);
 	}
 
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(null)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

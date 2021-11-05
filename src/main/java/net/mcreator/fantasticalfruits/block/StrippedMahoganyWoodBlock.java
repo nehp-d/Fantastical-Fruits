@@ -32,7 +32,7 @@ public class StrippedMahoganyWoodBlock extends FantasticalFruitsModElements.ModE
 	@ObjectHolder("fantastical_fruits:stripped_mahogany_wood")
 	public static final Block block = null;
 	public StrippedMahoganyWoodBlock(FantasticalFruitsModElements instance) {
-		super(instance, 289);
+		super(instance, 70);
 	}
 
 	@Override

@@ -32,7 +32,7 @@ public class JuniperLogBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:juniper_log")
 	public static final Block block = null;
 	public JuniperLogBlock(FantasticalFruitsModElements instance) {
-		super(instance, 50);
+		super(instance, 54);
 	}
 
 	@Override

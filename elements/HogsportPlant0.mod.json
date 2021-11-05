@@ -3,8 +3,8 @@
   "_type": "plant",
   "definition": {
     "renderType": 12,
-    "texture": "hogsporttop",
-    "textureBottom": "hogsportbottom",
+    "texture": "hogsport_top",
+    "textureBottom": "hogsport_bottom",
     "customModelName": "Cross model",
     "itemTexture": "",
     "particleTexture": "",
@@ -30,7 +30,7 @@
         "subtract": false
       }
     ],
-    "name": "Hogsport Plant 0",
+    "name": "Hogsport Plant",
     "specialInfo": [],
     "creativeTab": {
       "value": "No creative tab entry"
@@ -60,16 +60,16 @@
     },
     "useLootTableForDrops": false,
     "customDrop": {
-      "value": ""
+      "value": "Blocks.AIR"
     },
-    "dropAmount": 1,
+    "dropAmount": 0,
     "forceTicking": false,
     "emissiveRendering": false,
     "hasTileEntity": false,
     "isReplaceable": false,
     "colorOnMap": "DEFAULT",
     "creativePickItem": {
-      "value": ""
+      "value": "CUSTOM:Hogsport"
     },
     "offsetType": "NONE",
     "aiPathNodeType": "DEFAULT",
