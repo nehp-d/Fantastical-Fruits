@@ -71,7 +71,7 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 				.builder(new ResourceLocation("fantastical_fruits:blocks/honey_still"), new ResourceLocation("fantastical_fruits:blocks/honey_flow"))
 				.luminosity(0).density(1420).viscosity(1420).temperature(300).rarity(Rarity.COMMON)
 				.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")))).explosionResistance(10f).tickRate(25)
-						.levelDecreasePerBlock(1).slopeFindDistance(4).bucket(() -> bucket).block(() -> block);
+						.levelDecreasePerBlock(2).slopeFindDistance(3).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new CustomFlowingFluid.Source(fluidproperties).setRegistryName("honey");
 		flowing = (FlowingFluid) new CustomFlowingFluid.Flowing(fluidproperties).setRegistryName("honey_flowing");
 		elements.blocks.add(() -> new FlowingFluidBlock(still,

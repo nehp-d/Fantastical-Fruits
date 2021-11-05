@@ -9,8 +9,8 @@
     "tintType": "No tint",
     "canMultiply": false,
     "flowRate": 25,
-    "levelDecrease": 1,
-    "slopeFindDistance": 4,
+    "levelDecrease": 2,
+    "slopeFindDistance": 3,
     "spawnParticles": true,
     "dripParticle": {
       "value": "DRIPPING_HONEY"
