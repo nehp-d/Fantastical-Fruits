@@ -1,0 +1,47 @@
+{
+  "_fv": 24,
+  "_type": "fluid",
+  "definition": {
+    "name": "Honey",
+    "bucketName": "Honey Bucket",
+    "textureStill": "honey_still",
+    "textureFlowing": "honey_flow",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 25,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": true,
+    "dripParticle": {
+      "value": "DRIPPING_HONEY"
+    },
+    "flowStrength": 0.1,
+    "luminosity": 0,
+    "density": 1420,
+    "viscosity": 1420,
+    "isGas": false,
+    "temperature": 300,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "honey_bucket",
+    "creativeTab": {
+      "value": "CUSTOM:FantasticalItems"
+    },
+    "emptySound": {
+      "value": "block.honey_block.place"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 10.0,
+    "luminance": 0,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "GOLD",
+    "frequencyOnChunks": 0,
+    "spawnWorldTypes": [],
+    "restrictionBiomes": []
+  }
+}
