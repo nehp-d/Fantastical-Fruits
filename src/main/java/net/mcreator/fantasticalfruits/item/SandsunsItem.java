@@ -17,7 +17,7 @@ public class SandsunsItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:sandsuns")
 	public static final Item block = null;
 	public SandsunsItem(FantasticalFruitsModElements instance) {
-		super(instance, 278);
+		super(instance, 13);
 	}
 
 	@Override

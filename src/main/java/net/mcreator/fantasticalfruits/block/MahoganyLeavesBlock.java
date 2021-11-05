@@ -27,7 +27,7 @@ public class MahoganyLeavesBlock extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:mahogany_leaves")
 	public static final Block block = null;
 	public MahoganyLeavesBlock(FantasticalFruitsModElements instance) {
-		super(instance, 284);
+		super(instance, 92);
 	}
 
 	@Override

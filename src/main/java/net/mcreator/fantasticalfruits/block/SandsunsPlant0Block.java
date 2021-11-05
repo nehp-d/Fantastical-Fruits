@@ -62,7 +62,7 @@ public class SandsunsPlant0Block extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:sandsuns_plant_0")
 	public static final Block block = null;
 	public SandsunsPlant0Block(FantasticalFruitsModElements instance) {
-		super(instance, 279);
+		super(instance, 286);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

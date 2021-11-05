@@ -32,7 +32,7 @@ public class StrippedMahoganyLogBlock extends FantasticalFruitsModElements.ModEl
 	@ObjectHolder("fantastical_fruits:stripped_mahogany_log")
 	public static final Block block = null;
 	public StrippedMahoganyLogBlock(FantasticalFruitsModElements instance) {
-		super(instance, 287);
+		super(instance, 69);
 	}
 
 	@Override

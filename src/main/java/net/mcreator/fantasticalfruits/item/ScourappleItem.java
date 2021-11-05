@@ -19,7 +19,7 @@ public class ScourappleItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:scourapple")
 	public static final Item block = null;
 	public ScourappleItem(FantasticalFruitsModElements instance) {
-		super(instance, 16);
+		super(instance, 19);
 	}
 
 	@Override

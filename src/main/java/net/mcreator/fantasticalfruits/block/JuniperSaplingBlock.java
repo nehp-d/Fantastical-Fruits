@@ -36,7 +36,7 @@ public class JuniperSaplingBlock extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:juniper_sapling")
 	public static final Block block = null;
 	public JuniperSaplingBlock(FantasticalFruitsModElements instance) {
-		super(instance, 259);
+		super(instance, 267);
 	}
 
 	@Override

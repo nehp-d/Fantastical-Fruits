@@ -30,10 +30,10 @@
         "subtract": false
       }
     ],
-    "name": "Frigiplant 3",
+    "name": "Frigiplant",
     "specialInfo": [],
     "creativeTab": {
-      "value": "DECORATIONS"
+      "value": "No creative tab entry"
     },
     "hardness": 0.0,
     "resistance": 0.0,

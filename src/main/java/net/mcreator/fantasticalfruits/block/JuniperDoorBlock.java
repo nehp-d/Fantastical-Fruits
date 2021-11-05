@@ -32,7 +32,7 @@ public class JuniperDoorBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:juniper_door")
 	public static final Block block = null;
 	public JuniperDoorBlock(FantasticalFruitsModElements instance) {
-		super(instance, 61);
+		super(instance, 65);
 	}
 
 	@Override

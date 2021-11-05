@@ -68,7 +68,7 @@ public class WildWharpleyBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:wild_wharpley")
 	public static final Block block = null;
 	public WildWharpleyBlock(FantasticalFruitsModElements instance) {
-		super(instance, 143);
+		super(instance, 152);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

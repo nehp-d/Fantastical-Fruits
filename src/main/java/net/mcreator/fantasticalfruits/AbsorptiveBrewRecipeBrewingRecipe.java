@@ -17,7 +17,7 @@ import net.mcreator.fantasticalfruits.item.AbsorptiveBrewItem;
 @FantasticalFruitsModElements.ModElement.Tag
 public class AbsorptiveBrewRecipeBrewingRecipe extends FantasticalFruitsModElements.ModElement {
 	public AbsorptiveBrewRecipeBrewingRecipe(FantasticalFruitsModElements instance) {
-		super(instance, 283);
+		super(instance, 290);
 	}
 
 	@Override

@@ -1,21 +1,26 @@
 
 package net.mcreator.fantasticalfruits.potion;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effect;
+
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class HoneyEffectPotionEffect {
-
 	@ObjectHolder("fantastical_fruits:honey_effect")
 	public static final Effect potion = null;
-
 	@SubscribeEvent
 	public static void registerEffect(RegistryEvent.Register<Effect> event) {
 		event.getRegistry().register(new EffectCustom());
 	}
-
 	public static class EffectCustom extends Effect {
-
 		private final ResourceLocation potionIcon;
-
 		public EffectCustom() {
 			super(EffectType.BENEFICIAL, -344279);
 			setRegistryName("honey_effect");
@@ -56,7 +61,5 @@ public class HoneyEffectPotionEffect {
 		public boolean isReady(int duration, int amplifier) {
 			return true;
 		}
-
 	}
-
 }

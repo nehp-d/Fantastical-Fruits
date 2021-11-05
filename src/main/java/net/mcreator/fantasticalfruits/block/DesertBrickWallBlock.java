@@ -44,7 +44,7 @@ public class DesertBrickWallBlock extends FantasticalFruitsModElements.ModElemen
 	@ObjectHolder("fantastical_fruits:desert_brick_wall")
 	public static final Block block = null;
 	public DesertBrickWallBlock(FantasticalFruitsModElements instance) {
-		super(instance, 66);
+		super(instance, 75);
 	}
 
 	@Override

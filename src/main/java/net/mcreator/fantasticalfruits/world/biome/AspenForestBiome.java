@@ -37,7 +37,7 @@ import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 public class AspenForestBiome extends FantasticalFruitsModElements.ModElement {
 	public static Biome biome;
 	public AspenForestBiome(FantasticalFruitsModElements instance) {
-		super(instance, 111);
+		super(instance, 120);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new BiomeRegisterHandler());
 	}
 	private static class BiomeRegisterHandler {

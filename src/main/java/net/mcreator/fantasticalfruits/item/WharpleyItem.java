@@ -16,7 +16,7 @@ public class WharpleyItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:wharpley")
 	public static final Item block = null;
 	public WharpleyItem(FantasticalFruitsModElements instance) {
-		super(instance, 72);
+		super(instance, 81);
 	}
 
 	@Override

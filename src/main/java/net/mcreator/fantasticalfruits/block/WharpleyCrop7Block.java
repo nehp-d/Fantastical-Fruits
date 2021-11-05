@@ -47,7 +47,7 @@ public class WharpleyCrop7Block extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:wharpley_crop_7")
 	public static final Block block = null;
 	public WharpleyCrop7Block(FantasticalFruitsModElements instance) {
-		super(instance, 174);
+		super(instance, 182);
 	}
 
 	@Override

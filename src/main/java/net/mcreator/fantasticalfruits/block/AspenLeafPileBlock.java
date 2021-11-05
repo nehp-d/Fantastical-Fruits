@@ -62,7 +62,7 @@ public class AspenLeafPileBlock extends FantasticalFruitsModElements.ModElement 
 	@ObjectHolder("fantastical_fruits:aspen_leaf_pile")
 	public static final Block block = null;
 	public AspenLeafPileBlock(FantasticalFruitsModElements instance) {
-		super(instance, 94);
+		super(instance, 108);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

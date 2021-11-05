@@ -26,7 +26,7 @@ public class MaplePlanksBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:maple_planks")
 	public static final Block block = null;
 	public MaplePlanksBlock(FantasticalFruitsModElements instance) {
-		super(instance, 41);
+		super(instance, 45);
 	}
 
 	@Override

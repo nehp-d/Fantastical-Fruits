@@ -62,7 +62,7 @@ public class GlowSproutBlock extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:glow_sprout")
 	public static final Block block = null;
 	public GlowSproutBlock(FantasticalFruitsModElements instance) {
-		super(instance, 96);
+		super(instance, 110);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FeatureRegisterHandler());
 	}

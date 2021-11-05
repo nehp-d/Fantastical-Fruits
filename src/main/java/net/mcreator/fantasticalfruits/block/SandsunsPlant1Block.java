@@ -36,7 +36,7 @@ public class SandsunsPlant1Block extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:sandsuns_plant_1")
 	public static final Block block = null;
 	public SandsunsPlant1Block(FantasticalFruitsModElements instance) {
-		super(instance, 280);
+		super(instance, 287);
 	}
 
 	@Override

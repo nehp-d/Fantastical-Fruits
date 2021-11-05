@@ -27,7 +27,7 @@ public class TropicalLeavesBlock extends FantasticalFruitsModElements.ModElement
 	@ObjectHolder("fantastical_fruits:tropical_leaves")
 	public static final Block block = null;
 	public TropicalLeavesBlock(FantasticalFruitsModElements instance) {
-		super(instance, 82);
+		super(instance, 94);
 	}
 
 	@Override

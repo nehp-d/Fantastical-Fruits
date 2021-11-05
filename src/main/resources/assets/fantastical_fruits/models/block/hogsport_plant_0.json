@@ -1,7 +1,7 @@
 {
   "parent": "block/cross",
   "textures": {
-    "cross": "fantastical_fruits:blocks/hogsporttop",
-    "particle": "fantastical_fruits:blocks/hogsporttop"
+    "cross": "fantastical_fruits:blocks/hogsport_top",
+    "particle": "fantastical_fruits:blocks/hogsport_top"
   }
 }

@@ -21,7 +21,7 @@ public class JuniperBranchItem extends FantasticalFruitsModElements.ModElement {
 	@ObjectHolder("fantastical_fruits:juniper_branch")
 	public static final Item block = null;
 	public JuniperBranchItem(FantasticalFruitsModElements instance) {
-		super(instance, 256);
+		super(instance, 85);
 	}
 
 	@Override
