@@ -3709,6 +3709,15 @@
       "ids": {},
       "registry_name": "caramel_root_recipe_1",
       "path": "~/Recipes"
+    },
+    {
+      "name": "Rainforest",
+      "type": "biome",
+      "sortid": 293,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "rainforest"
     }
   ],
   "variable_elements": [],
@@ -3759,6 +3768,7 @@
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "block.fantastical_fruits.mahogany_wood": "Mahogany Wood",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
+      "biome.fantastical_fruits.rainforest": "Rainforest",
       "item.fantastical_fruits.mango": "Mango",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Maple Button",
@@ -3945,6 +3955,7 @@
       "block.fantastical_fruits.wild_wharpley": "Wild Wharpley",
       "block.fantastical_fruits.mahogany_wood": "Mahogany Log",
       "item.fantastical_fruits.blight_cookie": "Blight Cookie",
+      "biome.fantastical_fruits.rainforest": "Rainforest",
       "item.fantastical_fruits.mango": "Manga",
       "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
