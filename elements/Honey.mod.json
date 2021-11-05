@@ -42,6 +42,9 @@
     "colorOnMap": "GOLD",
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
-    "restrictionBiomes": []
+    "restrictionBiomes": [],
+    "onTickUpdate": {
+      "name": "HoneySolidify"
+    }
   }
 }
