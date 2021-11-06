@@ -13,6 +13,8 @@ import net.minecraftforge.common.property.Properties;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
@@ -35,8 +37,13 @@ import net.minecraft.block.FlowingFluidBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.fantasticalfruits.procedures.HoneySolidifyProcedure;
 import net.mcreator.fantasticalfruits.itemgroup.FantasticalItemsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
+
+import java.util.Random;
+import java.util.Map;
+import java.util.HashMap;
 
 @FantasticalFruitsModElements.ModElement.Tag
 public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
@@ -79,6 +86,32 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 			@Override
 			public boolean propagatesSkylightDown(BlockState state, IBlockReader reader, BlockPos pos) {
 				return true;
+			}
+
+			@Override
+			public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
+				super.onBlockAdded(blockstate, world, pos, oldState, moving);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			}
+
+			@Override
+			public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
+				super.tick(blockstate, world, pos, random);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					HoneySolidifyProcedure.executeProcedure($_dependencies);
+				}
+				world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
 			}
 		}.setRegistryName("honey"));
 		elements.items.add(() -> new BucketItem(still,
