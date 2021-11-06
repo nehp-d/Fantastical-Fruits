@@ -48,7 +48,7 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public HoneyBlock(FantasticalFruitsModElements instance) {
-		super(instance, 293);
+		super(instance, 86);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new FluidRegisterHandler());
 	}
 	private static class FluidRegisterHandler {
@@ -69,7 +69,7 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 	public void initElements() {
 		fluidproperties = new ForgeFlowingFluid.Properties(() -> still, () -> flowing, FluidAttributes
 				.builder(new ResourceLocation("fantastical_fruits:blocks/honey_still"), new ResourceLocation("fantastical_fruits:blocks/honey_flow"))
-				.luminosity(0).density(1420).viscosity(1420).temperature(300).rarity(Rarity.COMMON)
+				.luminosity(0).density(1420).viscosity(2500).temperature(300).rarity(Rarity.COMMON)
 				.sound(ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.honey_block.place")))).explosionResistance(10f).tickRate(25)
 						.levelDecreasePerBlock(2).slopeFindDistance(3).bucket(() -> bucket).block(() -> block);
 		still = (FlowingFluid) new CustomFlowingFluid.Source(fluidproperties).setRegistryName("honey");

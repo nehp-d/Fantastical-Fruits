@@ -18,7 +18,7 @@
     "flowStrength": 0.1,
     "luminosity": 0,
     "density": 1420,
-    "viscosity": 1420,
+    "viscosity": 2500,
     "isGas": false,
     "temperature": 300,
     "type": "WATER",
