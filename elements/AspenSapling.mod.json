@@ -33,7 +33,7 @@
     "name": "Aspen Sapling",
     "specialInfo": [],
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "DECORATIONS"
     },
     "hardness": 0.0,
     "resistance": 0.0,
@@ -81,9 +81,6 @@
     "frequencyOnChunks": 5,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "patchSize": 64,
-    "onTickUpdate": {
-      "name": "AspenSaplingGrow"
-    }
+    "patchSize": 64
   }
 }

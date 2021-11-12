@@ -39,7 +39,7 @@
     "hasGravity": false,
     "isWaterloggable": true,
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "CUSTOM:FantasticalFruits"
     },
     "destroyTool": "Not specified",
     "customDrop": {

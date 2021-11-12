@@ -200,15 +200,6 @@
       "path": "~/Blocks"
     },
     {
-      "name": "FantasticalNature",
-      "type": "tab",
-      "sortid": 117,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "fantastical_nature"
-    },
-    {
       "name": "AspenPlanks",
       "type": "block",
       "sortid": 32,
@@ -795,68 +786,6 @@
       "ids": {},
       "registry_name": "aspen_sapling",
       "path": "~/Nature"
-    },
-    {
-      "name": "AspenSaplingGrow",
-      "type": "procedure",
-      "sortid": 150,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspen_sapling_grow",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "AspenSaplingBonemeal",
-      "type": "procedure",
-      "sortid": 151,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "aspen_sapling_bonemeal",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     },
     {
       "name": "WildWharpley",
@@ -3768,6 +3697,72 @@
           }
         ]
       }
+    },
+    {
+      "name": "HoneyCollide",
+      "type": "procedure",
+      "sortid": 296,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "honey_collide",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoneyEffectCondition",
+      "type": "procedure",
+      "sortid": 297,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "honey_effect_condition",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "amplifier",
+            "type": "number"
+          },
+          {
+            "name": "duration",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "HoneyEffectTick",
+      "type": "procedure",
+      "sortid": 298,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "honey_effect_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "KiwiSeeds",
+      "type": "item",
+      "sortid": 299,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiwi_seeds",
+      "path": "~/Items"
     }
   ],
   "variable_elements": [],
@@ -3822,7 +3817,6 @@
       "effect.honey_effect": "Honey",
       "biome.fantastical_fruits.rainforest": "Rainforest",
       "item.fantastical_fruits.mango": "Mango",
-      "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Maple Button",
       "advancements.begone.title": "Begone!",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
@@ -3915,6 +3909,7 @@
       "block.fantastical_fruits.red_grape_vine_0": "Red Grape Vine 0",
       "block.fantastical_fruits.aspen_pressure_plate": "Aspen Pressure Plate",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
+      "item.fantastical_fruits.kiwi_seeds": "Kiwi Seeds",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "biome.fantastical_fruits.arctic_forest": "Arctic Forest",
@@ -4013,7 +4008,6 @@
       "effect.honey_effect": "Honey",
       "biome.fantastical_fruits.rainforest": "Rainforest",
       "item.fantastical_fruits.mango": "Manga",
-      "itemGroup.tabfantastical_nature": "Fantastical Nature",
       "block.fantastical_fruits.maple_button": "Aspen Button",
       "advancements.begone.title": "Begone!",
       "itemGroup.tabfantastical_blocks": "Fantastical Blocks",
@@ -4108,6 +4102,7 @@
       "block.fantastical_fruits.red_grape_vine_0": "Green Grape Vine 0",
       "block.fantastical_fruits.aspen_pressure_plate": "Aspen Pressure Plate",
       "block.fantastical_fruits.aspen_planks": "Aspen Planks",
+      "item.fantastical_fruits.kiwi_seeds": "Kiwi Seeds",
       "block.fantastical_fruits.christmas_rose": "Christmas Rose",
       "block.fantastical_fruits.wharpley_crop_3": "Wharpley Crop 3",
       "biome.fantastical_fruits.arctic_forest": "Arctic Forest",

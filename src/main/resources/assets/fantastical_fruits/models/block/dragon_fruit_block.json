@@ -1,8 +1,8 @@
 {
   "parent": "fantastical_fruits:custom/dragonfruit",
   "textures": {
-    "all": "fantastical_fruits:blocks/dragonfruittexture",
-    "particle": "fantastical_fruits:blocks/dragonfruittexture",
+    "all": "fantastical_fruits:blocks/dragonfruit",
+    "particle": "fantastical_fruits:blocks/dragonfruit",
     "2": "fantastical_fruits:blocks/dragonfruittexture"
   }
 }

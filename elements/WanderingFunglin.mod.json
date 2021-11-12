@@ -8,8 +8,8 @@
     "mobModelTexture": "funglintexture.png",
     "mobModelGlowTexture": "",
     "modelWidth": 0.6,
-    "modelHeight": 1.8,
-    "modelShadowSize": 0.5,
+    "modelHeight": 0.5,
+    "modelShadowSize": 0.8,
     "mountedYOffset": 0.0,
     "hasSpawnEgg": true,
     "spawnEggBaseColor": {
@@ -21,7 +21,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "CUSTOM:FantasticalNature"
+      "value": "MISC"
     },
     "isBoss": false,
     "bossBarColor": "PINK",

@@ -35,6 +35,7 @@ import net.minecraft.state.properties.BlockStateProperties;
 import net.minecraft.loot.LootContext;
 import net.minecraft.item.TallBlockItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
@@ -44,7 +45,6 @@ import net.minecraft.block.DoublePlantBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.Random;
@@ -64,8 +64,8 @@ public class TallAmberFungusBlock extends FantasticalFruitsModElements.ModElemen
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(
-				() -> new TallBlockItem(block, new Item.Properties().group(FantasticalNatureItemGroup.tab)).setRegistryName(block.getRegistryName()));
+		elements.items
+				.add(() -> new TallBlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override

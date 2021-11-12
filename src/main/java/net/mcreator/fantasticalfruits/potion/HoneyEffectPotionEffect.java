@@ -6,10 +6,20 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.event.RegistryEvent;
 
+import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.EffectType;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effect;
+import net.minecraft.entity.LivingEntity;
+
+import net.mcreator.fantasticalfruits.procedures.HoneyEffectTickProcedure;
+import net.mcreator.fantasticalfruits.procedures.HoneyEffectConditionProcedure;
+
+import java.util.Map;
+import java.util.HashMap;
+
+import com.google.common.collect.ImmutableMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class HoneyEffectPotionEffect {
@@ -58,8 +68,21 @@ public class HoneyEffectPotionEffect {
 		}
 
 		@Override
+		public void performEffect(LivingEntity entity, int amplifier) {
+			World world = entity.world;
+			double x = entity.getPosX();
+			double y = entity.getPosY();
+			double z = entity.getPosZ();
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				HoneyEffectTickProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
 		public boolean isReady(int duration, int amplifier) {
-			return true;
+			return HoneyEffectConditionProcedure.executeProcedure(ImmutableMap.of("amplifier", amplifier, "duration", duration));
 		}
 	}
 }

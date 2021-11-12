@@ -25,7 +25,7 @@ public class WanderingFunglinRenderer {
 		@OnlyIn(Dist.CLIENT)
 		public void registerModels(ModelRegistryEvent event) {
 			RenderingRegistry.registerEntityRenderingHandler(WanderingFunglinEntity.entity, renderManager -> {
-				return new MobRenderer(renderManager, new Modelcustom_model(), 0.5f) {
+				return new MobRenderer(renderManager, new Modelcustom_model(), 0.8f) {
 					@Override
 					public ResourceLocation getEntityTexture(Entity entity) {
 						return new ResourceLocation("fantastical_fruits:textures/funglintexture.png");

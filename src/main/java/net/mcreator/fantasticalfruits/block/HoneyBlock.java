@@ -13,15 +13,12 @@ import net.minecraftforge.common.property.Properties;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.World;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.vector.Vector3d;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.state.StateContainer;
-import net.minecraft.particles.ParticleTypes;
-import net.minecraft.particles.IParticleData;
 import net.minecraft.item.Rarity;
 import net.minecraft.item.Items;
 import net.minecraft.item.Item;
@@ -29,6 +26,7 @@ import net.minecraft.item.BucketItem;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.fluid.FlowingFluid;
+import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.block.material.MaterialColor;
@@ -38,10 +36,10 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.fantasticalfruits.procedures.HoneySolidifyProcedure;
+import net.mcreator.fantasticalfruits.procedures.HoneyCollideProcedure;
 import net.mcreator.fantasticalfruits.itemgroup.FantasticalItemsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
-import java.util.Random;
 import java.util.Map;
 import java.util.HashMap;
 
@@ -88,18 +86,8 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 				return true;
 			}
 
-			@Override
-			public void onBlockAdded(BlockState blockstate, World world, BlockPos pos, BlockState oldState, boolean moving) {
-				super.onBlockAdded(blockstate, world, pos, oldState, moving);
-				int x = pos.getX();
-				int y = pos.getY();
-				int z = pos.getZ();
-				world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
-			}
-
-			@Override
-			public void tick(BlockState blockstate, ServerWorld world, BlockPos pos, Random random) {
-				super.tick(blockstate, world, pos, random);
+			public void neighborChanged(BlockState blockstate, World world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
+				super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
 				int x = pos.getX();
 				int y = pos.getY();
 				int z = pos.getZ();
@@ -111,7 +99,19 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 					$_dependencies.put("world", world);
 					HoneySolidifyProcedure.executeProcedure($_dependencies);
 				}
-				world.getPendingBlockTicks().scheduleTick(new BlockPos(x, y, z), this, 10);
+			}
+
+			@Override
+			public void onEntityCollision(BlockState blockstate, World world, BlockPos pos, Entity entity) {
+				super.onEntityCollision(blockstate, world, pos, entity);
+				int x = pos.getX();
+				int y = pos.getY();
+				int z = pos.getZ();
+				{
+					Map<String, Object> $_dependencies = new HashMap<>();
+					$_dependencies.put("entity", entity);
+					HoneyCollideProcedure.executeProcedure($_dependencies);
+				}
 			}
 		}.setRegistryName("honey"));
 		elements.items.add(() -> new BucketItem(still,
@@ -121,12 +121,6 @@ public class HoneyBlock extends FantasticalFruitsModElements.ModElement {
 	public static abstract class CustomFlowingFluid extends ForgeFlowingFluid {
 		public CustomFlowingFluid(Properties properties) {
 			super(properties);
-		}
-
-		@OnlyIn(Dist.CLIENT)
-		@Override
-		public IParticleData getDripParticleData() {
-			return ParticleTypes.DRIPPING_HONEY;
 		}
 
 		@Override

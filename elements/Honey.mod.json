@@ -11,7 +11,7 @@
     "flowRate": 25,
     "levelDecrease": 2,
     "slopeFindDistance": 3,
-    "spawnParticles": true,
+    "spawnParticles": false,
     "dripParticle": {
       "value": "DRIPPING_HONEY"
     },
@@ -43,8 +43,11 @@
     "frequencyOnChunks": 0,
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
-    "onTickUpdate": {
+    "onNeighbourChanges": {
       "name": "HoneySolidify"
+    },
+    "onEntityCollides": {
+      "name": "HoneyCollide"
     }
   }
 }

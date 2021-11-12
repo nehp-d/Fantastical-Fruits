@@ -21,6 +21,7 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.ai.goal.SwimGoal;
@@ -41,7 +42,6 @@ import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 
 import net.mcreator.fantasticalfruits.procedures.BarteringProcedure;
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
 import net.mcreator.fantasticalfruits.entity.renderer.WanderingFunglinRenderer;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
@@ -52,7 +52,7 @@ import java.util.HashMap;
 public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElement {
 	public static EntityType entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new)
-			.size(0.6f, 1.8f)).build("wandering_funglin").setRegistryName("wandering_funglin");
+			.size(0.6f, 0.5f)).build("wandering_funglin").setRegistryName("wandering_funglin");
 	public WanderingFunglinEntity(FantasticalFruitsModElements instance) {
 		super(instance, 112);
 		FMLJavaModLoadingContext.get().getModEventBus().register(new WanderingFunglinRenderer.ModelRegisterHandler());
@@ -63,7 +63,7 @@ public class WanderingFunglinEntity extends FantasticalFruitsModElements.ModElem
 	@Override
 	public void initElements() {
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -39322, -1, new Item.Properties().group(FantasticalNatureItemGroup.tab))
+		elements.items.add(() -> new SpawnEggItem(entity, -39322, -1, new Item.Properties().group(ItemGroup.MISC))
 				.setRegistryName("wandering_funglin_spawn_egg"));
 	}
 

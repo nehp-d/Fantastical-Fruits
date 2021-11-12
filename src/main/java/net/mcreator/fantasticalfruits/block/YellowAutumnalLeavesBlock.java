@@ -19,7 +19,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
-import net.mcreator.fantasticalfruits.itemgroup.FantasticalNatureItemGroup;
+import net.mcreator.fantasticalfruits.itemgroup.FantasticalFruitsItemGroup;
 import net.mcreator.fantasticalfruits.FantasticalFruitsModElements;
 
 import java.util.List;
@@ -37,7 +37,7 @@ public class YellowAutumnalLeavesBlock extends FantasticalFruitsModElements.ModE
 	public void initElements() {
 		elements.blocks.add(() -> new CustomBlock());
 		elements.items.add(
-				() -> new BlockItem(block, new Item.Properties().group(FantasticalNatureItemGroup.tab)).setRegistryName(block.getRegistryName()));
+				() -> new BlockItem(block, new Item.Properties().group(FantasticalFruitsItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 	public static class CustomBlock extends LeavesBlock {
 		public CustomBlock() {
